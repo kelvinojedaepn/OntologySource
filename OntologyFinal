@@ -1,0 +1,2333 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/"
+     xml:base="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:OntologiaLOPDP="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#ambito_aplicacion_territorial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#ambito_aplicacion_territorial"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#condiciones_de_revocamiento_consentimiento -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#condiciones_de_revocamiento_consentimiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#considerando_que_el -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#considerando_que_el">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_revocamiento_consentimiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsable_del_tratamiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#cumpla_con -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#cumpla_con">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Informado"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Transparencia"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#es_un_integrante_por_concepto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#es_un_integrante_por_concepto">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#esten_domiciliados_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#esten_domiciliados_en">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#ambito_aplicacion_territorial"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Encargado_del_tratamiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsable_del_tratamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Territorio_nacional"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#le_resulte_aplicable_la_ley_en_virtud_de -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#le_resulte_aplicable_la_ley_en_virtud_de">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#ambito_aplicacion_territorial"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsable_del_tratamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Regulaciones_o_contratos_vigentes_del_derecho_publico"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#prodra_revocarse_considerando_las -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#prodra_revocarse_considerando_las">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_revocamiento_consentimiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_aplicara_la_ley_cuando -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_aplicara_la_ley_cuando">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#ambito_aplicacion_territorial"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Aplicabilidad"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Encargado_del_tratamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsable_del_tratamiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_garantise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_garantise">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Mecanismos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Celeridad"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Eficacia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Eficiencia"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Gratuidad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_lleve_a_cabo_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_lleve_a_cabo_en">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#ambito_aplicacion_territorial"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_de_datos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Territorio_nacional"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_necesita_justificacion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_necesita_justificacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#condiciones_de_revocamiento_consentimiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_revocamiento_consentimiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#sera_valido_cuando_cumpla_las -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#sera_valido_cuando_cumpla_las">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_consentimiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#utilice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#utilice">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsable_del_tratamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Mecanismos"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#condiciones_de_revocamiento_consentimiento"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Categoria_de_datos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Categoria_de_datos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Consentimiento_titular -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Consentimiento_titular">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sensibles"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_datos_sensibles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Cumplimiento_de_obligaciones_y_ejercicios_de_derechos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Cumplimiento_de_obligaciones_y_ejercicios_de_derechos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sensibles"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sensibles"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_datos_sensibles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_personas_mayores_fallecidas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_personas_mayores_fallecidas">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Categoria_de_datos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_de_personas_fallecidas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_personas_menores_fallecidas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_personas_menores_fallecidas">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Categoria_de_datos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_de_personas_fallecidas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sensibles -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sensibles">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Categoria_de_datos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Defensa_reclamos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Defensa_reclamos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_actualizar_rectificar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_actualizar_rectificar">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Encargado_otorgar_los_mecanismos_de_acceso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Encargado_otorgar_los_mecanismos_de_acceso">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_de_acceso"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_acceso"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Necesita_justificacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Necesita_justificacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_de_acceso"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_acceso"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#No_es_titular -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#No_es_titular">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Obligaciones_legales -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Obligaciones_legales">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Orden_judicial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Orden_judicial">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Perjuicios_a_terceros -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Perjuicios_a_terceros">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Proteger_intereses_del_titular -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Proteger_intereses_del_titular">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sensibles"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_datos_sensibles"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#afecta_los_derechos_y_liberatedes_de_otros -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#afecta_los_derechos_y_liberatedes_de_otros">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#base_de_datos_donde_consta_la_informaicon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#base_de_datos_donde_consta_la_informaicon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#base_legal_del_tratamiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#base_legal_del_tratamiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#condiciones_de_revocamiento_consentimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#condiciones_de_revocamiento_consentimiento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consecuencia_del_titular_de_la_entrega_o_negativa_a_ello -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consecuencia_del_titular_de_la_entrega_o_negativa_a_ello">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_cumplieron_con_la_finalidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_cumplieron_con_la_finalidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_de_contacto_del_delegado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_de_contacto_del_delegado">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_de_acceso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_de_acceso">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#descripcion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#descripcion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ley_Organica_Proteccion_Datos_Personales"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#efectos_suministrar_datos_inexactos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#efectos_suministrar_datos_inexactos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#es_un_derecho -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#es_un_derecho">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derechos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#es_un_integrante_por_concepto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#es_un_integrante_por_concepto">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#fines_del_tratamiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#fines_del_tratamiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#identidad_y_datos_de_contacto_del_responsable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#identidad_y_datos_de_contacto_del_responsable">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#no_cumpla_con_los_principios_ley -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#no_cumpla_con_los_principios_ley">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#numero_dias_para_la_atencion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#numero_dias_para_la_atencion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_acceso"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_rectificar_y_actualizar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#origen_de_los_datos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#origen_de_los_datos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#posibilidad_revocar_consentimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#posibilidad_revocar_consentimiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#responsable_de_tratamiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#responsable_de_tratamiento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_encuentra_domiciliado_en_ecuador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_encuentra_domiciliado_en_ecuador">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#responsable_de_tratamiento"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_necesita_justificacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#se_necesita_justificacion">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#tiempo_de_conservacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#tiempo_de_conservacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#tratamiento_legitimo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#tratamiento_legitimo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#tratamiento_no_es_pertinente -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#tratamiento_no_es_pertinente">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#vencieron_conservacion_datos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#vencieron_conservacion_datos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Actividades_familiares -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Actividades_familiares">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inaplicabilidad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Actividades_periodisticas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Actividades_periodisticas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inaplicabilidad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ambito_aplicacion_territorial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ambito_aplicacion_territorial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Procesamiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Aplicabilidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Aplicabilidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ambito_aplicacion_territorial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Aplicacion_favorable_titular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Aplicacion_favorable_titular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Autoridad_de_proteccion_de_datos_personales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Autoridad_de_proteccion_de_datos_personales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Bases_datos_publicas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Bases_datos_publicas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_legitimo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Calidad_y_exactitud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Calidad_y_exactitud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Categoria_de_datos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Categoria_de_datos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Procesamiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Celeridad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Celeridad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_revocamiento_consentimiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_consentimiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_consentimiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Recoleccion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_revocamiento_consentimiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_revocamiento_consentimiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Recoleccion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Confidencialidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Confidencialidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Consentimiento_del_titular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Consentimiento_del_titular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_legitimo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Conservacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Conservacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_de_personas_fallecidas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_de_personas_fallecidas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Categoria_de_datos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_personales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_personales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ley_Organica_Proteccion_Datos_Personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_regulados_en_normativa_especializada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_regulados_en_normativa_especializada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inaplicabilidad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sensibles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sensibles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Categoria_de_datos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sin_anonimizacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sin_anonimizacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inaplicabilidad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Delegado_de_proteccion_de_datos_personales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Delegado_de_proteccion_de_datos_personales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derechos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_acceso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_acceso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derechos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_rectificar_y_actualizar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_rectificar_y_actualizar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derechos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derechos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derechos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derechos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ley_Organica_Proteccion_Datos_Personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Destinatario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Destinatario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Eficacia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Eficacia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_revocamiento_consentimiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Eficiencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Eficiencia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_revocamiento_consentimiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Encargado_del_tratamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Encargado_del_tratamiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Especifico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Especifico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_consentimiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Estandares_internacionales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Estandares_internacionales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inaplicabilidad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_datos_sensibles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_datos_sensibles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sensibles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derechos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Finalidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Finalidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Gratuidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Gratuidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_revocamiento_consentimiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inaplicabilidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inaplicabilidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ambito_aplicacion_territorial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Independencia_del_control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Independencia_del_control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inequivoco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inequivoco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_consentimiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Informado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Informado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_consentimiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Infracciones_o_sanciones_penales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Infracciones_o_sanciones_penales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inaplicabilidad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ley_Organica_Proteccion_Datos_Personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Interes_publico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Interes_publico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_legitimo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Intereses_vitales_del_titular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Intereses_vitales_del_titular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_legitimo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Juridicidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Juridicidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Lealtad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Lealtad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ley_Organica_Proteccion_Datos_Personales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ley_Organica_Proteccion_Datos_Personales"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Libre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Libre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_consentimiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Materia_de_derechos_humanos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Materia_de_derechos_humanos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Estandares_internacionales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Materia_de_gestion_de_riesgos_por_desastres_naturales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Materia_de_gestion_de_riesgos_por_desastres_naturales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_regulados_en_normativa_especializada"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Materia_de_seguridad_y_defensa_del_Estado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Materia_de_seguridad_y_defensa_del_Estado">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_regulados_en_normativa_especializada"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Mayor_de_edad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Mayor_de_edad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Titular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Mecanismos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Mecanismos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Recoleccion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Medidas_precontractuales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Medidas_precontractuales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_legitimo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Menor_de_edad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Menor_de_edad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Titular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Obligaciones_legales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Obligaciones_legales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_legitimo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Orden_judicial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Orden_judicial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_legitimo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Personas_con_discapacidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Personas_con_discapacidad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Mayor_de_edad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Personas_fallecidas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Personas_fallecidas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Mayor_de_edad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Personas_juridicas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Personas_juridicas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Mayor_de_edad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Personas_naturales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Personas_naturales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Mayor_de_edad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Pertinencia_y_minimizacion_de_datos_personales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Pertinencia_y_minimizacion_de_datos_personales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ley_Organica_Proteccion_Datos_Personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Procesamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Procesamiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ley_Organica_Proteccion_Datos_Personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Proporcionalidad_del_tratamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Proporcionalidad_del_tratamiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Recoleccion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Recoleccion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ley_Organica_Proteccion_Datos_Personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Regulaciones_o_contratos_vigentes_del_derecho_publico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Regulaciones_o_contratos_vigentes_del_derecho_publico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Aplicabilidad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsabilidad_proactiva_y_demostrada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsabilidad_proactiva_y_demostrada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsable_del_tratamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsable_del_tratamiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Satisfaccion_legitima -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Satisfaccion_legitima">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_legitimo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Seguridad_de_datos_personales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Seguridad_de_datos_personales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Servicios_o_bienes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Servicios_o_bienes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Aplicabilidad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Territorio_nacional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Territorio_nacional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Aplicabilidad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Titular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Titular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Transparencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Transparencia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Principios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_de_datos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_de_datos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Ley_Organica_Proteccion_Datos_Personales"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_legitimo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Tratamiento_legitimo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Procesamiento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Recoleccion"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sin_anonimizar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sin_anonimizar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sin_anonimizacion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_de_derechos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_de_derechos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_derechos"/>
+        <OntologiaLOPDP:Defensa_reclamos>Cuando los datos son necesarios para la formulación, ejercicio o defensa de reclamos o recursos</OntologiaLOPDP:Defensa_reclamos>
+        <OntologiaLOPDP:No_es_titular>Si el solicitante no es el titular de los datos personales o su representante legal no se encuentre
+debidamente acreditado</OntologiaLOPDP:No_es_titular>
+        <OntologiaLOPDP:Obligaciones_legales>Cuando los datos son necesarios para el cumplimiento de una obligación legal o contractual</OntologiaLOPDP:Obligaciones_legales>
+        <OntologiaLOPDP:Orden_judicial>Cuando los datos son necesarios para el cumplimiento de una orden judicial, resolución o mandato motivado de autoridad pública competente</OntologiaLOPDP:Orden_judicial>
+        <OntologiaLOPDP:Perjuicios_a_terceros>Cuando se pueda causar perjuicios a derechos o afectación a intereses legítimos de terceros y ello sea acreditado por el responsable de la base de datos al momento de dar respuesta al titular a su solicitud de ejercicio del derecho respectivo</OntologiaLOPDP:Perjuicios_a_terceros>
+        <OntologiaLOPDP:descripcion>No proceden los derechos de rectificación, actualización y  eliminación</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Satisfaccion_legitima -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Satisfaccion_legitima">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Satisfaccion_legitima"/>
+        <OntologiaLOPDP:descripcion>Para satisfacer un interés legítimo del responsable de tratamiento o de tercero, siempre que no prevalezca el interés o derechos fundamentales de los titulares al amparo de lo dispuesto en esta norma.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#actividades_familiares -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#actividades_familiares">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Actividades_familiares"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#actividades_periodisticas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#actividades_periodisticas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Actividades_periodisticas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#aplicacion_faviorable_titular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#aplicacion_faviorable_titular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Aplicacion_favorable_titular"/>
+        <OntologiaLOPDP:descripcion>En caso de duda sobre el alcance de las disposiciones del ordenamiento jurídico o contractuales, aplicables a la protección de datos personales, los funcionarios judiciales y administrativos las interpretarán y aplicarán en el sentido más favorable al titular de dichos datos.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#autoridad_de_proteccion_de_datos_personales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#autoridad_de_proteccion_de_datos_personales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Autoridad_de_proteccion_de_datos_personales"/>
+        <OntologiaLOPDP:descripcion>Autoridad pública independiente encargada de supervisar la aplicación de la presente Ley, reglamento y resoluciones que ella dicte, con el fin de proteger los derechos y libertades fundamentales de las personas naturales, en cuanto al tratamiento de sus datos personales</OntologiaLOPDP:descripcion>
+        <OntologiaLOPDP:es_un_integrante_por_concepto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OntologiaLOPDP:es_un_integrante_por_concepto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#base_datos_publica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#base_datos_publica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Bases_datos_publicas"/>
+        <OntologiaLOPDP:descripcion>Para tratamiento de datos personales que consten en bases de datos de acceso público</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#calidad_y_exactitud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#calidad_y_exactitud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Calidad_y_exactitud"/>
+        <OntologiaLOPDP:descripcion>Los datos personales que sean objeto de tratamiento deben ser exactos, íntegros, precisos, completos, comprobables, claros; y, de ser el caso, debidamente actualizados; de tal forma que no se altere su veracidad. Se adoptarán todas las medidas razonables para que se supriman o rectifiquen sin dilación los datos personales que sean inexactos con respecto a los fines para los que se tratan.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#condiciones_para_el_consentimiento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#condiciones_para_el_consentimiento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_consentimiento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#condiciones_para_la_revocacion_del_consentimiento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#condiciones_para_la_revocacion_del_consentimiento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_revocamiento_consentimiento"/>
+        <OntologiaLOPDP:se_necesita_justificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</OntologiaLOPDP:se_necesita_justificacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#confidencialidad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#confidencialidad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Confidencialidad"/>
+        <OntologiaLOPDP:descripcion>El tratamiento de datos personales debe concebirse sobre la base del debido sigilo y secreto, es decir, no debe tratarse o comunicarse para un fin distinto para el cual fueron recogidos, a menos que concurra una de las causales que habiliten un nuevo tratamiento conforme los supuestos de tratamiento legítimo señalados en esta Ley.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento"/>
+        <OntologiaLOPDP:descripcion>Acto voluntario, informado y expreso por el cual una persona autoriza y acepta de manera consciente y libre el tratamiento de sus datos personales para una finalidad específica.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento_del_titular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#consentimiento_del_titular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Consentimiento_del_titular"/>
+        <OntologiaLOPDP:descripcion>Por consentimiento del titular para el tratamiento de sus datos personales, para una o varias finalidades especificas</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#conservacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#conservacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Conservacion"/>
+        <OntologiaLOPDP:descripcion>Los datos personales serán conservados durante un tiempo no mayor al necesario para cumplir con la finalidad de su tratamiento.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_personas_fallecidas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_personas_fallecidas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_de_personas_fallecidas"/>
+        <OntologiaLOPDP:Datos_personas_mayores_fallecidas>Los titulares de derechos sucesorios de las personas fallecidas, podrán dirigirse al responsable del tratamiento de datos personales con el objeto de solicitar el acceso, rectificación y actualización o eliminación de los datos personales del causante, siempre que el titular de los datos no haya, en vida, indicado otra utilización o destino para sus datos.</OntologiaLOPDP:Datos_personas_mayores_fallecidas>
+        <OntologiaLOPDP:Datos_personas_menores_fallecidas>En caso de fallecimiento de niñas, niños, adolescentes o personas que la ley reconozca como incapaces, las facultades de acceso, rectificación, actualización o eliminación, podrán ser ejercidas por quien hubiese sido su último representante legal. El Reglamento a la presente Ley establecerá los mecanismos para el ejercicio de las facultades enunciadas en el presente artículo</OntologiaLOPDP:Datos_personas_menores_fallecidas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_reglados_en_materia_de_gestion_de_riesgos_por_desastres -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_reglados_en_materia_de_gestion_de_riesgos_por_desastres">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Materia_de_gestion_de_riesgos_por_desastres_naturales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_regulados_en_materia_de_seguridad_y_defensa_del_estado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_regulados_en_materia_de_seguridad_y_defensa_del_estado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Materia_de_seguridad_y_defensa_del_Estado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_sensibles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#datos_sensibles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Datos_sensibles"/>
+        <OntologiaLOPDP:descripcion>Queda prohibido el tratamiento de datos personales sensibles salvo que concurra algunas excepciones.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#delegado_de_proteccion_de_datos_personales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#delegado_de_proteccion_de_datos_personales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Delegado_de_proteccion_de_datos_personales"/>
+        <OntologiaLOPDP:descripcion>Persona natural encargada de informar al responsable o al encargado del tratamiento sobre sus obligaciones legales en materia de protección de datos, así como de velar o supervisar el cumplimiento normativo al respecto, y de cooperar con la Autoridad de Protección de Datos Personales, sirviendo como punto de contacto entre esta y la entidad responsable del tratamiento de datos</OntologiaLOPDP:descripcion>
+        <OntologiaLOPDP:es_un_integrante_por_concepto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OntologiaLOPDP:es_un_integrante_por_concepto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_a_la_informacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_a_la_informacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+        <OntologiaLOPDP:base_de_datos_donde_consta_la_informaicon>La base de datos de donde posiblemente puedan constar los datos recopilados</OntologiaLOPDP:base_de_datos_donde_consta_la_informaicon>
+        <OntologiaLOPDP:base_legal_del_tratamiento>Base legal sobre la cual se realiza el tratamiento de datos</OntologiaLOPDP:base_legal_del_tratamiento>
+        <OntologiaLOPDP:consecuencia_del_titular_de_la_entrega_o_negativa_a_ello>La consecuencias de la entrega o no de los datos personales</OntologiaLOPDP:consecuencia_del_titular_de_la_entrega_o_negativa_a_ello>
+        <OntologiaLOPDP:datos_de_contacto_del_delegado>Datos asociados a al identificacion del delegado de proteccion de datos personales</OntologiaLOPDP:datos_de_contacto_del_delegado>
+        <OntologiaLOPDP:descripcion>El titular de datos personales tiene derecho a ser informado conforme los principios de lealtad y transparente</OntologiaLOPDP:descripcion>
+        <OntologiaLOPDP:efectos_suministrar_datos_inexactos>Las consecuencias de incoprorar datos inexactos</OntologiaLOPDP:efectos_suministrar_datos_inexactos>
+        <OntologiaLOPDP:es_un_derecho rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OntologiaLOPDP:es_un_derecho>
+        <OntologiaLOPDP:fines_del_tratamiento>Se está haciendo referencia a los propósitos específicos para los cuales se recopilan, procesan o utilizan los datos personales. En términos más simples, son las razones o metas detrás del manejo de la información personal de los individuos.</OntologiaLOPDP:fines_del_tratamiento>
+        <OntologiaLOPDP:identidad_y_datos_de_contacto_del_responsable>La informacion asociada a los datos de contacto del responsable o encargado de datos</OntologiaLOPDP:identidad_y_datos_de_contacto_del_responsable>
+        <OntologiaLOPDP:origen_de_los_datos>El origen de como se han obtenido dichos datos</OntologiaLOPDP:origen_de_los_datos>
+        <OntologiaLOPDP:posibilidad_revocar_consentimiento>Las posibilidades de suspender el tratamiento</OntologiaLOPDP:posibilidad_revocar_consentimiento>
+        <OntologiaLOPDP:tiempo_de_conservacion>El tiempo de conservacion de los datos</OntologiaLOPDP:tiempo_de_conservacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_acceso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_acceso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_acceso"/>
+        <OntologiaLOPDP:Encargado_otorgar_los_mecanismos_de_acceso>Responsable del tratamiento de datos</OntologiaLOPDP:Encargado_otorgar_los_mecanismos_de_acceso>
+        <OntologiaLOPDP:Necesita_justificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</OntologiaLOPDP:Necesita_justificacion>
+        <OntologiaLOPDP:descripcion>El titular tiene derecho a conocer y a obtener, gratuitamente la información de sus datos respecto a estos.</OntologiaLOPDP:descripcion>
+        <OntologiaLOPDP:es_un_derecho rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OntologiaLOPDP:es_un_derecho>
+        <OntologiaLOPDP:numero_dias_para_la_atencion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</OntologiaLOPDP:numero_dias_para_la_atencion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_eliminacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_eliminacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_eliminacion"/>
+        <OntologiaLOPDP:afecta_los_derechos_y_liberatedes_de_otros>Cuando estos datos afecten a los derechos y libertades de otros</OntologiaLOPDP:afecta_los_derechos_y_liberatedes_de_otros>
+        <OntologiaLOPDP:datos_cumplieron_con_la_finalidad>Cuando los datos ya cumplieron la finalidad prevista para el tratamiento de datos</OntologiaLOPDP:datos_cumplieron_con_la_finalidad>
+        <OntologiaLOPDP:descripcion>El titular tiene derecho a que el responsable del tratamiento suprima sus datos personales</OntologiaLOPDP:descripcion>
+        <OntologiaLOPDP:es_un_derecho rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OntologiaLOPDP:es_un_derecho>
+        <OntologiaLOPDP:no_cumpla_con_los_principios_ley>Cuando no se apegue a los prinicpios establecidos en la presente ley</OntologiaLOPDP:no_cumpla_con_los_principios_ley>
+        <OntologiaLOPDP:numero_dias_para_la_atencion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</OntologiaLOPDP:numero_dias_para_la_atencion>
+        <OntologiaLOPDP:tratamiento_no_es_pertinente>Cuando el tratamiento ya no se encuentra permitido por el titular</OntologiaLOPDP:tratamiento_no_es_pertinente>
+        <OntologiaLOPDP:vencieron_conservacion_datos>Cuando se hayan vencido el numero de días para los cuales fueron consevidos los datos</OntologiaLOPDP:vencieron_conservacion_datos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_rectificar_y_actualizar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#derecho_rectificar_y_actualizar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_rectificar_y_actualizar"/>
+        <OntologiaLOPDP:descripcion>El titular tiene el derecho a obtener del responsable del tratamiento la rectificación y actualización de sus datos personales inexactos o incompletos.</OntologiaLOPDP:descripcion>
+        <OntologiaLOPDP:es_un_derecho rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OntologiaLOPDP:es_un_derecho>
+        <OntologiaLOPDP:numero_dias_para_la_atencion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</OntologiaLOPDP:numero_dias_para_la_atencion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#destinatario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#destinatario">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Destinatario"/>
+        <OntologiaLOPDP:descripcion>Persona natural o jurídica que ha sido comunicada con datos personales</OntologiaLOPDP:descripcion>
+        <OntologiaLOPDP:es_un_integrante_por_concepto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OntologiaLOPDP:es_un_integrante_por_concepto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#encargado_de_tratamiento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#encargado_de_tratamiento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Encargado_del_tratamiento"/>
+        <OntologiaLOPDP:descripcion>Persona natural o jurídica, pública o privada, autoridad pública, u otro organismo que solo o conjuntamente con otros trate datos personales a nombre y por cuenta de un responsable de tratamiento de datos personales.</OntologiaLOPDP:descripcion>
+        <OntologiaLOPDP:es_un_integrante_por_concepto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OntologiaLOPDP:es_un_integrante_por_concepto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#especifico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#especifico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Especifico"/>
+        <OntologiaLOPDP:descripcion>En cuanto a la determinación concreta de los medios y fines del tratamiento</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#estandares_internacionales_en_materia_de_derechos_humanos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#estandares_internacionales_en_materia_de_derechos_humanos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Estandares_internacionales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#excepciones_datos_sensibles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#excepciones_datos_sensibles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Excepciones_datos_sensibles"/>
+        <OntologiaLOPDP:Consentimiento_titular>El titular haya dado su consentimiento explícito para el tratamiento de sus datos personales, especificándose claramente sus fines.</OntologiaLOPDP:Consentimiento_titular>
+        <OntologiaLOPDP:Cumplimiento_de_obligaciones_y_ejercicios_de_derechos>El tratamiento es necesario para el cumplimiento de obligaciones y el ejercicio de derechos específicos del responsable del tratamiento o del titular en el ámbito del Derecho laboral y de la seguridad y protección social.</OntologiaLOPDP:Cumplimiento_de_obligaciones_y_ejercicios_de_derechos>
+        <OntologiaLOPDP:Proteger_intereses_del_titular>El tratamiento es necesario para proteger intereses vitales del titular o de otra persona natural, en el supuesto de que el titular no esté capacitado, física o jurídicamente, para dar su consentimiento</OntologiaLOPDP:Proteger_intereses_del_titular>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#finalidad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#finalidad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Finalidad"/>
+        <OntologiaLOPDP:descripcion>Las finalidades del tratamiento deberán ser determinadas, explícitas, legítimas y comunicadas al titular: no podrán tratarse datos personales con fines distintos para los cuales fueron recopilados, a menos que concurra una de las causales que habiliten un nuevo tratamiento conforme los supuestos de tratamiento legítimo señalados en esta Ley.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#independencia_del_control -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#independencia_del_control">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Independencia_del_control"/>
+        <OntologiaLOPDP:descripcion>Para el efectivo ejercicio del derecho a la protección de datos personales, y en cumplimiento de las obligaciones de protección de los derechos que tiene el Estado, la Autoridad de Protección de Datos deberá ejercer un control independiente, imparcial y autónomo, así como llevar a cabo las respectivas acciones de prevención, investigación y sanción.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#informado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#informado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Informado"/>
+        <OntologiaLOPDP:descripcion>De modo que cumpla con el principio de transparencia y efectivice el derecho a la
+transparencia</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#infracciones_o_sanciones_penales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#infracciones_o_sanciones_penales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Infracciones_o_sanciones_penales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#inquevico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#inquevico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inequivoco"/>
+        <OntologiaLOPDP:descripcion>De manera que no presente dudas sobre el alcance de la autorización otorgada por el titular</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#interes_publico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#interes_publico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Interes_publico"/>
+        <OntologiaLOPDP:descripcion>Que el tratamiento de datos personales se sustente en el cumplimiento de una misión realizada en interés público o en el ejercicio de poderes públicos conferidos al responsable, derivados de una competencia atribuida por una norma con rango de ley, sujeto al cumplimiento de los estándares internacionales de derechos humanos aplicables a la materia, al cumplimiento de los principios de esta Ley y a los criterios de legalidad, proporcionalidad y necesidad</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#intereses_vitales_del_titular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#intereses_vitales_del_titular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Intereses_vitales_del_titular"/>
+        <OntologiaLOPDP:descripcion>Para proteger intereses vitales del interesado o de otra persona natural, como su vida, salud o integridad</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#juridicidad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#juridicidad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Juridicidad"/>
+        <OntologiaLOPDP:descripcion>Los datos personales deben tratarse con estricto apego y cumplimiento a los principios, derechos y obligaciones establecidas en la Constitución, los instrumentos internacionales, la presente Ley, su Reglamento y la demás normativa y jurisprudencia aplicable.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#lealtad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#lealtad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Lealtad"/>
+        <OntologiaLOPDP:descripcion>El tratamiento de datos personales deberá ser leal, por lo que para los titulares debe quedar claro que se están recogiendo, utilizando, consultando o tratando de otra manera, datos personales que les conciernen, así como las formas en que dichos datos son o serán tratados.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#libre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#libre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Libre"/>
+        <OntologiaLOPDP:descripcion>Cuando se encuentre exenta de vicios del consentimiento.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medidas_precontractuales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medidas_precontractuales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Medidas_precontractuales"/>
+        <OntologiaLOPDP:descripcion>Para la ejecución de medidas precontractuales a petición del titular o para el cumplimiento de obligaciones contractuales perseguidas por el responsable del tratamiento de datos personales, encargado del tratamiento de datos personales o por un tercero legalmente habilitado</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#oligaciones_legales -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#oligaciones_legales">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Obligaciones_legales"/>
+        <OntologiaLOPDP:descripcion>Que sea realizado por el responsable del tratamiento en cumplimiento de una obligación legal</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#orden_judicial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#orden_judicial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Orden_judicial"/>
+        <OntologiaLOPDP:descripcion>Que sea realizado por el responsable del tratamiento, por orden judicial, debiendo observarse los principios de la presente ley</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#pertinencia_y_minimizacion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#pertinencia_y_minimizacion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Pertinencia_y_minimizacion_de_datos_personales"/>
+        <OntologiaLOPDP:descripcion>Los datos personales deben ser pertinentes y estar limitados a lo estrictamente necesario para el cumplimiento de la finalidad del tratamiento.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#proporcionalidad_y_pertinencia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#proporcionalidad_y_pertinencia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Proporcionalidad_del_tratamiento"/>
+        <OntologiaLOPDP:descripcion>El tratamiento debe ser adecuado, necesario, oportuno, relevante y no excesivo con relación a las finalidades para las cuales hayan sido recogidos o a la naturaleza misma, de las categorías especiales de datos.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#regulaciones_o_contratos_vigentes_del_derecho_publico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#regulaciones_o_contratos_vigentes_del_derecho_publico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Regulaciones_o_contratos_vigentes_del_derecho_publico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#responsabilidad_proactiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#responsabilidad_proactiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsabilidad_proactiva_y_demostrada"/>
+        <OntologiaLOPDP:descripcion>Los responsables y encargados de tratamiento de los datos personales deberán implementar todas las medidas de seguridad adecuadas y necesarias, entendiéndose por tales las aceptadas por el estado de la técnica, sean estas organizativas, técnicas o de cualquier otra índole, para proteger los datos personales frente a cualquier riesgo, amenaza, vulnerabilidad, atendiendo a la naturaleza de los datos de carácter personal, al ámbito y el contexto.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#responsable_del_tratamiento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#responsable_del_tratamiento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsable_del_tratamiento"/>
+        <OntologiaLOPDP:descripcion>persona natural o jurídica, pública o privada, autoridad pública, u otro organismo, que solo o conjuntamente con otros decide sobre la finalidad y el tratamiento de datos personales.</OntologiaLOPDP:descripcion>
+        <OntologiaLOPDP:es_un_integrante_por_concepto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OntologiaLOPDP:es_un_integrante_por_concepto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#responsable_del_tratamiento_no_docimiliado_en_territorio_nacional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#responsable_del_tratamiento_no_docimiliado_en_territorio_nacional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsable_del_tratamiento"/>
+        <OntologiaLOPDP:le_resulte_aplicable_la_ley_en_virtud_de rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#regulaciones_o_contratos_vigentes_del_derecho_publico"/>
+        <OntologiaLOPDP:se_encuentra_domiciliado_en_ecuador rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</OntologiaLOPDP:se_encuentra_domiciliado_en_ecuador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#responsable_para_la_revocacion_del_consentimiento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#responsable_para_la_revocacion_del_consentimiento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Responsable_del_tratamiento"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#seguridad_de_datos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#seguridad_de_datos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Seguridad_de_datos_personales"/>
+        <OntologiaLOPDP:descripcion>Los responsables y encargados de tratamiento de los datos personales deberán implementar todas las medidas de seguridad adecuadas y necesarias, entendiéndose por tales las aceptadas por el estado de la técnica, sean estas organizativas, técnicas o de cualquier otra índole, para proteger los datos personales frente a cualquier riesgo, amenaza, vulnerabilidad, atendiendo a la naturaleza de los datos de carácter personal, al ámbito y el contexto.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#servicios_o_bienes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#servicios_o_bienes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Servicios_o_bienes"/>
+        <OntologiaLOPDP:descripcion>La oferta de bienes o servicios a dichos titulares, independientemente de si a estos se les requiere su pago, o, del control de su comportamiento, en la medida en que este
+tenga lugar en el Ecuador</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#titular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#titular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Titular"/>
+        <OntologiaLOPDP:descripcion>Persona natural cuyos datos son objeto de tratamiento.</OntologiaLOPDP:descripcion>
+        <OntologiaLOPDP:es_un_integrante_por_concepto rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</OntologiaLOPDP:es_un_integrante_por_concepto>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#transparencia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#transparencia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Transparencia"/>
+        <OntologiaLOPDP:descripcion>El tratamiento de datos personales deberá ser transparente, por lo que toda información o comunicación relativa a este tratamiento deberá ser fácilmente accesible y fácil de entender y se deberá utilizar un lenguaje sencillo y claro.</OntologiaLOPDP:descripcion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/cond">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/desc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/dinfo">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/medios">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/info">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/acc">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/mec">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/dias">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/derecho">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/ina">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/integrante">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Cuales son las condiciones para que el consentimiento sea valido?</rdfs:comment>
+        <rdfs:label>P09</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Condiciones_para_el_consentimiento"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/cond"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#descripcion"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/cond"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/desc"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/cond"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/desc"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Cuales son los medios para garantizar la transparencia y lealtad dentro del derecho a la información?</rdfs:comment>
+        <rdfs:label>P02</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/dinfo"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#medios_para_garantizar_transparencia_y_lealtad"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/dinfo"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/medios"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/dinfo"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/medios"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Respecto al derecho de la información, a que hace referencia los fines del tratamiento?</rdfs:comment>
+        <rdfs:label>7</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#fines_del_tratamiento"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/i"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/i"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/f"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Acorde a que principios se apega el derecho a la información?</rdfs:comment>
+        <rdfs:label>P06</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_a_la_informacion"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/info"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#descripcion"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/info"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/desc"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/desc"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Quien es el encargado de otorgar los mecanismos de acceso?</rdfs:comment>
+        <rdfs:label>P03</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_acceso"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/acc"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Encargado_otorgar_los_mecanismos_de_acceso"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/acc"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/mec"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/acc"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/mec"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>En que consiste el derecho de acceso?</rdfs:comment>
+        <rdfs:label>P07</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_acceso"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/acc"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#descripcion"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/acc"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/desc"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/acc"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/desc"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Cual es el número de días en el cual se debe atender un incidente por cuestión de derechos de acceso?</rdfs:comment>
+        <rdfs:label>P04</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derecho_de_acceso"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/acc"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#numero_dias_para_la_atencion"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/acc"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/dias"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/acc"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/dias"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>Cuáles son los derechos de los titulares de los datos al momento que se realice el procesamiento de datos?</rdfs:comment>
+        <rdfs:label>P01</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Derechos"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/derecho"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#es_un_derecho"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/derecho"/>
+                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/derecho"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>En que casos el tratamiento de datos no esta sujeto a lo prescrito en la ley?</rdfs:comment>
+        <rdfs:label>P10</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Inaplicabilidad"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/ina"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/ina"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>¿Cuáles son los integrantes que conforman la ley de protección de datos personales?</rdfs:comment>
+        <rdfs:label>P05</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP#Integrantes_del_sistema_de_proteccion_de_datos_personales"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/integrante"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/kevin/ontologies/2023/10/OntologiaLOPDP/integrante"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

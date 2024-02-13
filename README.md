@@ -20,7 +20,7 @@ A continuación, se presentan una serie de preguntas que la ontología puede res
 autogen0:Inaplicabilidad(?in) ^ autogen0:explicación_de_concepto_de_inaplicabilidad(?x, ?exp) ^ autogen0:es_la_no_aplicación_de_la_ley_en(?in, ?x) -> sqwrl:select(?x, ?exp)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](S001.png)  
+![alt text](./Imagenes_preguntas/S001.png)  
 
 ## Pregunta: S002
 **Planteamiento de la pregunta:**

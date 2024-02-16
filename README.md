@@ -2,15 +2,6 @@
 
 A continuación, se presentan una serie de preguntas que la ontología puede responder en el ámbito de recolección y procesamiento de datos personales. Cada pregunta contendrá un identificador para facilitar su referencia, el planteamiento de la pregunta, la especificación en lenguaje SQWRL y las respuestas proporcionadas por la ontología.
 
-## Pregunta: 
-**Planteamiento de la pregunta:**
-
-**Consulta en lenguaje SQWRL:**
-```
-
-```
-**Respuesta proporcionada por la ontología**
-
 ## Pregunta: S001
 **Planteamiento de la pregunta:**
 ¿Bajo qué conceptos la LOPDP no se puede aplicar?

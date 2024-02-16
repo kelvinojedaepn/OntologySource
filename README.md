@@ -17,7 +17,7 @@ A continuación, se presentan una serie de preguntas que la ontología puede res
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Inaplicabilidad(?in) ^ autogen0:explicación_de_concepto_de_inaplicabilidad(?x, ?exp) ^ autogen0:es_la_no_aplicación_de_la_ley_en(?in, ?x) -> sqwrl:select(?x, ?exp)
+Inaplicabilidad(?in) ^ explicación_de_concepto_de_inaplicabilidad(?x, ?exp) ^ es_la_no_aplicación_de_la_ley_en(?in, ?x) -> sqwrl:select(?x, ?exp)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](./Imagenes_preguntas/S001.png)  
@@ -28,7 +28,7 @@ autogen0:Inaplicabilidad(?in) ^ autogen0:explicación_de_concepto_de_inaplicabil
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:se_aplica_la_ley_en(?t, ?apt) ^ autogen0:escenario_de_aplicación_territorial(?apt, ?esc) ^ autogen0:Territorial(?t) -> sqwrl:select(?apt, ?esc)
+se_aplica_la_ley_en(?t, ?apt) ^ escenario_de_aplicación_territorial(?apt, ?esc) ^ Territorial(?t) -> sqwrl:select(?apt, ?esc)
 ```
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-2.png)  
@@ -40,7 +40,7 @@ autogen0:se_aplica_la_ley_en(?t, ?apt) ^ autogen0:escenario_de_aplicación_terri
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Integrantes_del_sistema_de_protección_de_datos_personales(?int) ^ autogen0:están_compuesto_por(?int, ?p) -> sqwrl:select(?p) ^ sqwrl:limit(6)
+Integrantes_del_sistema_de_protección_de_datos_personales(?int) ^ están_compuesto_por(?int, ?p) -> sqwrl:select(?p) ^ sqwrl:limit(6)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-3.png)  
@@ -51,7 +51,7 @@ autogen0:Integrantes_del_sistema_de_protección_de_datos_personales(?int) ^ auto
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tipos_de_datos(?td) ^ autogen0:tipos_de_datos_están_compuestos_por(?td, ?cp) ^ autogen0:descripción(?cp, ?d) -> sqwrl:select(?cp, ?d)
+Tipos_de_datos(?td) ^ tipos_de_datos_están_compuestos_por(?td, ?cp) ^ descripción(?cp, ?d) -> sqwrl:select(?cp, ?d)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-4.png)  
@@ -62,7 +62,7 @@ autogen0:Tipos_de_datos(?td) ^ autogen0:tipos_de_datos_están_compuestos_por(?td
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Entidad_certificadora(?ec) ^ autogen0:es_autorizada_por(?ec, ?x) -> sqwrl:select(?x)
+Entidad_certificadora(?ec) ^ es_autorizada_por(?ec, ?x) -> sqwrl:select(?x)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-5.png)  
@@ -73,7 +73,7 @@ autogen0:Entidad_certificadora(?ec) ^ autogen0:es_autorizada_por(?ec, ?x) -> sqw
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Fuente_accesible_al_público(?fp) ^ autogen0:tiene_la_característica_de_ser(?fp, ?tc) -> sqwrl:select(?tc)
+Fuente_accesible_al_público(?fp) ^ tiene_la_característica_de_ser(?fp, ?tc) -> sqwrl:select(?tc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-6.png)  
@@ -84,7 +84,7 @@ autogen0:Fuente_accesible_al_público(?fp) ^ autogen0:tiene_la_característica_d
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Sellos_de_protección_de_datos_personales(?sc) ^ autogen0:es_otorgada_por(?sc, ?x) -> sqwrl:select(?x)
+Sellos_de_protección_de_datos_personales(?sc) ^ es_otorgada_por(?sc, ?x) -> sqwrl:select(?x)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-7.png)  
@@ -95,7 +95,7 @@ autogen0:Sellos_de_protección_de_datos_personales(?sc) ^ autogen0:es_otorgada_p
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Vulnerabilidad_de_la_seguridad_de_los_datos_personales(?vs) ^ autogen0:afecta_a(?vs, ?aa) -> sqwrl:select(?aa)
+Vulnerabilidad_de_la_seguridad_de_los_datos_personales(?vs) ^ afecta_a(?vs, ?aa) -> sqwrl:select(?aa)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-8.png)  
@@ -106,7 +106,7 @@ autogen0:Vulnerabilidad_de_la_seguridad_de_los_datos_personales(?vs) ^ autogen0:
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:responsables_de_canalizar_el_ejercicio_de_derechos(?d, ?r) ^ autogen0:Derechos(?d) ^ autogen0:responsable_de_canalizar_el_ejercicio_de_derechos(?d, ?dr) -> sqwrl:select(?dr, ?r)
+responsables_de_canalizar_el_ejercicio_de_derechos(?d, ?r) ^ Derechos(?d) ^ responsable_de_canalizar_el_ejercicio_de_derechos(?d, ?dr) -> sqwrl:select(?dr, ?r)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-9.png) 
@@ -117,7 +117,7 @@ autogen0:responsables_de_canalizar_el_ejercicio_de_derechos(?d, ?r) ^ autogen0:D
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derechos(?d) ^ autogen0:descripción_responsables_de_canalizar_el_ejercicio_de_derechos(?d, ?desc) -> sqwrl:select(?desc)
+Derechos(?d) ^ descripción_responsables_de_canalizar_el_ejercicio_de_derechos(?d, ?desc) -> sqwrl:select(?desc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-10.png)  
@@ -128,7 +128,7 @@ autogen0:Derechos(?d) ^ autogen0:descripción_responsables_de_canalizar_el_ejerc
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derechos(?d) ^ autogen0:limitación_de_ejercicio_de_derechos_por_leyes_secundarias(?d, ?lm) -> sqwrl:select(?lm)
+Derechos(?d) ^ limitación_de_ejercicio_de_derechos_por_leyes_secundarias(?d, ?lm) -> sqwrl:select(?lm)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-11.png)  
@@ -139,7 +139,7 @@ autogen0:Derechos(?d) ^ autogen0:limitación_de_ejercicio_de_derechos_por_leyes_
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos(?t) ^ autogen0:condiciones_para_el_tratamiento_legítmo(?t, ?tl) ^ autogen0:Consentimiento(?c) ^ autogen0:condiciones_para_el_tratamiento_legítmo(?c, ?tl) -> sqwrl:select(?tl)
+Tratamiento_de_datos(?t) ^ condiciones_para_el_tratamiento_legítmo(?t, ?tl) ^ Consentimiento(?c) ^ condiciones_para_el_tratamiento_legítmo(?c, ?tl) -> sqwrl:select(?tl)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-12.png)  
@@ -150,7 +150,7 @@ autogen0:Tratamiento_de_datos(?t) ^ autogen0:condiciones_para_el_tratamiento_leg
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Interés_legítimo(?il) ^ autogen0:descripción(?il, ?ds) -> sqwrl:select(?ds)
+Interés_legítimo(?il) ^ descripción(?il, ?ds) -> sqwrl:select(?ds)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-13.png)  
@@ -161,7 +161,7 @@ autogen0:Interés_legítimo(?il) ^ autogen0:descripción(?il, ?ds) -> sqwrl:sele
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Consentimiento(?c) ^ autogen0:para_tratar_y_comunicar_datos_personales_se_debe(?c, ?ptc) -> sqwrl:select(?ptc)
+Consentimiento(?c) ^ para_tratar_y_comunicar_datos_personales_se_debe(?c, ?ptc) -> sqwrl:select(?ptc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-14.png)
@@ -172,7 +172,7 @@ autogen0:Consentimiento(?c) ^ autogen0:para_tratar_y_comunicar_datos_personales_
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Consentimiento(?c) ^ autogen0:válido(?c, ?cv) -> sqwrl:select(?cv)
+Consentimiento(?c) ^ válido(?c, ?cv) -> sqwrl:select(?cv)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-15.png)
@@ -183,7 +183,7 @@ autogen0:Consentimiento(?c) ^ autogen0:válido(?c, ?cv) -> sqwrl:select(?cv)
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Vicios_de_consentimiento(?vc) ^ autogen0:descripción(?vc, ?ds) -> sqwrl:select(?ds) ^ sqwrl:limit(1)
+Vicios_de_consentimiento(?vc) ^ descripción(?vc, ?ds) -> sqwrl:select(?ds) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-16.png)
@@ -194,7 +194,7 @@ autogen0:Vicios_de_consentimiento(?vc) ^ autogen0:descripción(?vc, ?ds) -> sqwr
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Consentimiento(?c) ^ autogen0:cuándo_puede_producirse(?c, ?cr) -> sqwrl:select(?cr)
+Consentimiento(?c) ^ cuándo_puede_producirse(?c, ?cr) -> sqwrl:select(?cr)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-17.png)
@@ -205,7 +205,7 @@ autogen0:Consentimiento(?c) ^ autogen0:cuándo_puede_producirse(?c, ?cr) -> sqwr
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Consentimiento(?c) ^ autogen0:justficación_del_revocamiento(?c, ?j) -> sqwrl:select(?j)
+Consentimiento(?c) ^ justficación_del_revocamiento(?c, ?j) -> sqwrl:select(?j)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-18.png)
@@ -216,7 +216,7 @@ autogen0:Consentimiento(?c) ^ autogen0:justficación_del_revocamiento(?c, ?j) ->
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:deben_ser(?mr, ?cds) ^ autogen0:Mecanismos_de_revocamiento(?mr) -> sqwrl:select(?cds)
+deben_ser(?mr, ?cds) ^ Mecanismos_de_revocamiento(?mr) -> sqwrl:select(?cds)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-19.png)
@@ -227,7 +227,7 @@ autogen0:deben_ser(?mr, ?cds) ^ autogen0:Mecanismos_de_revocamiento(?mr) -> sqwr
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Mecanismos_de_revocamiento(?mr) ^ autogen0:como_deben_ser(?mr, ?cds) -> sqwrl:select(?cds)
+Mecanismos_de_revocamiento(?mr) ^ como_deben_ser(?mr, ?cds) -> sqwrl:select(?cds)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-20.png)
@@ -238,7 +238,7 @@ autogen0:Mecanismos_de_revocamiento(?mr) ^ autogen0:como_deben_ser(?mr, ?cds) ->
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:son_establecidos_por(?mr, ?e) ^ autogen0:Mecanismos_de_revocamiento(?mr) -> sqwrl:select(?e)
+son_establecidos_por(?mr, ?e) ^ Mecanismos_de_revocamiento(?mr) -> sqwrl:select(?e)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-21.png)
@@ -249,7 +249,7 @@ autogen0:son_establecidos_por(?mr, ?e) ^ autogen0:Mecanismos_de_revocamiento(?mr
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Revocamiento_del_consentimiento(?rc) ^ autogen0:antes_de_la_revocación_del_consentimiento_se_considera(?rt, ?tarc) ^ autogen0:respecto_al_tratamiento(?rc, ?rt) -> sqwrl:select(?tarc)
+Revocamiento_del_consentimiento(?rc) ^ antes_de_la_revocación_del_consentimiento_se_considera(?rt, ?tarc) ^ respecto_al_tratamiento(?rc, ?rt) -> sqwrl:select(?tarc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-22.png)
@@ -260,7 +260,7 @@ autogen0:Revocamiento_del_consentimiento(?rc) ^ autogen0:antes_de_la_revocación
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:bajo_interés_legítimo(?td, ?tbil) ^ autogen0:Tratamiento_de_datos(?td) -> sqwrl:select(?tbil)
+bajo_interés_legítimo(?td, ?tbil) ^ Tratamiento_de_datos(?td) -> sqwrl:select(?tbil)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-23.png)
@@ -271,7 +271,7 @@ autogen0:bajo_interés_legítimo(?td, ?tbil) ^ autogen0:Tratamiento_de_datos(?td
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Finalidad(?f) ^ autogen0:deberán_ser(?f, ?fds) -> sqwrl:select(?fds)
+Finalidad(?f) ^ deberán_ser(?f, ?fds) -> sqwrl:select(?fds)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-24.png)
@@ -282,7 +282,7 @@ autogen0:Finalidad(?f) ^ autogen0:deberán_ser(?f, ?fds) -> sqwrl:select(?fds)
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Finalidad(?f) ^ autogen0:es_distinta_a_la_recogida_de_datos_en_el(?f, ?df) ^ autogen0:para_finalidad_distinta(?df, ?tdf) -> sqwrl:select(?tdf)
+Finalidad(?f) ^ es_distinta_a_la_recogida_de_datos_en_el(?f, ?df) ^ para_finalidad_distinta(?df, ?tdf) -> sqwrl:select(?tdf)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-25.png)
@@ -293,7 +293,7 @@ autogen0:Finalidad(?f) ^ autogen0:es_distinta_a_la_recogida_de_datos_en_el(?f, ?
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Finalidad(?f) ^ autogen0:es_distinta_a_la_recogida_de_datos_en_el(?f, ?df) ^ autogen0:determinar_la_compatibilidad(?df, ?dct) -> sqwrl:select(?dct)
+Finalidad(?f) ^ es_distinta_a_la_recogida_de_datos_en_el(?f, ?df) ^ determinar_la_compatibilidad(?df, ?dct) -> sqwrl:select(?dct)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-26.png)
@@ -304,7 +304,7 @@ autogen0:Finalidad(?f) ^ autogen0:es_distinta_a_la_recogida_de_datos_en_el(?f, ?
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:asociada_a(?c, ?td) ^ autogen0:para_cumplir_con_calidad_se_debe(?td, ?cc) ^ autogen0:Calidad(?c) -> sqwrl:select(?cc)
+asociada_a(?c, ?td) ^ para_cumplir_con_calidad_se_debe(?td, ?cc) ^ Calidad(?c) -> sqwrl:select(?cc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-27.png)
@@ -315,7 +315,7 @@ autogen0:asociada_a(?c, ?td) ^ autogen0:para_cumplir_con_calidad_se_debe(?td, ?c
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Calidad(?c) ^ autogen0:está_encargada_por_el(?c, ?ec) -> sqwrl:select(?ec)
+Calidad(?c) ^ está_encargada_por_el(?c, ?ec) -> sqwrl:select(?ec)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-28.png)
@@ -326,7 +326,7 @@ autogen0:Calidad(?c) ^ autogen0:está_encargada_por_el(?c, ?ec) -> sqwrl:select(
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:no_es_imputable_la_inexactitud_cuando(?dp, ?nii) ^ autogen0:Datos_personales(?dp) -> sqwrl:select(?nii)
+no_es_imputable_la_inexactitud_cuando(?dp, ?nii) ^ Datos_personales(?dp) -> sqwrl:select(?nii)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-29.png)
@@ -337,7 +337,7 @@ autogen0:no_es_imputable_la_inexactitud_cuando(?dp, ?nii) ^ autogen0:Datos_perso
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Conservación(?c) ^ autogen0:encargado_de_establecer_los_plazos_para_la_suspensión_o_revisión_periódica_dentro_del_tratamiento_de_datos_es(?c, ?cesr) -> sqwrl:select(?cesr)
+Conservación(?c) ^ encargado_de_establecer_los_plazos_para_la_suspensión_o_revisión_periódica_dentro_del_tratamiento_de_datos_es(?c, ?cesr) -> sqwrl:select(?cesr)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-30.png)
@@ -348,7 +348,7 @@ autogen0:Conservación(?c) ^ autogen0:encargado_de_establecer_los_plazos_para_la
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Conservación(?c) ^ autogen0:conservación_ampliada_de_tratamiento_de_datos_personales(?c, ?catdp) -> sqwrl:select(?catdp)
+Conservación(?c) ^ conservación_ampliada_de_tratamiento_de_datos_personales(?c, ?catdp) -> sqwrl:select(?catdp)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-31.png)
@@ -359,7 +359,7 @@ autogen0:Conservación(?c) ^ autogen0:conservación_ampliada_de_tratamiento_de_d
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Seguridad(?s) ^ autogen0:tipos_de_medidas_de_seguridad(?s, ?tdm) -> sqwrl:select(?tdm)
+Seguridad(?s) ^ tipos_de_medidas_de_seguridad(?s, ?tdm) -> sqwrl:select(?tdm)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-32.png)
@@ -370,7 +370,7 @@ autogen0:Seguridad(?s) ^ autogen0:tipos_de_medidas_de_seguridad(?s, ?tdm) -> sqw
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Seguridad(?s) ^ autogen0:encargado_de_implementar_medidas_de_seguridad(?s, ?eims) -> sqwrl:select(?eims)
+Seguridad(?s) ^ encargado_de_implementar_medidas_de_seguridad(?s, ?eims) -> sqwrl:select(?eims)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-33.png)
@@ -381,7 +381,7 @@ autogen0:Seguridad(?s) ^ autogen0:encargado_de_implementar_medidas_de_seguridad(
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:actividad_respecto_a_responsabilidad_proactiva_y_demostrada(?r, ?arpd) ^ autogen0:Responsable_del_tratamiento(?r) -> sqwrl:select(?arpd)
+actividad_respecto_a_responsabilidad_proactiva_y_demostrada(?r, ?arpd) ^ Responsable_del_tratamiento(?r) -> sqwrl:select(?arpd)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-34.png)
@@ -392,7 +392,7 @@ autogen0:actividad_respecto_a_responsabilidad_proactiva_y_demostrada(?r, ?arpd) 
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Responsable_del_tratamiento(?r) ^ autogen0:debe_haber_cumplido_respecto_a_responsabilidad_proactiva(?r, ?dhacrrp) -> sqwrl:select(?dhacrrp)
+Responsable_del_tratamiento(?r) ^ debe_haber_cumplido_respecto_a_responsabilidad_proactiva(?r, ?dhacrrp) -> sqwrl:select(?dhacrrp)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-35.png)
@@ -403,7 +403,7 @@ autogen0:Responsable_del_tratamiento(?r) ^ autogen0:debe_haber_cumplido_respecto
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Responsable_del_tratamiento(?r) ^ autogen0:acreditar_el_cumplimiento_de_los_mecanismos(?r, ?acm) -> sqwrl:select(?acm)
+Responsable_del_tratamiento(?r) ^ acreditar_el_cumplimiento_de_los_mecanismos(?r, ?acm) -> sqwrl:select(?acm)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-36.png)
@@ -414,7 +414,7 @@ autogen0:Responsable_del_tratamiento(?r) ^ autogen0:acreditar_el_cumplimiento_de
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:debe_rendir_cuentas_respecto_al_tratamiento_con(?r, ?rcc) ^ autogen0:Responsable_del_tratamiento(?r) -> sqwrl:select(?rcc)
+debe_rendir_cuentas_respecto_al_tratamiento_con(?r, ?rcc) ^ Responsable_del_tratamiento(?r) -> sqwrl:select(?rcc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-37.png)
@@ -425,7 +425,7 @@ autogen0:debe_rendir_cuentas_respecto_al_tratamiento_con(?r, ?rcc) ^ autogen0:Re
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Independencia_de_control(?ic) ^ autogen0:es_supervisada_por(?ic, ?ics) -> sqwrl:select(?ics)
+Independencia_de_control(?ic) ^ es_supervisada_por(?ic, ?ics) -> sqwrl:select(?ics)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-38.png)
@@ -436,7 +436,7 @@ autogen0:Independencia_de_control(?ic) ^ autogen0:es_supervisada_por(?ic, ?ics) 
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Independencia_de_control(?ic) ^ autogen0:acciones_respecto_a_la_independencia_de_control(?ics, ?aric) ^ autogen0:es_supervisada_por(?ic, ?ics) -> sqwrl:select(?aric)
+Independencia_de_control(?ic) ^ acciones_respecto_a_la_independencia_de_control(?ics, ?aric) ^ es_supervisada_por(?ic, ?ics) -> sqwrl:select(?aric)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-39.png)
@@ -447,7 +447,7 @@ autogen0:Independencia_de_control(?ic) ^ autogen0:acciones_respecto_a_la_indepen
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Datos_en_materia_especializada(?dpme) ^ autogen0:tratamiento_regulado_en_normativa_especializada_en_materia_de(?dpme, ?trne) -> sqwrl:select(?trne)
+Datos_en_materia_especializada(?dpme) ^ tratamiento_regulado_en_normativa_especializada_en_materia_de(?dpme, ?trne) -> sqwrl:select(?trne)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-40.png)
@@ -458,7 +458,7 @@ autogen0:Datos_en_materia_especializada(?dpme) ^ autogen0:tratamiento_regulado_e
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Datos_en_materia_especializada(?dme) ^ autogen0:estarán_sujetos_a(?dme, ?es) -> sqwrl:select(?es)
+Datos_en_materia_especializada(?dme) ^ estarán_sujetos_a(?dme, ?es) -> sqwrl:select(?es)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-41.png)
@@ -469,7 +469,7 @@ autogen0:Datos_en_materia_especializada(?dme) ^ autogen0:estarán_sujetos_a(?dme
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Datos_en_materia_especializada(?dme) ^ autogen0:deberán_cumplir_por_lo_mínimo_con(?dme, ?dcm) ^ autogen0:están_conformados_por(?dcm, ?cdc) ^ autogen0:descripción(?cdc, ?des) -> sqwrl:select(?cdc, ?des) ^ sqwrl:limit(3)
+Datos_en_materia_especializada(?dme) ^ deberán_cumplir_por_lo_mínimo_con(?dme, ?dcm) ^ están_conformados_por(?dcm, ?cdc) ^ descripción(?cdc, ?des) -> sqwrl:select(?cdc, ?des) ^ sqwrl:limit(3)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-42.png)
@@ -480,7 +480,7 @@ autogen0:Datos_en_materia_especializada(?dme) ^ autogen0:deberán_cumplir_por_lo
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_a_la_información(?di) ^ autogen0:cononcer_en_el_derecho_a_la_información(?di, ?ddc) -> sqwrl:select(?ddc)
+Derecho_a_la_información(?di) ^ cononcer_en_el_derecho_a_la_información(?di, ?ddc) -> sqwrl:select(?ddc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-43.png)
@@ -491,7 +491,7 @@ autogen0:Derecho_a_la_información(?di) ^ autogen0:cononcer_en_el_derecho_a_la_i
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:en_caso_de_obtención_de_datos_directo_por_el(?c, ?codt) ^ autogen0:Consentimiento(?c) ^ autogen0:obtención_de_datos_personales_directamente_por_el_titular(?codt, ?odpdt) -> sqwrl:select(?odpdt)
+en_caso_de_obtención_de_datos_directo_por_el(?c, ?codt) ^ Consentimiento(?c) ^ obtención_de_datos_personales_directamente_por_el_titular(?codt, ?odpdt) -> sqwrl:select(?odpdt)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-44.png)
@@ -502,7 +502,7 @@ autogen0:en_caso_de_obtención_de_datos_directo_por_el(?c, ?codt) ^ autogen0:Con
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:en_caso_de_no_obteción_directa_por_el_titular(?t, ?cnodt) ^ autogen0:Consentimiento(?c) ^ autogen0:en_caso_de_no_obtención_de_datos_directo_por_el(?c, ?t) -> sqwrl:select(?cnodt)
+en_caso_de_no_obteción_directa_por_el_titular(?t, ?cnodt) ^ Consentimiento(?c) ^ en_caso_de_no_obtención_de_datos_directo_por_el(?c, ?t) -> sqwrl:select(?cnodt)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-45.png)
@@ -513,7 +513,7 @@ autogen0:en_caso_de_no_obteción_directa_por_el_titular(?t, ?cnodt) ^ autogen0:C
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Consentimiento(?c) ^ autogen0:modo_en_que_se_podrá_transmitir_la_información_al_titular(?c, ?m) -> sqwrl:select(?m)
+Consentimiento(?c) ^ modo_en_que_se_podrá_transmitir_la_información_al_titular(?c, ?m) -> sqwrl:select(?m)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-46.png)
@@ -524,7 +524,7 @@ autogen0:Consentimiento(?c) ^ autogen0:modo_en_que_se_podrá_transmitir_la_infor
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Consentimiento(?c) ^ autogen0:caracteristicas_que_debe_tener_la_información_transferida_al_titular(?c, ?cdti) -> sqwrl:select(?cdti)
+Consentimiento(?c) ^ caracteristicas_que_debe_tener_la_información_transferida_al_titular(?c, ?cdti) -> sqwrl:select(?cdti)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-47.png)
@@ -535,7 +535,7 @@ autogen0:Consentimiento(?c) ^ autogen0:caracteristicas_que_debe_tener_la_informa
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_acceso(?da) ^ autogen0:derecho_cuenta_encargado(?da, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
+Derecho_de_acceso(?da) ^ derecho_cuenta_encargado(?da, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-48.png)
@@ -546,7 +546,7 @@ autogen0:Derecho_de_acceso(?da) ^ autogen0:derecho_cuenta_encargado(?da, ?dce) -
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_acceso(?da) ^ autogen0:derecho_cuenta_encargado(?da, ?dce) ^ autogen0:actividad_dentro_de_derecho_de_acceso(?dce, ?ada) -> sqwrl:select(?ada) ^ sqwrl:limit(1)
+Derecho_de_acceso(?da) ^ derecho_cuenta_encargado(?da, ?dce) ^ actividad_dentro_de_derecho_de_acceso(?dce, ?ada) -> sqwrl:select(?ada) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-49.png)
@@ -557,7 +557,7 @@ autogen0:Derecho_de_acceso(?da) ^ autogen0:derecho_cuenta_encargado(?da, ?dce) ^
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_acceso(?da) ^ autogen0:derecho_cuenta_encargado(?da, ?dce) ^ autogen0:plazo_de_atención_en_días_para_el_derecho_de_acceso(?dce, ?pad) -> sqwrl:select(?pad) ^ sqwrl:limit(1)
+Derecho_de_acceso(?da) ^ derecho_cuenta_encargado(?da, ?dce) ^ plazo_de_atención_en_días_para_el_derecho_de_acceso(?dce, ?pad) -> sqwrl:select(?pad) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-50.png)
@@ -568,7 +568,7 @@ autogen0:Derecho_de_acceso(?da) ^ autogen0:derecho_cuenta_encargado(?da, ?dce) ^
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_rectificación_y_actualización(?dra) ^ autogen0:derecho_cuenta_encargado(?dra, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
+Derecho_de_rectificación_y_actualización(?dra) ^ derecho_cuenta_encargado(?dra, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-51.png)
@@ -579,7 +579,7 @@ autogen0:Derecho_de_rectificación_y_actualización(?dra) ^ autogen0:derecho_cue
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_rectificación_y_actualización(?dra) ^ autogen0:derecho_cuenta_encargado(?dra, ?dce) ^ autogen0:actividad_dentro_de_derecho_de_rectificación_y_actualización(?dce, ?adra) -> sqwrl:select(?adra) ^ sqwrl:limit(1)
+Derecho_de_rectificación_y_actualización(?dra) ^ derecho_cuenta_encargado(?dra, ?dce) ^ actividad_dentro_de_derecho_de_rectificación_y_actualización(?dce, ?adra) -> sqwrl:select(?adra) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-52.png)
@@ -590,7 +590,7 @@ autogen0:Derecho_de_rectificación_y_actualización(?dra) ^ autogen0:derecho_cue
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_rectificación_y_actualización(?dra) ^ autogen0:derecho_cuenta_encargado(?dra, ?dce) ^ autogen0:plazo_de_atención_en_días_para_el_derecho_de_rectificación_y_actualización(?dce, ?p) -> sqwrl:select(?p) ^ sqwrl:limit(1)
+Derecho_de_rectificación_y_actualización(?dra) ^ derecho_cuenta_encargado(?dra, ?dce) ^ plazo_de_atención_en_días_para_el_derecho_de_rectificación_y_actualización(?dce, ?p) -> sqwrl:select(?p) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-53.png)
@@ -601,7 +601,7 @@ autogen0:Derecho_de_rectificación_y_actualización(?dra) ^ autogen0:derecho_cue
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_eliminación(?de) ^ autogen0:derecho_cuenta_encargado(?de, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
+Derecho_de_eliminación(?de) ^ derecho_cuenta_encargado(?de, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-54.png)
@@ -612,7 +612,7 @@ autogen0:Derecho_de_eliminación(?de) ^ autogen0:derecho_cuenta_encargado(?de, ?
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_eliminación(?de) ^ autogen0:cuándo_se_puede_eliminar_los_datos_personales(?dce, ?cedp) -> sqwrl:select(?cedp) ^ sqwrl:limit(7)
+Derecho_de_eliminación(?de) ^ cuándo_se_puede_eliminar_los_datos_personales(?dce, ?cedp) -> sqwrl:select(?cedp) ^ sqwrl:limit(7)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-55.png)
@@ -623,7 +623,7 @@ autogen0:Derecho_de_eliminación(?de) ^ autogen0:cuándo_se_puede_eliminar_los_d
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_eliminación(?de) ^ autogen0:derecho_cuenta_encargado(?de, ?dce) ^ autogen0:actividad_dentro_de_derecho_de_eliminación(?dce, ?ade) -> sqwrl:select(?ade) ^ sqwrl:limit(1)
+Derecho_de_eliminación(?de) ^ derecho_cuenta_encargado(?de, ?dce) ^ actividad_dentro_de_derecho_de_eliminación(?dce, ?ade) -> sqwrl:select(?ade) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-56.png)
@@ -634,7 +634,7 @@ autogen0:Derecho_de_eliminación(?de) ^ autogen0:derecho_cuenta_encargado(?de, ?
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_eliminación(?de) ^ autogen0:derecho_cuenta_encargado(?de, ?dce) ^ autogen0:plazo_de_atención_en_días_para_el_derecho_de_eliminación(?dce, ?pde) -> sqwrl:select(?pde) ^ sqwrl:limit(1)
+Derecho_de_eliminación(?de) ^ derecho_cuenta_encargado(?de, ?dce) ^ plazo_de_atención_en_días_para_el_derecho_de_eliminación(?dce, ?pde) -> sqwrl:select(?pde) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-57.png)
@@ -645,7 +645,7 @@ autogen0:Derecho_de_eliminación(?de) ^ autogen0:derecho_cuenta_encargado(?de, ?
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_oposición(?do) ^ autogen0:derecho_cuenta_encargado(?do, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
+Derecho_de_oposición(?do) ^ derecho_cuenta_encargado(?do, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-58.png)
@@ -656,7 +656,7 @@ autogen0:Derecho_de_oposición(?do) ^ autogen0:derecho_cuenta_encargado(?do, ?dc
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:cuándo_se_puede_oponer_al_tratamiento(?do, ?cpot) ^ autogen0:Derecho_de_oposición(?do) -> sqwrl:select(?cpot)
+cuándo_se_puede_oponer_al_tratamiento(?do, ?cpot) ^ Derecho_de_oposición(?do) -> sqwrl:select(?cpot)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-59.png)
@@ -667,7 +667,7 @@ autogen0:cuándo_se_puede_oponer_al_tratamiento(?do, ?cpot) ^ autogen0:Derecho_d
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_oposición(?do) ^ autogen0:en_caso_de_mercadotécnia_directa(?do, ?md) -> sqwrl:select(?md)
+Derecho_de_oposición(?do) ^ en_caso_de_mercadotécnia_directa(?do, ?md) -> sqwrl:select(?md)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-60.png)
@@ -678,7 +678,7 @@ autogen0:Derecho_de_oposición(?do) ^ autogen0:en_caso_de_mercadotécnia_directa
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_oposición(?do) ^ autogen0:derecho_cuenta_encargado(?do, ?dce) ^ autogen0:actividad_dentro_de_derecho_de_oposición(?dce, ?ado) -> sqwrl:select(?ado) ^ sqwrl:limit(1)
+Derecho_de_oposición(?do) ^ derecho_cuenta_encargado(?do, ?dce) ^ actividad_dentro_de_derecho_de_oposición(?dce, ?ado) -> sqwrl:select(?ado) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-61.png)
@@ -689,7 +689,7 @@ autogen0:Derecho_de_oposición(?do) ^ autogen0:derecho_cuenta_encargado(?do, ?dc
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_oposición(?do) ^ autogen0:derecho_cuenta_encargado(?do, ?dce) ^ autogen0:plazo_de_atención_en_días_para_el_derecho_de_oposición(?dce, ?pado) -> sqwrl:select(?pado) ^ sqwrl:limit(1)
+Derecho_de_oposición(?do) ^ derecho_cuenta_encargado(?do, ?dce) ^ plazo_de_atención_en_días_para_el_derecho_de_oposición(?dce, ?pado) -> sqwrl:select(?pado) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-62.png)
@@ -700,7 +700,7 @@ autogen0:Derecho_de_oposición(?do) ^ autogen0:derecho_cuenta_encargado(?do, ?dc
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Excepciones_de_derechos(?ed) ^ autogen0:derechos_para_rectificación_actualización_eliminación_y_oposición(?ed, ?edc) -> sqwrl:select(?edc)
+Excepciones_de_derechos(?ed) ^ derechos_para_rectificación_actualización_eliminación_y_oposición(?ed, ?edc) -> sqwrl:select(?edc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-63.png)
@@ -711,7 +711,7 @@ autogen0:Excepciones_de_derechos(?ed) ^ autogen0:derechos_para_rectificación_ac
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_a_la_suspensión_del_tratamiento(?dst) ^ autogen0:condiciones_para_la_suspensión_del_tratamiento(?dst, ?cst) -> sqwrl:select(?cst)
+Derecho_a_la_suspensión_del_tratamiento(?dst) ^ condiciones_para_la_suspensión_del_tratamiento(?dst, ?cst) -> sqwrl:select(?cst)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-64.png)
@@ -722,7 +722,7 @@ autogen0:Derecho_a_la_suspensión_del_tratamiento(?dst) ^ autogen0:condiciones_p
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_a_la_suspensión_del_tratamiento(?dst) ^ autogen0:condiciones_para_la_suspensión_del_tratamiento(?dst, ?cst) -> sqwrl:select(?cst)
+Derecho_a_la_suspensión_del_tratamiento(?dst) ^ condiciones_para_la_suspensión_del_tratamiento(?dst, ?cst) -> sqwrl:select(?cst)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-64.png)
@@ -733,7 +733,7 @@ autogen0:Derecho_a_la_suspensión_del_tratamiento(?dst) ^ autogen0:condiciones_p
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Titular(?t) ^ autogen0:en_caso_de_suspesión_de_tratamiento_debe_recurrir_hacia(?t, ?st) -> sqwrl:select(?st)
+Titular(?t) ^ en_caso_de_suspesión_de_tratamiento_debe_recurrir_hacia(?t, ?st) -> sqwrl:select(?st)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-65.png)
@@ -744,7 +744,7 @@ autogen0:Titular(?t) ^ autogen0:en_caso_de_suspesión_de_tratamiento_debe_recurr
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_a_la_suspensión_del_tratamiento(?dst) ^ autogen0:cuando_debe_ocurrir_el_titular_a_la_autoridad_de_protección_de_datos_personales(?dst, ?drapd) -> sqwrl:select(?drapd)
+Derecho_a_la_suspensión_del_tratamiento(?dst) ^ cuando_debe_ocurrir_el_titular_a_la_autoridad_de_protección_de_datos_personales(?dst, ?drapd) -> sqwrl:select(?drapd)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-66.png)
@@ -755,7 +755,7 @@ autogen0:Derecho_a_la_suspensión_del_tratamiento(?dst) ^ autogen0:cuando_debe_o
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Titular(?t) ^ autogen0:en_caso_de_impugar_la_exactitud_de_los_datos_a(?t, ?tcidp) ^ autogen0:ante_impugnación_de_exactitud_de_datos(?tcidp, ?idp) -> sqwrl:select(?idp)
+Titular(?t) ^ en_caso_de_impugar_la_exactitud_de_los_datos_a(?t, ?tcidp) ^ ante_impugnación_de_exactitud_de_datos(?tcidp, ?idp) -> sqwrl:select(?idp)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-67.png)
@@ -766,7 +766,7 @@ autogen0:Titular(?t) ^ autogen0:en_caso_de_impugar_la_exactitud_de_los_datos_a(?
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_a_la_suspensión_del_tratamiento(?dst) ^ autogen0:supuestos_para_tratar_los_datos_en_caso_de_impugnación_de_los_mismos(?dst, ?stdcidp) -> sqwrl:select(?stdcidp)
+Derecho_a_la_suspensión_del_tratamiento(?dst) ^ supuestos_para_tratar_los_datos_en_caso_de_impugnación_de_los_mismos(?dst, ?stdcidp) -> sqwrl:select(?stdcidp)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-68.png)
@@ -777,7 +777,7 @@ autogen0:Derecho_a_la_suspensión_del_tratamiento(?dst) ^ autogen0:supuestos_par
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:en_caso_de_valoraciones_automatizadas(?t, ?cda) ^ autogen0:Derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?dnva) ^ autogen0:para_el(?dnva, ?t) -> sqwrl:select(?cda)
+en_caso_de_valoraciones_automatizadas(?t, ?cda) ^ Derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?dnva) ^ para_el(?dnva, ?t) -> sqwrl:select(?cda)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-69.png)
@@ -788,7 +788,7 @@ autogen0:en_caso_de_valoraciones_automatizadas(?t, ?cda) ^ autogen0:Derecho_a_no
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:derechos_para_no_ser_objeto_de_valoraciones_automatizadas(?ed, ?edva) ^ autogen0:Excepciones_de_derechos(?ed) -> sqwrl:select(?edva)
+derechos_para_no_ser_objeto_de_valoraciones_automatizadas(?ed, ?edva) ^ Excepciones_de_derechos(?ed) -> sqwrl:select(?edva)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-70.png)
@@ -799,7 +799,7 @@ autogen0:derechos_para_no_ser_objeto_de_valoraciones_automatizadas(?ed, ?edva) ^
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Excepciones_de_derechos(?ed) ^ autogen0:no_se_podrá_revocar_el_derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?ed, ?rdova) -> sqwrl:select(?rdova)
+Excepciones_de_derechos(?ed) ^ no_se_podrá_revocar_el_derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?ed, ?rdova) -> sqwrl:select(?rdova)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-71.png)
@@ -810,7 +810,7 @@ autogen0:Excepciones_de_derechos(?ed) ^ autogen0:no_se_podrá_revocar_el_derecho
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:no_se_podrán_tratar(?dova, ?ntd) ^ autogen0:Derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?dova) ^ autogen0:datos_no_sujetos_a_tratamiento_según_el_derecho_a_no_ser_objeto_de_decisiones_automatizadas(?ntd, ?dnst) -> sqwrl:select(?dnst)
+no_se_podrán_tratar(?dova, ?ntd) ^ Derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?dova) ^ datos_no_sujetos_a_tratamiento_según_el_derecho_a_no_ser_objeto_de_decisiones_automatizadas(?ntd, ?dnst) -> sqwrl:select(?dnst)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-72.png)
@@ -821,7 +821,7 @@ autogen0:no_se_podrán_tratar(?dova, ?ntd) ^ autogen0:Derecho_a_no_ser_objeto_de
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:no_se_podrán_tratar(?dova, ?ntd) ^ autogen0:Derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?dova) ^ autogen0:datos_sujetos_a_tratamiento_según_el_derecho_a_no_ser_objeto_de_decisiones_automatizadas(?ntd, ?dst) -> sqwrl:select(?dst)
+no_se_podrán_tratar(?dova, ?ntd) ^ Derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?dova) ^ datos_sujetos_a_tratamiento_según_el_derecho_a_no_ser_objeto_de_decisiones_automatizadas(?ntd, ?dst) -> sqwrl:select(?dst)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-73.png)
@@ -832,7 +832,7 @@ autogen0:no_se_podrán_tratar(?dova, ?ntd) ^ autogen0:Derecho_a_no_ser_objeto_de
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Titular(?t) ^ autogen0:puede_dar_consentimiento_explícito_para_el_tratamiento(?t, true) -> sqwrl:select(?t)
+Titular(?t) ^ puede_dar_consentimiento_explícito_para_el_tratamiento(?t, true) -> sqwrl:select(?t)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-74.png)
@@ -843,7 +843,7 @@ autogen0:Titular(?t) ^ autogen0:puede_dar_consentimiento_explícito_para_el_trat
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_consulta(?dc) ^ autogen0:garatiza_que(?dc, ?gq) -> sqwrl:select(?gq)
+Derecho_de_consulta(?dc) ^ garatiza_que(?dc, ?gq) -> sqwrl:select(?gq)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-75.png)
@@ -854,7 +854,7 @@ autogen0:Derecho_de_consulta(?dc) ^ autogen0:garatiza_que(?dc, ?gq) -> sqwrl:sel
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_consulta(?dc) ^ autogen0:dónde_puede_consultar(?dc, ?dpc) -> sqwrl:select(?dpc)
+Derecho_de_consulta(?dc) ^ dónde_puede_consultar(?dc, ?dpc) -> sqwrl:select(?dpc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-76.png)
@@ -865,7 +865,7 @@ autogen0:Derecho_de_consulta(?dc) ^ autogen0:dónde_puede_consultar(?dc, ?dpc) -
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_a_la_educación_digital(?ded) ^ autogen0:derecho_al_acceso_y_disponibilidad(?ded, ?sdad) -> sqwrl:select(?sdad)
+Derecho_a_la_educación_digital(?ded) ^ derecho_al_acceso_y_disponibilidad(?ded, ?sdad) -> sqwrl:select(?sdad)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-77.png)
@@ -876,7 +876,7 @@ autogen0:Derecho_a_la_educación_digital(?ded) ^ autogen0:derecho_al_acceso_y_di
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_a_la_educación_digital(?ded) ^ autogen0:garantizar_la_educación_digital(?ded, ?dged) -> sqwrl:select(?dged)
+Derecho_a_la_educación_digital(?ded) ^ garantizar_la_educación_digital(?ded, ?dged) -> sqwrl:select(?dged)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-78.png)
@@ -887,7 +887,7 @@ autogen0:Derecho_a_la_educación_digital(?ded) ^ autogen0:garantizar_la_educaci�
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_a_la_educación_digital(?ded) ^ autogen0:carácter_inclusivo_en(?ded, ?cied) -> sqwrl:select(?cied)
+Derecho_a_la_educación_digital(?ded) ^ carácter_inclusivo_en(?ded, ?cied) -> sqwrl:select(?cied)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-79.png)
@@ -898,7 +898,7 @@ autogen0:Derecho_a_la_educación_digital(?ded) ^ autogen0:carácter_inclusivo_en
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Ejercicio_de_derechos(?ed) ^ autogen0:descripción(?ed, ?d) -> sqwrl:select(?d)
+Ejercicio_de_derechos(?ed) ^ descripción(?ed, ?d) -> sqwrl:select(?d)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-80.png)
@@ -909,7 +909,7 @@ autogen0:Ejercicio_de_derechos(?ed) ^ autogen0:descripción(?ed, ?d) -> sqwrl:se
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Ejercicio_de_derechos(?ed) ^ autogen0:deben_dar_capacitación_y_proveer_información(?ed, ?ddc) -> sqwrl:select(?ddc)
+Ejercicio_de_derechos(?ed) ^ deben_dar_capacitación_y_proveer_información(?ed, ?ddc) -> sqwrl:select(?ddc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-81.png)
@@ -920,7 +920,7 @@ autogen0:Ejercicio_de_derechos(?ed) ^ autogen0:deben_dar_capacitación_y_proveer
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Categorías_especiales_de_datos_personales(?cde) ^ autogen0:categorías_especiales_de_datos_personales_están_compuestos_por(?cde, ?ecp) -> sqwrl:select(?ecp) ^ sqwrl:limit(4)
+Categorías_especiales_de_datos_personales(?cde) ^ categorías_especiales_de_datos_personales_están_compuestos_por(?cde, ?ecp) -> sqwrl:select(?ecp) ^ sqwrl:limit(4)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-82.png)
@@ -931,7 +931,7 @@ autogen0:Categorías_especiales_de_datos_personales(?cde) ^ autogen0:categorías
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_sensibles(?tds) ^ autogen0:escenarios_de_tratamiento_de_datos_sensibles(?tds, ?etds) -> sqwrl:select(?etds)
+Tratamiento_de_datos_sensibles(?tds) ^ escenarios_de_tratamiento_de_datos_sensibles(?tds, ?etds) -> sqwrl:select(?etds)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-83.png)
@@ -942,7 +942,7 @@ autogen0:Tratamiento_de_datos_sensibles(?tds) ^ autogen0:escenarios_de_tratamien
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:cuenta_con_un(?tf, ?cu) ^ autogen0:Titular_fallecido(?tf) -> sqwrl:select(?cu)
+cuenta_con_un(?tf, ?cu) ^ Titular_fallecido(?tf) -> sqwrl:select(?cu)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-84.png)
@@ -953,7 +953,7 @@ autogen0:cuenta_con_un(?tf, ?cu) ^ autogen0:Titular_fallecido(?tf) -> sqwrl:sele
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:cuenta_con_un(?tf, ?cu) ^ autogen0:ejercicio_de_derechos_por_parte_del_titular_fallecido(?cu, ?ed) ^ autogen0:Titular_fallecido(?tf) -> sqwrl:select(?ed)
+cuenta_con_un(?tf, ?cu) ^ ejercicio_de_derechos_por_parte_del_titular_fallecido(?cu, ?ed) ^ Titular_fallecido(?tf) -> sqwrl:select(?ed)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-85.png)
@@ -964,7 +964,7 @@ autogen0:cuenta_con_un(?tf, ?cu) ^ autogen0:ejercicio_de_derechos_por_parte_del_
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_crediticios(?tdc) ^ autogen0:permitan_evaluar(?tdc, ?pe) -> sqwrl:select(?pe)
+Tratamiento_de_datos_crediticios(?tdc) ^ permitan_evaluar(?tdc, ?pe) -> sqwrl:select(?pe)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-86.png)
@@ -975,7 +975,7 @@ autogen0:Tratamiento_de_datos_crediticios(?tdc) ^ autogen0:permitan_evaluar(?tdc
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:para_informar_sobre(?tdc, ?pis) ^ autogen0:Tratamiento_de_datos_crediticios(?tdc) -> sqwrl:select(?pis)
+para_informar_sobre(?tdc, ?pis) ^ Tratamiento_de_datos_crediticios(?tdc) -> sqwrl:select(?pis)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-87.png)
@@ -986,7 +986,7 @@ autogen0:para_informar_sobre(?tdc, ?pis) ^ autogen0:Tratamiento_de_datos_crediti
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_crediticios(?tdc) ^ autogen0:fuentes_de_dónde_se_obtuvieron_los_datos_crediticios(?tdc, ?fdo) -> sqwrl:select(?fdo)
+Tratamiento_de_datos_crediticios(?tdc) ^ fuentes_de_dónde_se_obtuvieron_los_datos_crediticios(?tdc, ?fdo) -> sqwrl:select(?fdo)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-88.png)
@@ -997,7 +997,7 @@ autogen0:Tratamiento_de_datos_crediticios(?tdc) ^ autogen0:fuentes_de_dónde_se_
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_crediticios(?tdc) ^ autogen0:destinado(?tdc, ?tddc) -> sqwrl:select(?tddc)
+Tratamiento_de_datos_crediticios(?tdc) ^ destinado(?tdc, ?tddc) -> sqwrl:select(?tddc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-89.png)
@@ -1008,7 +1008,7 @@ autogen0:Tratamiento_de_datos_crediticios(?tdc) ^ autogen0:destinado(?tdc, ?tddc
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_crediticios(?tdc) ^ autogen0:no_se_podrá_hacer_con_el_tratamiento_de_datos_crediticios(?tdc, ?npad) -> sqwrl:select(?npad)
+Tratamiento_de_datos_crediticios(?tdc) ^ no_se_podrá_hacer_con_el_tratamiento_de_datos_crediticios(?tdc, ?npad) -> sqwrl:select(?npad)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-90.png)
@@ -1019,7 +1019,7 @@ autogen0:Tratamiento_de_datos_crediticios(?tdc) ^ autogen0:no_se_podrá_hacer_co
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ autogen0:derechos_de_los_titulares_de_datos_crediticios(?dtdc, ?dtd) -> sqwrl:select(?dtd)
+Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ derechos_de_los_titulares_de_datos_crediticios(?dtdc, ?dtd) -> sqwrl:select(?dtd)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-91.png)
@@ -1030,7 +1030,7 @@ autogen0:Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ autogen0:derecho
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ autogen0:derecho_al_acceso_de_los_titulares_de_datos_crediticios(?dtdc, ?dadp) -> sqwrl:select(?dadp)
+Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ derecho_al_acceso_de_los_titulares_de_datos_crediticios(?dtdc, ?dadp) -> sqwrl:select(?dadp)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-92.png)
@@ -1041,7 +1041,7 @@ autogen0:Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ autogen0:derecho
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ autogen0:mecanismos_para_asegurar_el_derecho_de_acceso_del_titular_de_datos_crediticios(?dtdc, ?mada) -> sqwrl:select(?mada)
+Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ mecanismos_para_asegurar_el_derecho_de_acceso_del_titular_de_datos_crediticios(?dtdc, ?mada) -> sqwrl:select(?mada)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-93.png)
@@ -1052,7 +1052,7 @@ autogen0:Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ autogen0:mecanis
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ autogen0:derecho_de_actualización_rectificación_o_eliminación_del_titular_de_datos_crediticios(?dtdc, ?daredc) -> sqwrl:select(?daredc)
+Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ derecho_de_actualización_rectificación_o_eliminación_del_titular_de_datos_crediticios(?dtdc, ?daredc) -> sqwrl:select(?daredc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-94.png)
@@ -1063,7 +1063,7 @@ autogen0:Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ autogen0:derecho
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ autogen0:fuente_de_información_actividad_frente_la_solicitud(?dtdc, ?afi) -> sqwrl:select(?afi)
+Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ fuente_de_información_actividad_frente_la_solicitud(?dtdc, ?afi) -> sqwrl:select(?afi)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-95.png)
@@ -1074,7 +1074,7 @@ autogen0:Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ autogen0:fuente_
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:recolección_y_tratamiento_de_dato_relativo_a_salud(?tds, ?rtdrs) -> sqwrl:select(?rtdrs)
+Tratamiento_de_datos_relativos_a_salud(?tds) ^ recolección_y_tratamiento_de_dato_relativo_a_salud(?tds, ?rtdrs) -> sqwrl:select(?rtdrs)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-96.png)
@@ -1085,7 +1085,7 @@ autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:recolección_y_
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:en_lo_que_respecta_a_el(?tds, ?ctds) ^ autogen0:para_datos_relativos_a_salud_sin_consentimiento(?ctds, ?cdrs) -> sqwrl:select(?cdrs)
+Tratamiento_de_datos_relativos_a_salud(?tds) ^ en_lo_que_respecta_a_el(?tds, ?ctds) ^ para_datos_relativos_a_salud_sin_consentimiento(?ctds, ?cdrs) -> sqwrl:select(?cdrs)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-97.png)
@@ -1096,7 +1096,7 @@ autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:en_lo_que_respe
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:escenarios_de_aplicación_para_el_tratamiento_de_datos_sin_consentimiento(?tds, ?eatds) -> sqwrl:select(?eatds)
+Tratamiento_de_datos_relativos_a_salud(?tds) ^ escenarios_de_aplicación_para_el_tratamiento_de_datos_sin_consentimiento(?tds, ?eatds) -> sqwrl:select(?eatds)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-98.png)
@@ -1107,7 +1107,7 @@ autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:escenarios_de_a
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:supervisar_el_tratamiento_en_actividades_de_gestión_de_servicio_de_salud(?tds, ?dst) -> sqwrl:select(?dst)
+Tratamiento_de_datos_relativos_a_salud(?tds) ^ supervisar_el_tratamiento_en_actividades_de_gestión_de_servicio_de_salud(?tds, ?dst) -> sqwrl:select(?dst)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-99.png)
@@ -1118,7 +1118,7 @@ autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:supervisar_el_t
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:deberá_ser_autorizado_por(?tds, ?tdrsdsa) -> sqwrl:select(?tdrsdsa)
+Tratamiento_de_datos_relativos_a_salud(?tds) ^ deberá_ser_autorizado_por(?tds, ?tdrsdsa) -> sqwrl:select(?tdrsdsa)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-100.png)
@@ -1129,7 +1129,7 @@ autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:deberá_ser_aut
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:deberá_ser_autorizado_por(?tds, ?tdrsdsa) ^ autogen0:acciones_respecto_al_tratamiento_de_datos_de_salud(?tdrsdsa, ?artds) -> sqwrl:select(?artds)
+Tratamiento_de_datos_relativos_a_salud(?tds) ^ deberá_ser_autorizado_por(?tds, ?tdrsdsa) ^ acciones_respecto_al_tratamiento_de_datos_de_salud(?tdrsdsa, ?artds) -> sqwrl:select(?artds)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-101.png)
@@ -1140,7 +1140,7 @@ autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:deberá_ser_aut
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:autorización_de_tratamiento_de_datos_de_salud_anonimizados(?tds, ?atds) ^ autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) -> sqwrl:select(?atds)
+autorización_de_tratamiento_de_datos_de_salud_anonimizados(?tds, ?atds) ^ Tratamiento_de_datos_relativos_a_salud(?tds) -> sqwrl:select(?atds)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-102.png)
@@ -1151,7 +1151,7 @@ autogen0:autorización_de_tratamiento_de_datos_de_salud_anonimizados(?tds, ?atds
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:fines_del_tratamiento_de_datos_por_entes_privados_y_públicos(?tds, ?tdepp) -> sqwrl:select(?tdepp)
+Tratamiento_de_datos_relativos_a_salud(?tds) ^ fines_del_tratamiento_de_datos_por_entes_privados_y_públicos(?tds, ?tdepp) -> sqwrl:select(?tdepp)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-103.png)
@@ -1162,7 +1162,7 @@ autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:fines_del_trata
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:escenarios_para_el_tratamiento_por_entes_privados_y_públicos(?tds, ?eptepp) -> sqwrl:select(?eptepp)
+Tratamiento_de_datos_relativos_a_salud(?tds) ^ escenarios_para_el_tratamiento_por_entes_privados_y_públicos(?tds, ?eptepp) -> sqwrl:select(?eptepp)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-104.png)
@@ -1173,7 +1173,7 @@ autogen0:Tratamiento_de_datos_relativos_a_salud(?tds) ^ autogen0:escenarios_para
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Responsable_del_tratamiento(?rt) ^ autogen0:obligaciones(?rt, ?o) -> sqwrl:select(?o) ^ sqwrl:limit(16)
+Responsable_del_tratamiento(?rt) ^ obligaciones(?rt, ?o) -> sqwrl:select(?o) ^ sqwrl:limit(16)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-105.png)
@@ -1184,7 +1184,7 @@ autogen0:Responsable_del_tratamiento(?rt) ^ autogen0:obligaciones(?rt, ?o) -> sq
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Delegado_de_protección_de_datos_personales(?dpd) ^ autogen0:se_asignará_un_delegado_de_protección_de_datos(?dpd, ?adpd) -> sqwrl:select(?adpd)
+Delegado_de_protección_de_datos_personales(?dpd) ^ se_asignará_un_delegado_de_protección_de_datos(?dpd, ?adpd) -> sqwrl:select(?adpd)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-106.png)
@@ -1195,7 +1195,7 @@ autogen0:Delegado_de_protección_de_datos_personales(?dpd) ^ autogen0:se_asignar
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Delegado_de_protección_de_datos_personales(?dpd) ^ autogen0:funciones_del_rol(?dpd, ?fdd) -> sqwrl:select(?fdd) ^ sqwrl:limit(5)
+Delegado_de_protección_de_datos_personales(?dpd) ^ funciones_del_rol(?dpd, ?fdd) -> sqwrl:select(?fdd) ^ sqwrl:limit(5)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-107.png)
@@ -1206,7 +1206,7 @@ autogen0:Delegado_de_protección_de_datos_personales(?dpd) ^ autogen0:funciones_
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Delegado_de_protección_de_datos_personales(?dpd) ^ autogen0:deberá_ser_observado_por(?dpd, ?dop) -> sqwrl:select(?dop)
+Delegado_de_protección_de_datos_personales(?dpd) ^ deberá_ser_observado_por(?dpd, ?dop) -> sqwrl:select(?dop)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-108.png)
@@ -1218,7 +1218,7 @@ autogen0:Delegado_de_protección_de_datos_personales(?dpd) ^ autogen0:deberá_se
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Delegado_de_protección_de_datos_personales(?dpd) ^ autogen0:deberá_ser_observado_por(?dpd, ?dop) ^ autogen0:observaciones_del_delegado(?dop, ?odd) -> sqwrl:select( ?odd) ^ sqwrl:limit(5)
+Delegado_de_protección_de_datos_personales(?dpd) ^ deberá_ser_observado_por(?dpd, ?dop) ^ observaciones_del_delegado(?dop, ?odd) -> sqwrl:select( ?odd) ^ sqwrl:limit(5)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-109.png)
@@ -1229,7 +1229,7 @@ autogen0:Delegado_de_protección_de_datos_personales(?dpd) ^ autogen0:deberá_se
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Reclamaciones(?r) ^ autogen0:podrán_ser_hechas_por(?r, ?pshp) -> sqwrl:select(?pshp)
+Reclamaciones(?r) ^ podrán_ser_hechas_por(?r, ?pshp) -> sqwrl:select(?pshp)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-110.png)
@@ -1240,7 +1240,7 @@ autogen0:Reclamaciones(?r) ^ autogen0:podrán_ser_hechas_por(?r, ?pshp) -> sqwrl
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Reclamaciones(?r) ^ autogen0:van_destinadas_hacia(?r, ?rvdh) -> sqwrl:select(?rvdh)
+Reclamaciones(?r) ^ van_destinadas_hacia(?r, ?rvdh) -> sqwrl:select(?rvdh)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-111.png)
@@ -1252,7 +1252,7 @@ autogen0:Reclamaciones(?r) ^ autogen0:van_destinadas_hacia(?r, ?rvdh) -> sqwrl:s
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Reclamaciones(?r) ^ autogen0:podrán_ser_hecha_de_forma(?r, ?psh) -> sqwrl:select(?psh)
+Reclamaciones(?r) ^ podrán_ser_hecha_de_forma(?r, ?psh) -> sqwrl:select(?psh)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-112.png)
@@ -1263,7 +1263,7 @@ autogen0:Reclamaciones(?r) ^ autogen0:podrán_ser_hecha_de_forma(?r, ?psh) -> sq
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:podrán_ser_hecha_por_medios(?r, ?pshpm) ^ autogen0:Reclamaciones(?r) -> sqwrl:select(?pshpm)
+podrán_ser_hecha_por_medios(?r, ?pshpm) ^ Reclamaciones(?r) -> sqwrl:select(?pshpm)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-113.png)
@@ -1274,7 +1274,7 @@ autogen0:podrán_ser_hecha_por_medios(?r, ?pshpm) ^ autogen0:Reclamaciones(?r) -
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Reclamaciones(?r) ^ autogen0:reclamos_de(?r, ?rd) -> sqwrl:select(?rd)
+Reclamaciones(?r) ^ reclamos_de(?r, ?rd) -> sqwrl:select(?rd)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-114.png)
@@ -1285,7 +1285,7 @@ autogen0:Reclamaciones(?r) ^ autogen0:reclamos_de(?r, ?rd) -> sqwrl:select(?rd)
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Reclamaciones(?r) ^ autogen0:presentar_en_caso_de_reclamación(?r, ?pecr) -> sqwrl:select(?pecr)
+Reclamaciones(?r) ^ presentar_en_caso_de_reclamación(?r, ?pecr) -> sqwrl:select(?pecr)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-115.png)
@@ -1296,7 +1296,7 @@ autogen0:Reclamaciones(?r) ^ autogen0:presentar_en_caso_de_reclamación(?r, ?pec
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Reclamaciones(?r) ^ autogen0:contestar_la_reclamación(?r, ?cr) -> sqwrl:select(?cr)
+Reclamaciones(?r) ^ contestar_la_reclamación(?r, ?cr) -> sqwrl:select(?cr)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-116.png)
@@ -1307,7 +1307,7 @@ autogen0:Reclamaciones(?r) ^ autogen0:contestar_la_reclamación(?r, ?cr) -> sqwr
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Reclamaciones(?r) ^ autogen0:antes_de_contestar_la_reclamación(?r, ?acr) -> sqwrl:select(?acr)
+Reclamaciones(?r) ^ antes_de_contestar_la_reclamación(?r, ?acr) -> sqwrl:select(?acr)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-117.png)
@@ -1318,7 +1318,7 @@ autogen0:Reclamaciones(?r) ^ autogen0:antes_de_contestar_la_reclamación(?r, ?ac
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Reclamaciones(?r) ^ autogen0:ante_una_negación_o_no_respuesta_del_reclamo(?r, ?annr) -> sqwrl:select(?annr)
+Reclamaciones(?r) ^ ante_una_negación_o_no_respuesta_del_reclamo(?r, ?annr) -> sqwrl:select(?annr)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-118.png)
@@ -1329,7 +1329,7 @@ autogen0:Reclamaciones(?r) ^ autogen0:ante_una_negación_o_no_respuesta_del_recl
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Medidas_correctivas(?mc) ^ autogen0:en_caso_de_incumplimiento_de(?mc, ?ecimc) -> sqwrl:select(?ecimc)
+Medidas_correctivas(?mc) ^ en_caso_de_incumplimiento_de(?mc, ?ecimc) -> sqwrl:select(?ecimc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-119.png)
@@ -1340,7 +1340,7 @@ autogen0:Medidas_correctivas(?mc) ^ autogen0:en_caso_de_incumplimiento_de(?mc, ?
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:serán_impuestas_por(?mc, ?mcsip) ^ autogen0:Medidas_correctivas(?mc) -> sqwrl:select(?mcsip) ^ sqwrl:limit(1)
+serán_impuestas_por(?mc, ?mcsip) ^ Medidas_correctivas(?mc) -> sqwrl:select(?mcsip) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-120.png)
@@ -1351,7 +1351,7 @@ autogen0:serán_impuestas_por(?mc, ?mcsip) ^ autogen0:Medidas_correctivas(?mc) -
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Medidas_correctivas(?mc) ^ autogen0:cuáles_serán_las_medidas_correctivas(?mc, ?cmc) -> sqwrl:select(?cmc)
+Medidas_correctivas(?mc) ^ cuáles_serán_las_medidas_correctivas(?mc, ?cmc) -> sqwrl:select(?cmc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-121.png)
@@ -1362,7 +1362,7 @@ autogen0:Medidas_correctivas(?mc) ^ autogen0:cuáles_serán_las_medidas_correcti
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Medidas_correctivas(?mc) ^ autogen0:antes_de_dictar_las_medidas_correctivas(?mc, ?admc) -> sqwrl:select(?admc)
+Medidas_correctivas(?mc) ^ antes_de_dictar_las_medidas_correctivas(?mc, ?admc) -> sqwrl:select(?admc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-122.png)
@@ -1374,7 +1374,7 @@ autogen0:Medidas_correctivas(?mc) ^ autogen0:antes_de_dictar_las_medidas_correct
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Medidas_correctivas(?mc) ^ autogen0:casos_para_incurrir_en_medidas_correctivas(?mc, ?cimc) -> sqwrl:select(?cimc)
+Medidas_correctivas(?mc) ^ casos_para_incurrir_en_medidas_correctivas(?mc, ?cimc) -> sqwrl:select(?cimc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-123.png)
@@ -1385,7 +1385,7 @@ autogen0:Medidas_correctivas(?mc) ^ autogen0:casos_para_incurrir_en_medidas_corr
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Medidas_correctivas(?mc) ^ autogen0:por_infracciones_leves(?mc, ?mcil) -> sqwrl:select(?mcil)
+Medidas_correctivas(?mc) ^ por_infracciones_leves(?mc, ?mcil) -> sqwrl:select(?mcil)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-124.png)
@@ -1396,7 +1396,7 @@ autogen0:Medidas_correctivas(?mc) ^ autogen0:por_infracciones_leves(?mc, ?mcil) 
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:por_infracciones_graves(?mc, ?mcig) ^ autogen0:Medidas_correctivas(?mc) -> sqwrl:select(?mcig)
+por_infracciones_graves(?mc, ?mcig) ^ Medidas_correctivas(?mc) -> sqwrl:select(?mcig)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-125.png)
@@ -1407,7 +1407,7 @@ autogen0:por_infracciones_graves(?mc, ?mcig) ^ autogen0:Medidas_correctivas(?mc)
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:por_infracciones_muy_graves(?mc, ?mcimg) ^ autogen0:Medidas_correctivas(?mc) -> sqwrl:select(?mcimg)
+por_infracciones_muy_graves(?mc, ?mcimg) ^ Medidas_correctivas(?mc) -> sqwrl:select(?mcimg)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-126.png)
@@ -1418,7 +1418,7 @@ autogen0:por_infracciones_muy_graves(?mc, ?mcimg) ^ autogen0:Medidas_correctivas
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:cometidas_por(?il, ?rt) ^ autogen0:Infracciones_leves(?il) ^ autogen0:Responsable_del_tratamiento(?rt) ^ autogen0:infracciones_leves(?rt, ?eil) -> sqwrl:select(?eil) ^ sqwrl:limit(5)
+cometidas_por(?il, ?rt) ^ Infracciones_leves(?il) ^ Responsable_del_tratamiento(?rt) ^ infracciones_leves(?rt, ?eil) -> sqwrl:select(?eil) ^ sqwrl:limit(5)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-127.png)
@@ -1429,7 +1429,7 @@ autogen0:cometidas_por(?il, ?rt) ^ autogen0:Infracciones_leves(?il) ^ autogen0:R
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Responsable_del_tratamiento(?rt) ^ autogen0:infracciones_graves(?rt, ?eig) ^ autogen0:Infracciones_graves(?ig) ^ autogen0:cometidas_por(?ig, ?rt) -> sqwrl:select(?eig) ^ sqwrl:limit(14)
+Responsable_del_tratamiento(?rt) ^ infracciones_graves(?rt, ?eig) ^ Infracciones_graves(?ig) ^ cometidas_por(?ig, ?rt) -> sqwrl:select(?eig) ^ sqwrl:limit(14)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-128.png)
@@ -1440,7 +1440,7 @@ autogen0:Responsable_del_tratamiento(?rt) ^ autogen0:infracciones_graves(?rt, ?e
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Infracciones_leves(?il) ^ autogen0:cometidas_por(?il, ?et) ^ autogen0:infracciones_leves(?et, ?eil) ^ autogen0:Encargado_del_tratamiento(?et) -> sqwrl:select(?eil) ^ sqwrl:limit(4)
+Infracciones_leves(?il) ^ cometidas_por(?il, ?et) ^ infracciones_leves(?et, ?eil) ^ Encargado_del_tratamiento(?et) -> sqwrl:select(?eil) ^ sqwrl:limit(4)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-129.png)
@@ -1451,7 +1451,7 @@ autogen0:Infracciones_leves(?il) ^ autogen0:cometidas_por(?il, ?et) ^ autogen0:i
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:cometidas_por(?ig, ?et) ^ autogen0:Infracciones_graves(?ig) ^ autogen0:Encargado_del_tratamiento(?et) ^ autogen0:infracciones_graves(?et, ?eig) -> sqwrl:select(?eig) ^ sqwrl:limit(8)
+cometidas_por(?ig, ?et) ^ Infracciones_graves(?ig) ^ Encargado_del_tratamiento(?et) ^ infracciones_graves(?et, ?eig) -> sqwrl:select(?eig) ^ sqwrl:limit(8)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-130.png)
@@ -1462,7 +1462,7 @@ autogen0:cometidas_por(?ig, ?et) ^ autogen0:Infracciones_graves(?ig) ^ autogen0:
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Sanciones(?s) ^ autogen0:están_compuesto_por(?s, ?ec) -> sqwrl:select(?ec) ^ sqwrl:limit(2)
+Sanciones(?s) ^ están_compuesto_por(?s, ?ec) -> sqwrl:select(?ec) ^ sqwrl:limit(2)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-131.png)
@@ -1473,7 +1473,7 @@ autogen0:Sanciones(?s) ^ autogen0:están_compuesto_por(?s, ?ec) -> sqwrl:select(
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Sanciones(?s) ^ autogen0:serán_impuestas_por(?s, ?si) -> sqwrl:select(?si) ^ sqwrl:limit(1)
+Sanciones(?s) ^ serán_impuestas_por(?s, ?si) -> sqwrl:select(?si) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-132.png)
@@ -1484,7 +1484,7 @@ autogen0:Sanciones(?s) ^ autogen0:serán_impuestas_por(?s, ?si) -> sqwrl:select(
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Sanciones_por_infracciones_leves(?sil) ^ destinadas(?sil, ?d) -> sqwrl:select(?d) ^ sqwrl:limit(2)
+Sanciones_por_infracciones_leves(?sil) ^ destinadas(?sil, ?d) -> sqwrl:select(?d) ^ sqwrl:limit(2)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-133.png)
@@ -1495,7 +1495,7 @@ autogen0:Sanciones_por_infracciones_leves(?sil) ^ destinadas(?sil, ?d) -> sqwrl:
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Sanciones_por_infracciones_leves(?sil) ^ autogen0:tipo_de_sanción_por_infracciones_hacia_servidores_o_funcionarios_públicos(?sil, ?tssf) -> sqwrl:select(?tssf) ^ sqwrl:limit(2)
+Sanciones_por_infracciones_leves(?sil) ^ tipo_de_sanción_por_infracciones_hacia_servidores_o_funcionarios_públicos(?sil, ?tssf) -> sqwrl:select(?tssf) ^ sqwrl:limit(2)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-134.png)
@@ -1506,7 +1506,7 @@ autogen0:Sanciones_por_infracciones_leves(?sil) ^ autogen0:tipo_de_sanción_por_
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Sanciones_por_infracciones_leves(?sil) ^ autogen0:tipo_de_sanción_por_infracciones_hacia_responsable_o_el_encargado_del_tratamiento(?sil, ?tsret) -> sqwrl:select(?tsret) ^ sqwrl:limit(1)
+Sanciones_por_infracciones_leves(?sil) ^ tipo_de_sanción_por_infracciones_hacia_responsable_o_el_encargado_del_tratamiento(?sil, ?tsret) -> sqwrl:select(?tsret) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-135.png)
@@ -1517,7 +1517,7 @@ autogen0:Sanciones_por_infracciones_leves(?sil) ^ autogen0:tipo_de_sanción_por_
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Sanciones_por_infracciones_leves(?sil) ^ autogen0:determinación_de_la_multa_respecto_a_sanciones_por_infracción_del_responsable_o_encargado_del_tratamiento(?sil, ?dm) -> sqwrl:select(?dm) ^ sqwrl:limit(4)
+Sanciones_por_infracciones_leves(?sil) ^ determinación_de_la_multa_respecto_a_sanciones_por_infracción_del_responsable_o_encargado_del_tratamiento(?sil, ?dm) -> sqwrl:select(?dm) ^ sqwrl:limit(4)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-136.png)
@@ -1528,7 +1528,7 @@ autogen0:Sanciones_por_infracciones_leves(?sil) ^ autogen0:determinación_de_la_
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Sanciones_por_infracciones_graves(?sig) ^ destinadas(?sig, ?d) -> sqwrl:select(?d) ^ sqwrl:limit(2)
+Sanciones_por_infracciones_graves(?sig) ^ destinadas(?sig, ?d) -> sqwrl:select(?d) ^ sqwrl:limit(2)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-137.png)
@@ -1539,7 +1539,7 @@ autogen0:Sanciones_por_infracciones_graves(?sig) ^ destinadas(?sig, ?d) -> sqwrl
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Sanciones_por_infracciones_graves(?sig) ^ autogen0:tipo_de_sanción_por_infracciones_hacia_servidores_o_funcionarios_públicos(?sig, ?tssf) -> sqwrl:select(?tssf) ^ sqwrl:limit(2)
+Sanciones_por_infracciones_graves(?sig) ^ tipo_de_sanción_por_infracciones_hacia_servidores_o_funcionarios_públicos(?sig, ?tssf) -> sqwrl:select(?tssf) ^ sqwrl:limit(2)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-138.png)
@@ -1550,7 +1550,7 @@ autogen0:Sanciones_por_infracciones_graves(?sig) ^ autogen0:tipo_de_sanción_por
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Sanciones_por_infracciones_graves(?sig) ^ autogen0:tipo_de_sanción_por_infracciones_hacia_responsable_o_el_encargado_del_tratamiento(?sig, ?tsret) -> sqwrl:select(?tsret) ^ sqwrl:limit(1)
+Sanciones_por_infracciones_graves(?sig) ^ tipo_de_sanción_por_infracciones_hacia_responsable_o_el_encargado_del_tratamiento(?sig, ?tsret) -> sqwrl:select(?tsret) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-139.png)
@@ -1561,7 +1561,7 @@ autogen0:Sanciones_por_infracciones_graves(?sig) ^ autogen0:tipo_de_sanción_por
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Sanciones_por_infracciones_graves(?sig) ^ autogen0:determinación_de_la_multa_respecto_a_sanciones_por_infracción_del_responsable_o_encargado_del_tratamiento(?sig, ?dm) -> sqwrl:select(?dm) ^ sqwrl:limit(4)
+Sanciones_por_infracciones_graves(?sig) ^ determinación_de_la_multa_respecto_a_sanciones_por_infracción_del_responsable_o_encargado_del_tratamiento(?sig, ?dm) -> sqwrl:select(?dm) ^ sqwrl:limit(4)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-140.png)
@@ -1572,7 +1572,7 @@ autogen0:Sanciones_por_infracciones_graves(?sig) ^ autogen0:determinación_de_la
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Autoridad_de_protección_de_datos_personales(?apd) ^ autogen0:funciones(?apd, ?f) -> sqwrl:select(?f)
+Autoridad_de_protección_de_datos_personales(?apd) ^ funciones(?apd, ?f) -> sqwrl:select(?f)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-141.png)
@@ -1583,7 +1583,7 @@ autogen0:Autoridad_de_protección_de_datos_personales(?apd) ^ autogen0:funciones
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Autoridad_de_protección_de_datos_personales(?apd) ^ autogen0:conocido_como(?apd, ?cm) -> sqwrl:select(?cm)
+Autoridad_de_protección_de_datos_personales(?apd) ^ conocido_como(?apd, ?cm) -> sqwrl:select(?cm)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-142.png)
@@ -1594,7 +1594,7 @@ autogen0:Autoridad_de_protección_de_datos_personales(?apd) ^ autogen0:conocido_
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Autoridad_de_protección_de_datos_personales(?apd) ^ autogen0:designación(?apd, ?d) -> sqwrl:select(?d)
+Autoridad_de_protección_de_datos_personales(?apd) ^ designación(?apd, ?d) -> sqwrl:select(?d)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-143.png)
@@ -1605,7 +1605,7 @@ autogen0:Autoridad_de_protección_de_datos_personales(?apd) ^ autogen0:designaci
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Autoridad_de_protección_de_datos_personales(?apd) ^ autogen0:requisitos_que_debe_cumplir(?apd, ?rdc) -> sqwrl:select(?rdc)
+Autoridad_de_protección_de_datos_personales(?apd) ^ requisitos_que_debe_cumplir(?apd, ?rdc) -> sqwrl:select(?rdc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-144.png)
@@ -1616,7 +1616,7 @@ autogen0:Autoridad_de_protección_de_datos_personales(?apd) ^ autogen0:requisito
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Autoridad_de_protección_de_datos_personales(?apd) ^ autogen0:duración_del_cargo(?apd, ?dc) -> sqwrl:select(?dc)
+Autoridad_de_protección_de_datos_personales(?apd) ^ duración_del_cargo(?apd, ?dc) -> sqwrl:select(?dc)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-145.png)
@@ -1627,7 +1627,7 @@ autogen0:Autoridad_de_protección_de_datos_personales(?apd) ^ autogen0:duración
 
 **Consulta en lenguaje SQWRL:**  
 ```
-autogen0:Autoridad_de_protección_de_datos_personales(?apd) ^ autogen0:revocación(?apd, ?r) -> sqwrl:select(?r)
+Autoridad_de_protección_de_datos_personales(?apd) ^ revocación(?apd, ?r) -> sqwrl:select(?r)
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](image-146.png)

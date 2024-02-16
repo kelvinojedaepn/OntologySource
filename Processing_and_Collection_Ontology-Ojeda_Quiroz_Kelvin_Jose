@@ -889,6 +889,9 @@
         <DataProperty IRI="#designación"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#destinadas"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#destinado"/>
     </Declaration>
     <Declaration>
@@ -1434,6 +1437,14 @@
     <Declaration>
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Infracciones"/>
+        <Class IRI="#Medidas_correctivas"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Medidas_correctivas"/>
+        <Class IRI="#Sanciones"/>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Actividades_familiares_o_domésticas"/>
         <Class IRI="#Inaplicabilidad"/>
@@ -1822,6 +1833,63 @@
         <Class IRI="#Ámbito_de_aplicación"/>
         <Class IRI="#Aplicabilidad"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Anonimización"/>
+        <Class IRI="#Base_de_datos"/>
+        <Class IRI="#Consentimiento"/>
+        <Class IRI="#Elaboración_de_perfiles"/>
+        <Class IRI="#Entidad_certificadora"/>
+        <Class IRI="#Fuente_accesible_al_público"/>
+        <Class IRI="#Interés_legítimo"/>
+        <Class IRI="#Sellos_de_protección_de_datos_personales"/>
+        <Class IRI="#Tipos_de_datos"/>
+        <Class IRI="#Tratamiento_de_datos"/>
+        <Class IRI="#Volumen_de_negocio"/>
+        <Class IRI="#Vulnerabilidad_de_la_seguridad_de_los_datos_personales"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Aplicabilidad"/>
+        <Class IRI="#Inaplicabilidad"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Base_de_datos"/>
+        <Class IRI="#Consentimiento"/>
+        <Class IRI="#Elaboración_de_perfiles"/>
+        <Class IRI="#Entidad_certificadora"/>
+        <Class IRI="#Fuente_accesible_al_público"/>
+        <Class IRI="#Interés_legítimo"/>
+        <Class IRI="#Sellos_de_protección_de_datos_personales"/>
+        <Class IRI="#Seudonimización"/>
+        <Class IRI="#Tipos_de_datos"/>
+        <Class IRI="#Tratamiento_de_datos"/>
+        <Class IRI="#Volumen_de_negocio"/>
+        <Class IRI="#Vulnerabilidad_de_la_seguridad_de_los_datos_personales"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Derecho_a_la_educación_digital"/>
+        <Class IRI="#Derecho_a_la_información"/>
+        <Class IRI="#Derecho_a_la_suspensión_del_tratamiento"/>
+        <Class IRI="#Derecho_a_no_ser_objeto_de_valoraciones_automatizadas"/>
+        <Class IRI="#Derecho_de_acceso"/>
+        <Class IRI="#Derecho_de_consulta"/>
+        <Class IRI="#Derecho_de_eliminación"/>
+        <Class IRI="#Derecho_de_oposición"/>
+        <Class IRI="#Derecho_de_rectificación_y_actualización"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Derechos"/>
+        <Class IRI="#Infracciones"/>
+        <Class IRI="#Sanciones"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Procesamiento"/>
+        <Class IRI="#Recolección"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Tratamiento_de_datos_crediticios"/>
+        <Class IRI="#Tratamiento_de_datos_relativos_a_salud"/>
+        <Class IRI="#Tratamiento_de_datos_sensibles"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Finalidad"/>
         <NamedIndividual IRI="#Finalidad"/>
@@ -3657,11 +3725,6 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#derecho_al_acceso_y_disponibilidad"/>
         <NamedIndividual IRI="#derecho_a_la_educación_digital"/>
-        <Literal>El uso y manejo adecuado, sano, constructivo, seguro y responsable de las tecnologías de la información y comunicación</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#derecho_al_acceso_y_disponibilidad"/>
-        <NamedIndividual IRI="#derecho_a_la_educación_digital"/>
         <Literal>Aprendizaje de Tecnologías de la Información y Comunicación</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -3678,6 +3741,11 @@
         <DataProperty IRI="#derecho_al_acceso_y_disponibilidad"/>
         <NamedIndividual IRI="#derecho_a_la_educación_digital"/>
         <Literal>Desarrollo en Tecnologías de la Información y Comunicación</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#derecho_al_acceso_y_disponibilidad"/>
+        <NamedIndividual IRI="#derecho_a_la_educación_digital"/>
+        <Literal>El uso y manejo adecuado, sano, constructivo, seguro y responsable de las tecnologías de la información y comunicación</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#derecho_al_acceso_y_disponibilidad"/>
@@ -4940,6 +5008,16 @@
         <Literal>No es necesario una justificación para la revocación del consentimiento</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#destinadas"/>
+        <NamedIndividual IRI="#sanciones_por_infracciones_graves"/>
+        <Literal>El Responsable o el Encargado del tratamiento de datos personales o de ser el caso un tercero, pueden ser una entidad de derecho privado o una empresa pública</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#destinadas"/>
+        <NamedIndividual IRI="#sanciones_por_infracciones_graves"/>
+        <Literal>Servidores o funcionarios del sector público</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#determinación_de_la_multa_respecto_a_sanciones_por_infracción_del_responsable_o_encargado_del_tratamiento"/>
         <NamedIndividual IRI="#sanciones_por_infracciones_graves"/>
         <Literal>Intencionalidad, la cual, evaluará la conducta del infractor para determinar si hubo intención de cometer la infracción</Literal>
@@ -4975,13 +5053,13 @@
         <Literal>Será sancionado con una multa que oscila entre 10 y 20 salarios básicos unificados del servidor o funcionario público</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#van_destinadas_hacia"/>
-        <NamedIndividual IRI="#sanciones_por_infracciones_graves"/>
+        <DataProperty IRI="#destinadas"/>
+        <NamedIndividual IRI="#sanciones_por_infracciones_leves"/>
         <Literal>El Responsable o el Encargado del tratamiento de datos personales o de ser el caso un tercero, pueden ser una entidad de derecho privado o una empresa pública</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#van_destinadas_hacia"/>
-        <NamedIndividual IRI="#sanciones_por_infracciones_graves"/>
+        <DataProperty IRI="#destinadas"/>
+        <NamedIndividual IRI="#sanciones_por_infracciones_leves"/>
         <Literal>Servidores o funcionarios del sector público</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -5023,16 +5101,6 @@
         <DataProperty IRI="#tipo_de_sanción_por_infracciones_hacia_servidores_o_funcionarios_públicos"/>
         <NamedIndividual IRI="#sanciones_por_infracciones_leves"/>
         <Literal>Será sancionado con una multa que oscila entre 1 y 10 salarios básicos unificados del servidor o funcionario público</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#van_destinadas_hacia"/>
-        <NamedIndividual IRI="#sanciones_por_infracciones_leves"/>
-        <Literal>El Responsable o el Encargado del tratamiento de datos personales o de ser el caso un tercero, pueden ser una entidad de derecho privado o una empresa pública</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#van_destinadas_hacia"/>
-        <NamedIndividual IRI="#sanciones_por_infracciones_leves"/>
-        <Literal>Servidores o funcionarios del sector público</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#descripción"/>
@@ -7108,6 +7176,10 @@
         <DataProperty IRI="#Autoridad_de_protección_de_datos_personales"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#destinadas"/>
+        <DataProperty IRI="#Sanciones"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#destinado"/>
         <DataProperty IRI="#Tratamiento_de_datos_crediticios"/>
     </SubDataPropertyOf>
@@ -7626,6 +7698,14 @@
     <DataPropertyDomain>
         <DataProperty IRI="#designación"/>
         <Class IRI="#Autoridad_de_protección_de_datos_personales"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#destinadas"/>
+        <Class IRI="#Sanciones_por_infracciones_graves"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#destinadas"/>
+        <Class IRI="#Sanciones_por_infracciones_leves"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#destinado"/>
@@ -8152,6 +8232,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#destinadas"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#destinado"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -8462,11 +8546,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cual es el otro nombre con el que se conoce a la autoridad de proteccion de datos?</Literal>
+            <Literal>¿Bajo qué otro nombre se conoce a la autoridad de protección de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S143</Literal>
+            <Literal>S142</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -8492,11 +8576,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Como será designado al autoridad de proteccion de datos?</Literal>
+            <Literal>¿Cómo será designada la autoridad de protección de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S144</Literal>
+            <Literal>S143</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -8512,36 +8596,6 @@
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/d"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cual será la duración del cargo de la autoridad de proteccion de datos?</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S146</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Autoridad_de_protección_de_datos_personales"/>
-                <Variable IRI="/apd"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#duración_del_cargo"/>
-                <Variable IRI="/apd"/>
-                <Variable IRI="/dc"/>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/dc"/>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -8582,11 +8636,41 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son las fucnioes o atribuciones asociadas con la autoridad de proteccion de datos personales</Literal>
+            <Literal>¿Cuál será la duración del cargo de la autoridad de protección de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S142</Literal>
+            <Literal>S145</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Autoridad_de_protección_de_datos_personales"/>
+                <Variable IRI="/apd"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#duración_del_cargo"/>
+                <Variable IRI="/apd"/>
+                <Variable IRI="/dc"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/dc"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿Cuáles son las funciones y atribuciones asociadas con la autoridad de protección de datos personales?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S141</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -8612,11 +8696,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son los requisitos que debe cumplir de la autoridad de proteccion de datos para ser designado como autoridad de datos personales</Literal>
+            <Literal>¿Cuáles son los requisitos que debe cumplir la autoridad de protección de datos para ser designada como autoridad de datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S145</Literal>
+            <Literal>S144</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -8632,36 +8716,6 @@
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/rdc"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales serán las razone spara la deestitución de la autoridad de proteccion de datos</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S147</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Autoridad_de_protección_de_datos_personales"/>
-                <Variable IRI="/apd"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#revocación"/>
-                <Variable IRI="/apd"/>
-                <Variable IRI="/r"/>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/r"/>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -8702,7 +8756,37 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>COn que deben cumplir los datos personales para considerarlos con el prinicipio de calidad</Literal>
+            <Literal>¿Cuáles son las razones para revocar el mandato de la autoridad de protección de datos?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S146</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Autoridad_de_protección_de_datos_personales"/>
+                <Variable IRI="/apd"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#revocación"/>
+                <Variable IRI="/apd"/>
+                <Variable IRI="/r"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/r"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿Qué criterios deben cumplir los datos personales para considerarlos bajo el principio de calidad?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8737,7 +8821,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En caso de tratamiento de datos, para validar el principio de calidad cual es el encargado de esto</Literal>
+            <Literal>¿Quién es responsable de validar el principio de calidad en el tratamiento de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8767,11 +8851,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Las categorias epseciales de datos porque tipos de datos estan compuesta</Literal>
+            <Literal>¿Cuáles son las categorías especiales de datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S083</Literal>
+            <Literal>S082</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -8800,7 +8884,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Condiciones para el tratamiento legitimo</Literal>
+            <Literal>¿Cuáles son las condiciones para el tratamiento legítimo de los datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8839,7 +8923,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En caso de que la obtención de datos personales no se la realiza de manera dirtecta con el titular de los datos que se debe realizar</Literal>
+            <Literal>¿Qué procedimientos deben seguirse cuando los datos personales no se obtienen directamente del titular?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8874,7 +8958,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En caso de que los datos en el proceso de consentimiento por el titular qeu se debe dar a conocer al titular</Literal>
+            <Literal>¿Qué información específica debe proporcionarse al titular durante el proceso de obtención de datos directamente del titular?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8909,7 +8993,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que caracteristicas deberia tener la información que se deberia dar a concer al titular en caso de que los datos personale ssean obtenidos de manera directa o indirecta de el</Literal>
+            <Literal>¿Qué características debe tener la información que se proporciona al titular de datos cuando los datos se obtienen directa o indirectamente de él?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8939,7 +9023,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuando el titular puede revocar si consentimiento</Literal>
+            <Literal>¿Cuándo puede un titular revocar su consentimiento?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8969,7 +9053,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Necesita una justificación para la revocación del consentimiento</Literal>
+            <Literal>¿Se necesita una justificación para la revocación del consentimiento?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8999,7 +9083,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>MOdo en que se debería de transmitir la ifnormación en el proceso de consentimiento</Literal>
+            <Literal>¿Cuál es el método adecuado para transmitir información durante el proceso de consentimiento?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9029,7 +9113,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuando se podrá tratar o cumunicar los datos personales</Literal>
+            <Literal>¿En qué situaciones se pueden tratar o comunicar los datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9059,7 +9143,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Condiciones para un consentimiento válido</Literal>
+            <Literal>¿Cuáles son las condiciones para que el consentimiento sea válido?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9119,7 +9203,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Encargo de establecer los plazos para la suspensión o revisión periódica dentro del tratamiento</Literal>
+            <Literal>¿Quién determina los plazos para la suspensión o revisión periódica de los datos personales en el proceso de conservación?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9149,7 +9233,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En que circunstancias se puede realizar una conservacion ampliada de  datos personales</Literal>
+            <Literal>¿En qué situaciones se puede llevar a cabo una conservación ampliada de datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9179,7 +9263,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son los criterios minimos que deberan cumplir los datos en materia especializada</Literal>
+            <Literal>¿Cuáles son los criterios mínimos que los datos en materia especializadas deben cumplir?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9196,7 +9280,7 @@
                 <Variable IRI="/dcm"/>
             </ObjectPropertyAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#están_compuesto_por"/>
+                <ObjectProperty IRI="#están_conformados_por"/>
                 <Variable IRI="/dcm"/>
                 <Variable IRI="/cdc"/>
             </ObjectPropertyAtom>
@@ -9223,7 +9307,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Bajo que principios estaran sujetos los datos en materia especializada</Literal>
+            <Literal>¿Bajo qué principios están sujetos los datos en materia especializada?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9253,7 +9337,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Qué tipos de datos están sujetos a regulaciones especializadas según normativas específicas</Literal>
+            <Literal>¿Qué tipos de datos están sujetos a regulaciones especializadas según normativas específicas?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9283,7 +9367,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuando queda inputable la inexactitud de los datos</Literal>
+            <Literal>¿Cuándo se considera que la inexactitud de los datos no es imputable?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9313,7 +9397,37 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>El delegado debera ser observadoo en su proceso de particpacion del tratamiento de datos ppor que integrantes del sistema de proteccion de datos personales</Literal>
+            <Literal>¿Qué integrantes del sistema de protección de datos supervisarán las actividades asociadas al delegado de protección de datos personales?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S108</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Delegado_de_protección_de_datos_personales"/>
+                <Variable IRI="/dpd"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#deberá_ser_observado_por"/>
+                <Variable IRI="/dpd"/>
+                <Variable IRI="/dop"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/dop"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿En qué circunstancias el responsable y el encargado del tratamiento deben realizar observaciones sobre el delegado de protección de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9329,45 +9443,18 @@
                 <Variable IRI="/dpd"/>
                 <Variable IRI="/dop"/>
             </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/dop"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>El responsible y encargado del tratamiento deberán realizar ciertas observaciones sobre el delegado dentro en los siguientes casos</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S110</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Delegado_de_protección_de_datos_personales"/>
-                <Variable IRI="/dpd"/>
-            </ClassAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#observaciones_del_delegado"/>
                 <Variable IRI="/dop"/>
                 <Variable IRI="/odd"/>
             </DataPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#deberá_ser_observado_por"/>
-                <Variable IRI="/dpd"/>
-                <Variable IRI="/dop"/>
-            </ObjectPropertyAtom>
         </Body>
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/odd"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -9378,11 +9465,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son las fucniones del delegado respecto las actividades de procesamiento de datos el responsible y encargado del tratamiento</Literal>
+            <Literal>¿Cuáles son las funciones del delegado de protección de datos en relación con las actividades de tratamiento de datos realizadas por el responsable y el encargado?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S108</Literal>
+            <Literal>S107</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9411,11 +9498,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuando se designará un delegado de proteccion de datos personales</Literal>
+            <Literal>¿Cuándo se designará un delegado de protección de datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S107</Literal>
+            <Literal>S106</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9441,11 +9528,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>EL caracter incluso de la educación digital sobre que personas recae</Literal>
+            <Literal>¿Sobre qué personas recae el carácter inclusivo de la educación digital?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S080</Literal>
+            <Literal>S079</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9471,11 +9558,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Respecto a que se tiene derecho al acceso y disponibilidad en el derechoa  al educación digital</Literal>
+            <Literal>¿Cuál es el concepto central asociado al ámbito del derecho de la educación digital en la LOPDP?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S078</Literal>
+            <Literal>S077</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9501,11 +9588,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Quienes deben garantizar la educación digital en el derrecho a la aeducación digital</Literal>
+            <Literal>¿Quiénes son responsables de garantizar el derecho a la educación digital?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S079</Literal>
+            <Literal>S078</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9561,7 +9648,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que es lo que se debe dar a concoer en el derecho a la informacion</Literal>
+            <Literal>¿Qué debe ser comunicado en el derecho a la información?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9591,7 +9678,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son las condiciones para la suspensión del tratamiento</Literal>
+            <Literal>¿Cuáles son las condiciones para suspender el tratamiento de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9612,6 +9699,9 @@
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/cst"/>
             </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
@@ -9621,7 +9711,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuando el titular de datos debe recurrir a la autoridad de proteccion de datos personales</Literal>
+            <Literal>¿Cuándo debe recurrir el titular de los datos a la autoridad de protección de datos personales respecto a la suspensión del tratamiento?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9651,7 +9741,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En casod e impugacación de al exactitud de los datos en el derecho a la suspención, unicamente podran ser tratados los datos personales impugados para que escenarios</Literal>
+            <Literal>¿Bajo qué circunstancias pueden tratarse los datos personales impugnados en el derecho a la suspensión?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9681,7 +9771,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En caso de valoraciones automatizadas el titular de los datos podrá realizar ciertas actividades respecto a las decisiones realizadas por valoraciones automatizadas, cuales son estas?</Literal>
+            <Literal>¿Qué actividades puede realizar el titular de los datos en caso de valoraciones automatizadas?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9716,7 +9806,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que tipo de datos  no pueden ser tratados  para el derecho de no ser objetos de valoraciones automatizadas y en que condiciones sí</Literal>
+            <Literal>¿Qué tipo de datos no pueden ser tratados bajo el derecho a no ser objeto de valoraciones automatizadas y en qué condiciones sí?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9751,7 +9841,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que tipos de tratamiento de datos pueden estar sujetos a deciciones automatizadas segun el derecho de no ser objeto de decisiones automatizadas</Literal>
+            <Literal>¿En qué circunstancias el tratamiento de datos puede estar sujeto a decisiones automatizadas conforme al derecho de no ser objeto de tales decisiones automatizadas?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9776,39 +9866,6 @@
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/dst"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cual es el encargado velar por el cumplimiento del derecho de acceso</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S048</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Derecho_de_acceso"/>
-                <Variable IRI="/da"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#derecho_cuenta_encargado"/>
-                <Variable IRI="/da"/>
-                <Variable IRI="/dce"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/dce"/>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -9852,7 +9909,40 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que actividad debe realizar el responsable del tratamiento en lo que respecta al derecho de acceso</Literal>
+            <Literal>¿Quién es responsable de garantizar el cumplimiento del derecho de acceso?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S048</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Derecho_de_acceso"/>
+                <Variable IRI="/da"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#derecho_cuenta_encargado"/>
+                <Variable IRI="/da"/>
+                <Variable IRI="/dce"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/dce"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿Cuáles son las actividades que el responsable del tratamiento de datos debe llevar a cabo con respecto al derecho de acceso?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9890,11 +9980,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En que tiempo deberá ser atendido el derecho de acceso pro el responsable del tratamiento</Literal>
+            <Literal>¿Cuántos días debo esperar para obtener mi información personal, de acuerdo con lo establecido en el derecho de acceso?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S050</Literal>
+            <Literal>P05</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9928,11 +10018,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>¿Cuántos días debo esperar para obtener mi información personal, de acuerdo con lo establecido en el derecho de acceso?</Literal>
+            <Literal>¿Cuál es el plazo para atender las solicitudes de acceso por parte del responsable del tratamiento?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>P05</Literal>
+            <Literal>S050</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -9999,7 +10089,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En donde se puede consultar los datos acorde al derecho de consulta?</Literal>
+            <Literal>¿En qué entidad se pueden consultar los datos personales según lo establecido en el derecho de consulta?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10029,7 +10119,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que garantiza el derecho de consuta</Literal>
+            <Literal>¿Qué características debe tener la consulta en el marco del derecho a la consulta?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10059,7 +10149,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Quien es el encargado del derecho de eliminiacion</Literal>
+            <Literal>¿Quién es el responsable de garantizar el derecho de eliminación?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10092,7 +10182,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que actividades realiza el responsable del tratamiento dentro del derecho de eliminacion</Literal>
+            <Literal>¿Qué actividades lleva a cabo el responsable del tratamiento de datos dentro del derecho de eliminación?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10130,42 +10220,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En que situaciones se pueden suprimir los datos personales</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S055</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Derecho_de_eliminación"/>
-                <Variable IRI="/de"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#cuándo_se_puede_eliminar_los_datos_personales"/>
-                <Variable IRI="/dce"/>
-                <Variable IRI="/cedp"/>
-            </DataPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#derecho_cuenta_encargado"/>
-                <Variable IRI="/de"/>
-                <Variable IRI="/dce"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/cedp"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cual es el plazo de atencion del derecho de eliminación</Literal>
+            <Literal>¿Cuál es el plazo de atención para las solicitudes de eliminación de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10203,11 +10258,44 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son las considicones para garantizar el derecho de acceso para los titulares de datos crediticios</Literal>
+            <Literal>¿En qué circunstancias se pueden eliminar los datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S093</Literal>
+            <Literal>S055</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Derecho_de_eliminación"/>
+                <Variable IRI="/de"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#cuándo_se_puede_eliminar_los_datos_personales"/>
+                <Variable IRI="/dce"/>
+                <Variable IRI="/cedp"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/cedp"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿Cuáles son las condiciones para garantizar el derecho de acceso para los titulares de datos crediticios?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S092</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -10233,11 +10321,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que debería realizar el titular de datos crediticios respecto al derecho de actualización o eliminación  de datos crediticios</Literal>
+            <Literal>¿Qué acciones debe realizar el titular de datos crediticios con respecto al derecho de actualización, rectificación o eliminación de datos crediticios?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S095</Literal>
+            <Literal>S094</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -10263,11 +10351,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son los derechos de los titulares de datos crediticios</Literal>
+            <Literal>¿Cuáles son los derechos de los titulares de datos crediticios?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S092</Literal>
+            <Literal>S091</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -10293,11 +10381,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que debería realizar la fuente de información respecto a la solicit de actualización, eliminación realziarda por el titular de datos crediticios</Literal>
+            <Literal>¿Qué debe hacer la fuente de información respecto a la solicitud de actualización, rectificación o eliminación realizada por el titular de datos crediticios?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S096</Literal>
+            <Literal>S095</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -10323,11 +10411,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son los mecanismos para garantizar le derecho de acceso a los datos personales del titular de datos crediticios</Literal>
+            <Literal>¿Cuáles son los mecanismos para asegurar el derecho de acceso a los datos personales de los titulares de datos crediticios?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S094</Literal>
+            <Literal>S093</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -10353,7 +10441,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Quien es el que controla el derecho de oposicion</Literal>
+            <Literal>¿Quién es responsable de garantizar el derecho de oposición?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10386,7 +10474,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que actividades debe ser realizada por el responsable del tratamiento en derecho a oposición</Literal>
+            <Literal>¿Qué actividades debe llevar a cabo el responsable del tratamiento de datos en relación con el derecho de oposición?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10424,7 +10512,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Numero de días en los que se pueden atender el derecho de oposición</Literal>
+            <Literal>¿Cuántos días tiene el responsable del tratamiento de datos para atender las solicitudes de oposición?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10462,7 +10550,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Enque casos el titualr se puede oponer al tratamiento de los datos</Literal>
+            <Literal>¿En qué situaciones puede oponerse el titular al tratamiento de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10492,7 +10580,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En casod ela mercadotecnica directa que sucede respecto al tratamiento</Literal>
+            <Literal>¿Qué sucede con el tratamiento de datos en caso de mercadotecnia directa?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10522,7 +10610,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Quien es el encargado de velar por el derecho de rectificación y actualización</Literal>
+            <Literal>¿Quién es responsable de garantizar el derecho de rectificación y actualización?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10555,7 +10643,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Actividad que debe realizar el responsable del tratameinto respecto al derecho de rectificacion y actualización</Literal>
+            <Literal>¿Qué actividades debe realizar el responsable del tratamiento de datos en relación con el derecho de rectificación y actualización?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10593,7 +10681,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Plazo para atender la rectificacion y actualización</Literal>
+            <Literal>¿Cuál es el plazo para atender las solicitudes de rectificación y actualización?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10670,7 +10758,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Responsables de canalizar ele ejercicio de derechos</Literal>
+            <Literal>¿Quién es el responsable de canalizar el ejercicio de derechos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10706,7 +10794,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Significado de canalizar ele ejercicio de derechos</Literal>
+            <Literal>¿Cuál es el significado de canalizar el ejercicio de derechos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10736,7 +10824,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Existen limitaciones del ejercicio de derechos respecto a leyes complementarias</Literal>
+            <Literal>¿Existen limitaciones del ejercicio de derechos según las leyes complementarias?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10766,11 +10854,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Quienes deben dar el capacitación  e información respecto al uso y taratamiento responsible de datos</Literal>
+            <Literal>¿Quiénes deben proporcionar capacitación e información sobre el uso y tratamiento responsable de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S082</Literal>
+            <Literal>S081</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -10796,11 +10884,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En que consiste el ejercicio de derechos</Literal>
+            <Literal>¿En qué consiste el ejercicio de derechos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S081</Literal>
+            <Literal>S080</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -10826,11 +10914,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuando se considera una sancion graves por el encargado del tratamiento de datos</Literal>
+            <Literal>¿Cuándo se considera una sanción grave por parte del encargado del tratamiento de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S131</Literal>
+            <Literal>S130</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -10858,48 +10946,6 @@
             </BuiltInAtom>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuando se considera una sancion leve por el encargado del tratamiento de datos</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S130</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Infracciones_leves"/>
-                <Variable IRI="/il"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#cometidas_por"/>
-                <Variable IRI="/il"/>
-                <Variable IRI="/et"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#infracciones_leves"/>
-                <Variable IRI="/et"/>
-                <Variable IRI="/eil"/>
-            </DataPropertyAtom>
-            <ClassAtom>
-                <Class IRI="#Encargado_del_tratamiento"/>
-                <Variable IRI="/et"/>
-            </ClassAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/eil"/>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -10952,7 +10998,49 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>P05-Porquien es autorizada la entidad certificadora</Literal>
+            <Literal>¿Cuándo se considera una sanción leve por parte del encargado del tratamiento de datos?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S129</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Infracciones_leves"/>
+                <Variable IRI="/il"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#cometidas_por"/>
+                <Variable IRI="/il"/>
+                <Variable IRI="/et"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#infracciones_leves"/>
+                <Variable IRI="/et"/>
+                <Variable IRI="/eil"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Encargado_del_tratamiento"/>
+                <Variable IRI="/et"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/eil"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿Por quién es autorizada la entidad certificadora?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10982,7 +11070,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>No se podrá aplciar el derecho a no sera objeto de una decisión basada única o parcialmente en valoraciones automatizadas en os siguientes escenarios</Literal>
+            <Literal>¿En qué escenarios no se aplica el derecho a no ser objeto de decisiones basadas en valoraciones automatizadas?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11012,7 +11100,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son las excepciones de los derechos de rectificación, actualización, eliminación, oposición, anulación y portabilidad</Literal>
+            <Literal>¿Cuáles son las excepciones a los derechos de rectificación, actualización, eliminación y oposición?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11042,7 +11130,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Se puede revocar el derecho de antemano mediante contratos apra la revocación del derecho anoser badado en valoraciones automatizadas</Literal>
+            <Literal>¿Es posible revocar el derecho a no ser sujeto de decisiones automatizadas a través de contratos previos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11072,7 +11160,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que consideraciones se deben tomar en cuenta al momento de realizar el tratamiento para finalidades distintas a las que fueron recogidas</Literal>
+            <Literal>¿Qué consideraciones se deben tener al tratar datos para finalidades distintas a las que fueron recogidas inicialmente?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11107,7 +11195,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Si las finalidades para el tratamiento son distintas, solo se permite el tratamiento</Literal>
+            <Literal>¿Se permite el tratamiento de datos si las finalidades para dicho tratamiento son distintas a las originalmente recogidas?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11142,7 +11230,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Como deben ser las finalidades asociadas al tratamiento de datos personales</Literal>
+            <Literal>¿Cuáles son las características que deben tener las finalidades asociadas al tratamiento de datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11172,7 +11260,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>P06-Fuente de acceso publico tienen la caracteristica de ser</Literal>
+            <Literal>¿Qué característica tienen las fuentes de acceso público?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11192,42 +11280,6 @@
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/tc"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>P01</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S001</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Inaplicabilidad"/>
-                <Variable IRI="/in"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#explicación_de_concepto_de_inaplicabilidad"/>
-                <Variable IRI="/x"/>
-                <Variable IRI="/exp"/>
-            </DataPropertyAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#es_la_no_aplicación_de_la_ley_en"/>
-                <Variable IRI="/in"/>
-                <Variable IRI="/x"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/x"/>
-                <Variable IRI="/exp"/>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -11274,7 +11326,43 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Quien es el de implementar el principio de independencia de control</Literal>
+            <Literal>¿Bajo qué conceptos la LOPDP no se puede aplicar?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S001</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Inaplicabilidad"/>
+                <Variable IRI="/in"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#explicación_de_concepto_de_inaplicabilidad"/>
+                <Variable IRI="/x"/>
+                <Variable IRI="/exp"/>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#es_la_no_aplicación_de_la_ley_en"/>
+                <Variable IRI="/in"/>
+                <Variable IRI="/x"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/x"/>
+                <Variable IRI="/exp"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿Quién tiene la responsabilidad de implementar el principio de independencia de control?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11304,7 +11392,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son las acciones que son llevadas por la autoridad de  proteccion de datos personales respecto al principio de independencia de control</Literal>
+            <Literal>¿Cuáles son las acciones llevadas a cabo por la autoridad de protección de datos personales en relación con el principio de independencia de control?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11339,11 +11427,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuando se considera una sancion grave por el reposanble del tratamiento de datos</Literal>
+            <Literal>¿Cuándo se considera una sanción grave por parte del responsable del tratamiento de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S129</Literal>
+            <Literal>S128</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -11381,11 +11469,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuando se considera una sancion leve por el reposanble del tratamiento de datos</Literal>
+            <Literal>¿Cuándo se considera una sanción leve por parte del responsable del tratamiento de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S128</Literal>
+            <Literal>S127</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -11424,7 +11512,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>P03</Literal>
+            <Literal>¿Quiénes forman parte del sistema de protección de datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11490,7 +11578,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que es el interes legitimo</Literal>
+            <Literal>¿Qué se entiende por interés legítimo?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11523,7 +11611,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Por quien son establecidos los mecanismos de revocamiento del consentimiento</Literal>
+            <Literal>¿Quién establece los mecanismos de revocamiento del consentimiento?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11553,7 +11641,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que deben garantizar los mecanismos de revocamiento del consentimiento</Literal>
+            <Literal>¿Qué deben garantizar los mecanismos de revocación del consentimiento?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11583,7 +11671,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Como deben ser los mecanismos de revocamiento</Literal>
+            <Literal>¿Cómo deben ser los mecanismos de revocamiento?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11613,11 +11701,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Quien será el encargado de aplicar las medidas correctivas</Literal>
+            <Literal>¿Quién es responsable de imponer las medidas correctivas?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S121</Literal>
+            <Literal>S120</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -11634,6 +11722,9 @@
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/mcsip"/>
             </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
@@ -11643,11 +11734,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Antes de dictar las medidas correctivas que se debe realizar por parte de la autoridad de proteccion de datos personales</Literal>
+            <Literal>¿Qué pautas deben seguirse antes de dictar medidas correctivas por parte de la autoridad de protección de datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S123</Literal>
+            <Literal>S122</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -11673,11 +11764,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En que casos se incurrira a la utilizacion de las medidas correctivas</Literal>
+            <Literal>¿En qué circunstancias se recurre a la utilización de medidas correctivas?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S124</Literal>
+            <Literal>S123</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -11703,11 +11794,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales podrán ser las medidas correctivas aplicables</Literal>
+            <Literal>¿Cuáles son las posibles medidas correctivas que pueden aplicarse?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S122</Literal>
+            <Literal>S121</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -11733,11 +11824,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En que casos se podrá aplciar medidas correctivas</Literal>
+            <Literal>¿En qué situaciones se pueden aplicar medidas correctivas?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S120</Literal>
+            <Literal>S119</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -11763,11 +11854,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que acciones realizara la autoridad de proteccion de datosd personales para presuntos cometimientos de infracciones graves cometidos por el resposnable o encargado de tratamiento de datos personales</Literal>
+            <Literal>¿Qué medidas adoptará la autoridad de protección de datos personales frente a presuntas infracciones graves cometidas por el responsable o encargado del tratamiento de datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S126</Literal>
+            <Literal>S125</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -11793,11 +11884,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que acciones realizara la autoridad de proteccion de datosd personales para presuntos cometimientos de infracciones leves cometidos por el resposnable o encargado de tratamiento de datos personales</Literal>
+            <Literal>¿Qué acciones tomará la autoridad de protección de datos personales frente a presuntas infracciones leves cometidas por el responsable o encargado del tratamiento de datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S125</Literal>
+            <Literal>S124</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -11823,11 +11914,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que acciones realizara la autoridad de proteccion de datosd personales para presuntos cometimientos de infracciones muy graves cometidos por el resposnable o encargado de tratamiento de datos personales</Literal>
+            <Literal>¿Qué acciones llevará a cabo la autoridad de protección de datos personales frente a presuntas infracciones muy graves cometidas por el responsable o encargado del tratamiento de datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S127</Literal>
+            <Literal>S126</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -11853,11 +11944,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Por quien podran ser hechas las reclamaciones</Literal>
+            <Literal>¿Quién tiene la facultad de presentar reclamaciones sobre la forma en que se está llevando a cabo el tratamiento de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S111</Literal>
+            <Literal>S110</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -11883,11 +11974,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Hacia quien van destinadas las reclamaciones</Literal>
+            <Literal>¿Hacia quién van dirigidas las reclamaciones?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S112</Literal>
+            <Literal>S111</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -11913,11 +12004,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Ante una negación o no respuesta del reclamo dentro del plazo establecido que pdora realizar el titualr de lso datos</Literal>
+            <Literal>¿Qué acciones puede tomar el titular de los datos ante la negativa o falta de respuesta a una reclamación después de que haya vencido el plazo establecido de respuesta a la misma?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S119</Literal>
+            <Literal>S118</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -11943,11 +12034,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que se debe realizar antes de proceder a dar una respuesta respecto a las reclamaciones</Literal>
+            <Literal>¿Qué acciones deben tomarse antes de responder a una reclamación?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S118</Literal>
+            <Literal>S117</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -11973,11 +12064,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que se debe contemplar al momento de responder una reclamacion</Literal>
+            <Literal>¿Qué consideraciones deben tenerse al responder a una reclamación?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S117</Literal>
+            <Literal>S116</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12003,11 +12094,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Como podran ser hechas las reclamaciones</Literal>
+            <Literal>¿De qué maneras pueden realizarse las reclamaciones?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S113</Literal>
+            <Literal>S112</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12033,11 +12124,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Por que medios se podran realizar las reclamaciones</Literal>
+            <Literal>¿A través de qué medios se pueden presentar las reclamaciones?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S114</Literal>
+            <Literal>S113</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -12063,11 +12154,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que se podra presentar dentro de una reclamacion</Literal>
+            <Literal>¿Qué se puede presentar como parte de una reclamación?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S116</Literal>
+            <Literal>S115</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12093,11 +12184,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Respecto a que se puede referir en las reclamaciones el titular de los datos</Literal>
+            <Literal>¿Sobre qué asuntos pueden referirse las reclamaciones presentadas por el titular de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S115</Literal>
+            <Literal>S114</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12123,7 +12214,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Con que tuvo que haber cumplido el responsable del tratamiento respecto al principio de responsabildia dproactiva</Literal>
+            <Literal>¿Con qué debe cumplir el responsable del tratamiento de datos en relación con la responsabilidad proactiva?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12153,7 +12244,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>A quien debe rendir cuentas respecto el tratameinto de los datos el responsable del tratamiento</Literal>
+            <Literal>¿A quién debe rendir cuentas el responsable del tratamiento de datos en relación con el manejo de los datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12183,7 +12274,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Como se puede verificar el cumplimiento de las actividades respecto al prinipio de responsabilidad proactiva y demostrable</Literal>
+            <Literal>¿Cuáles métodos pueden emplearse para asegurar que se están cumpliendo las actividades relacionadas con el principio de responsabilidad proactiva y demostrable?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12213,7 +12304,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que actividades se deben de implementar respecto al prinicipio de responsabilidad proactiva y demostrada segun el responsable de tratamiento</Literal>
+            <Literal>¿Qué actividades se deben realizar en relación con el principio de responsabilidad proactiva y demostrada por parte del responsable del tratamiento?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12243,11 +12334,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son las obligaciones del encargado y responsible del tratamiento</Literal>
+            <Literal>¿Cuáles son las obligaciones del responsable y encargado del tratamiento de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S106</Literal>
+            <Literal>S105</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12264,6 +12355,9 @@
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/o"/>
             </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
+            </BuiltInAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
@@ -12273,7 +12367,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Tratamiento ante la revocación de consentimiento</Literal>
+            <Literal>¿Cuál es el efecto legal de la revocación del consentimiento en relación con el tratamiento previamente realizado?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12308,11 +12402,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Por que tipo de sansiones estan embueltas las sanciones</Literal>
+            <Literal>¿Qué tipos de sanciones están incluidos en las sanciones?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S132</Literal>
+            <Literal>S131</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12331,39 +12425,6 @@
             </BuiltInAtom>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Quien será el integrante del sistema de proteccion de datos personales encargado de ejercer las sanciones independientemente de la gravedad de la sancion</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S133</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Sanciones"/>
-                <Variable IRI="/s"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#serán_impuestas_por"/>
-                <Variable IRI="/s"/>
-                <Variable IRI="/si"/>
-            </ObjectPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/si"/>
-            </BuiltInAtom>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -12407,11 +12468,77 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En base a que se considera la multa al momento cuando estan van dirigidas hacia responsables o encargados del tratamiento o por un tercero que puede ser una entidad de derechos privado o publico</Literal>
+            <Literal>¿Quién será el encargado de imponer las sanciones en el sistema de protección de datos personales, independientemente de la gravedad de la sanción?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S141</Literal>
+            <Literal>S132</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Sanciones"/>
+                <Variable IRI="/s"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#serán_impuestas_por"/>
+                <Variable IRI="/s"/>
+                <Variable IRI="/si"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/si"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿Hacia que tipo de personas pueden dirigirse las infracciones graves?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S137</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Sanciones_por_infracciones_graves"/>
+                <Variable IRI="/sig"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#destinadas"/>
+                <Variable IRI="/sig"/>
+                <Variable IRI="/d"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/d"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿En base a qué se determina la multa cuando se cometen infracciones graves por parte del responsable, el encargado del tratamiento o terceros?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S140</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12440,11 +12567,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales serán las multas y acciones por infracciones leves cuando estan van dirigidas responsables o encargados del tratamiento o por un tercero que puede ser una entidad de derechos privado o publico</Literal>
+            <Literal>¿Cuáles son las multas y acciones por infracciones graves cuando están dirigidas hacia el responsable, el encargado del tratamiento o terceros?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S140</Literal>
+            <Literal>S139</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12473,11 +12600,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales serán las multas y acciones por infracciones graves cuando estan van dirigidas hacia servidores o fucnionarios publicos</Literal>
+            <Literal>¿Cuáles son las multas y acciones por infracciones graves cuando están dirigidas hacia servidores o funcionarios públicos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S139</Literal>
+            <Literal>S138</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12506,26 +12633,26 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Respecto a que tipo de personas van destinadas las sanciones por infracciones Graves</Literal>
+            <Literal>¿Hacia que tipo de personas pueden dirigirse las infracciones leves? ¿Hacia que tipo de personas pueden dirigirse las infracciones leves?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S138</Literal>
+            <Literal>S133</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
-                <Class IRI="#Sanciones_por_infracciones_graves"/>
-                <Variable IRI="/sig"/>
+                <Class IRI="#Sanciones_por_infracciones_leves"/>
+                <Variable IRI="/sil"/>
             </ClassAtom>
             <DataPropertyAtom>
-                <DataProperty IRI="#van_destinadas_hacia"/>
-                <Variable IRI="/sig"/>
-                <Variable IRI="/vda"/>
+                <DataProperty IRI="#destinadas"/>
+                <Variable IRI="/sil"/>
+                <Variable IRI="/d"/>
             </DataPropertyAtom>
         </Body>
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/vda"/>
+                <Variable IRI="/d"/>
             </BuiltInAtom>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
@@ -12539,11 +12666,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En base a que se considera la multa al momento cuando estan van dirigidas hacia responsables o encargados del tratamiento o por un tercero que puede ser una entidad de derechos privado o publico</Literal>
+            <Literal>¿En base a qué se determina la multa cuando se cometen infracciones leves por parte del responsable, el encargado del tratamiento o terceros?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S137</Literal>
+            <Literal>S136</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12560,6 +12687,9 @@
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/dm"/>
             </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#limit">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
         </Head>
     </DLSafeRule>
     <DLSafeRule>
@@ -12569,11 +12699,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales serán las multas y acciones por infracciones leves cuando estan van dirigidas responsables o encargados del tratamiento o por un tercero que puede ser una entidad de derechos privado o publico</Literal>
+            <Literal>¿Cuáles son las multas y acciones por infracciones leves cuando están dirigidas hacia el responsable, el encargado del tratamiento o terceros?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S136</Literal>
+            <Literal>S135</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12602,11 +12732,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales serán las multas y acciones por infracciones leves cuando estan van dirigidas hacia servidores o fucnionarios publicos</Literal>
+            <Literal>¿Cuáles son las multas y acciones por infracciones leves cuando están dirigidas hacia servidores o funcionarios públicos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S135</Literal>
+            <Literal>S134</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -12635,37 +12765,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Respecto a que tipo de personas van destinadas las sanciones por infracciones leves</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S134</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Sanciones_por_infracciones_leves"/>
-                <Variable IRI="/sil"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#van_destinadas_hacia"/>
-                <Variable IRI="/sil"/>
-                <Variable IRI="/vda"/>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/vda"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Quienes son los responsables de implementar las medidas de seguridad de datos</Literal>
+            <Literal>¿Quiénes son responsables de implementar las medidas de seguridad de los datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12695,7 +12795,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que tipos de medidas se puede implementar para los datos personales</Literal>
+            <Literal>¿Qué tipos de medidas de seguridad pueden implementarse para proteger los datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12725,7 +12825,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Por quien es otorgado los sellos de certificacion</Literal>
+            <Literal>¿Quién otorga los sellos de certificación?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12755,7 +12855,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Escenario de aplicacion territorial</Literal>
+            <Literal>¿Cuáles son los escenarios de aplicación territorial?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12791,7 +12891,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Por que tipo de datos se encuentra están compuestos la ley en lo que respecta el tipo de datos</Literal>
+            <Literal>¿Cómo se clasifican los tipos de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12827,7 +12927,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En casod e inpugnacion por ionexactitud de datos por parte del titular de datos al responsable del tratamiento que deberá hacer este</Literal>
+            <Literal>¿Cómo debe actuar el responsable del tratamiento ante la impugnación de la exactitud de los datos por parte del titular?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12862,7 +12962,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>A donde debe recurrir el titular en  caso de existir problemas con el responsable del tratamiento respecto a la suspensión del tratamiento</Literal>
+            <Literal>¿Dónde debe dirigirse el titular de los datos si experimenta problemas relacionados con la suspensión del tratamiento de datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12882,36 +12982,6 @@
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/st"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Desde que edad el titular de datos puede dar el sonsentimiento explicto de tratamiento de datosa personales</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S074</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Titular"/>
-                <Variable IRI="/t"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#puede_dar_consentimiento_explícito_para_el_tratamiento"/>
-                <Variable IRI="/t"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/t"/>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -12952,11 +13022,41 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Una persona que ha fallecido queda bajo la tutela del procesamiento de datos personales de?</Literal>
+            <Literal>¿A partir de qué edad puede dar el titular su consentimiento explícito para el tratamiento de datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S085</Literal>
+            <Literal>S074</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Titular"/>
+                <Variable IRI="/t"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#puede_dar_consentimiento_explícito_para_el_tratamiento"/>
+                <Variable IRI="/t"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/t"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿Quién tiene la autoridad para otorgar el consentimiento para el procesamiento de datos personales de una persona fallecida?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S084</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -12982,11 +13082,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que puede hacer el titular de derechos sucesores respecto al ejercicio de derechos de la perosna fallecida de la que representa</Literal>
+            <Literal>¿Qué acciones pueden realizar los titulares de derechos sucesores en relación con el ejercicio de los derechos de una persona fallecida a la que representan?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S086</Literal>
+            <Literal>S085</Literal>
         </Annotation>
         <Body>
             <ObjectPropertyAtom>
@@ -13052,7 +13152,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que se debe realizar cuando se realice el tratamiento bajo itneres legítimo</Literal>
+            <Literal>¿Qué acciones se deben tomar al realizar el tratamiento bajo interés legítimo?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13082,11 +13182,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales serán los fines del tratameitno de datos crediticios</Literal>
+            <Literal>¿Con qué finalidad se puede llevar a cabo el tratamiento de datos crediticios?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S090</Literal>
+            <Literal>S089</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -13112,11 +13212,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuales son las fuentes de donde se puedieron obtener los datos crediticios</Literal>
+            <Literal>¿Cuáles son las fuentes de las que pueden obtenerse los datos crediticios?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S089</Literal>
+            <Literal>S088</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -13142,11 +13242,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que fines no están admitidos dentro del tratamiento de datos crediticios</Literal>
+            <Literal>¿Qué acciones están restringidas en relación con el tratamiento de datos crediticios?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S091</Literal>
+            <Literal>S090</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -13172,11 +13272,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Sobre que puede informar el tratameinto de datos crediticios</Literal>
+            <Literal>¿Qué información puede proporcionar el tratamiento de datos crediticios?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S088</Literal>
+            <Literal>S087</Literal>
         </Annotation>
         <Body>
             <DataPropertyAtom>
@@ -13202,11 +13302,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que permite evalaur el tratamiento de datos crediticios</Literal>
+            <Literal>¿Qué aspectos permiten evaluar el tratamiento de datos crediticios?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S087</Literal>
+            <Literal>S086</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -13232,11 +13332,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En que circunstancias se debe autorizar el tratamiento de datos de salud por parte de la autoiridad de proteccion de datos personales?</Literal>
+            <Literal>¿Quién es el responsable de otorgar la autorización para el tratamiento de datos relativos a la salud?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S101</Literal>
+            <Literal>S100</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -13252,41 +13352,6 @@
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/tdrsdsa"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En que scircunstancias se debe autorizar el tratamiento de datos de salud por parte de la autoiridad de proteccion de datos personales?</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S102</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Tratamiento_de_datos_relativos_a_salud"/>
-                <Variable IRI="/tds"/>
-            </ClassAtom>
-            <ObjectPropertyAtom>
-                <ObjectProperty IRI="#deberá_ser_autorizado_por"/>
-                <Variable IRI="/tds"/>
-                <Variable IRI="/tdrsdsa"/>
-            </ObjectPropertyAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#acciones_respecto_al_tratamiento_de_datos_de_salud"/>
-                <Variable IRI="/tdrsdsa"/>
-                <Variable IRI="/artds"/>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/artds"/>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -13332,11 +13397,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Como es el proceso de consentimiento en los datos relativos a sdalud</Literal>
+            <Literal>¿En qué circunstancias debe la autoridad de protección de datos personales autorizar el tratamiento de datos de salud?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S098</Literal>
+            <Literal>S101</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -13344,19 +13409,19 @@
                 <Variable IRI="/tds"/>
             </ClassAtom>
             <ObjectPropertyAtom>
-                <ObjectProperty IRI="#en_lo_que_respecta_a_el"/>
+                <ObjectProperty IRI="#deberá_ser_autorizado_por"/>
                 <Variable IRI="/tds"/>
-                <Variable IRI="/ctds"/>
+                <Variable IRI="/tdrsdsa"/>
             </ObjectPropertyAtom>
             <DataPropertyAtom>
-                <DataProperty IRI="#para_datos_relativos_a_salud_sin_consentimiento"/>
-                <Variable IRI="/ctds"/>
-                <Variable IRI="/cdrs"/>
+                <DataProperty IRI="#acciones_respecto_al_tratamiento_de_datos_de_salud"/>
+                <Variable IRI="/tdrsdsa"/>
+                <Variable IRI="/artds"/>
             </DataPropertyAtom>
         </Body>
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/cdrs"/>
+                <Variable IRI="/artds"/>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -13402,26 +13467,31 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Para la autorizacion del tratanmeintop de ddatos de salud anonimizados por parte de la Autoridad de protección de datos perosnales que se debe poroprocionar para cumplir con dicha autorizacion</Literal>
+            <Literal>¿Cómo es el proceso de consentimiento para el tratamiento de datos relativos a la salud cuando se lleva a cabo sin el consentimiento del titular de los datos?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S103</Literal>
+            <Literal>S097</Literal>
         </Annotation>
         <Body>
-            <DataPropertyAtom>
-                <DataProperty IRI="#autorización_de_tratamiento_de_datos_de_salud_anonimizados"/>
-                <Variable IRI="/tds"/>
-                <Variable IRI="/atds"/>
-            </DataPropertyAtom>
             <ClassAtom>
                 <Class IRI="#Tratamiento_de_datos_relativos_a_salud"/>
                 <Variable IRI="/tds"/>
             </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#en_lo_que_respecta_a_el"/>
+                <Variable IRI="/tds"/>
+                <Variable IRI="/ctds"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#para_datos_relativos_a_salud_sin_consentimiento"/>
+                <Variable IRI="/ctds"/>
+                <Variable IRI="/cdrs"/>
+            </DataPropertyAtom>
         </Body>
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/atds"/>
+                <Variable IRI="/cdrs"/>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -13462,11 +13532,41 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>En que escenarios se puede realizar el tratamiento de datos sin la necesidad del consentimiento del titular</Literal>
+            <Literal>¿Qué requisitos deben cumplirse para obtener la autorización para el tratamiento de datos relativos a salud por parte de la Autoridad de Protección de Datos Personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S099</Literal>
+            <Literal>S102</Literal>
+        </Annotation>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#autorización_de_tratamiento_de_datos_de_salud_anonimizados"/>
+                <Variable IRI="/tds"/>
+                <Variable IRI="/atds"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Tratamiento_de_datos_relativos_a_salud"/>
+                <Variable IRI="/tds"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/atds"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿En qué situaciones se puede realizar el tratamiento de datos sin la necesidad del consentimiento del titular?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S098</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -13482,36 +13582,6 @@
         <Head>
             <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
                 <Variable IRI="/eatds"/>
-            </BuiltInAtom>
-        </Head>
-    </DLSafeRule>
-    <DLSafeRule>
-        <Annotation>
-            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Bajo que condiciones se puede realizar el tratamiento de datos por entes privada o publicas</Literal>
-        </Annotation>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S105</Literal>
-        </Annotation>
-        <Body>
-            <ClassAtom>
-                <Class IRI="#Tratamiento_de_datos_relativos_a_salud"/>
-                <Variable IRI="/tds"/>
-            </ClassAtom>
-            <DataPropertyAtom>
-                <DataProperty IRI="#escenarios_para_el_tratamiento_por_entes_privados_y_públicos"/>
-                <Variable IRI="/tds"/>
-                <Variable IRI="/eptepp"/>
-            </DataPropertyAtom>
-        </Body>
-        <Head>
-            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
-                <Variable IRI="/eptepp"/>
             </BuiltInAtom>
         </Head>
     </DLSafeRule>
@@ -13552,11 +13622,41 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Con que fines pueden ser tratados los datos relativos a salud que consenten dentro de sistema Nacional de salud por entes privadas o publicas</Literal>
+            <Literal>¿Bajo qué condiciones pueden los entes públicos y privados llevar a cabo el tratamiento de datos relacionados con la salud?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
             <Literal>S104</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Tratamiento_de_datos_relativos_a_salud"/>
+                <Variable IRI="/tds"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#escenarios_para_el_tratamiento_por_entes_privados_y_públicos"/>
+                <Variable IRI="/tds"/>
+                <Variable IRI="/eptepp"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="/eptepp"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>¿Con qué fines pueden ser tratados los datos relativos a la salud dentro del Sistema Nacional de Salud por entidades públicas y privadas?</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S103</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -13582,11 +13682,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Quienes son los encargados de tratar los datos personales relativos a salud</Literal>
+            <Literal>¿Quiénes son responsables de tratar los datos personales relativos a la salud?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S097</Literal>
+            <Literal>S096</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -13612,11 +13712,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Quien debe supervisar el tratamiento de datos cuando las actividades a las que s esomente n los datos relativos de salud estan relacionadas con la gestion de los servicios de salud</Literal>
+            <Literal>¿Quién debe supervisar el tratamiento de datos cuando las actividades que involucran datos relativos a la salud están relacionadas con la gestión de los servicios de salud?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S100</Literal>
+            <Literal>S099</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -13642,11 +13742,11 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Cuando se puede realizar el procesamiento de datos sensibles</Literal>
+            <Literal>¿Bajo qué circunstancias se puede realizar el procesamiento de datos sensibles, incluso cuando no es válido el tratamiento de datos sensibles?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-            <Literal>S084</Literal>
+            <Literal>S083</Literal>
         </Annotation>
         <Body>
             <ClassAtom>
@@ -13672,7 +13772,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Que son los vicios de consentimiento</Literal>
+            <Literal>¿Cuál es la descripción de vicios de consentimiento?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13705,7 +13805,7 @@
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-            <Literal>Afecta la vulnerabilidad de la seguridad</Literal>
+            <Literal>¿Qué aspectos afectan la vulnerabilidad de la seguridad de los datos personales?</Literal>
         </Annotation>
         <Annotation>
             <AnnotationProperty abbreviatedIRI="rdfs:label"/>

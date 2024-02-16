@@ -1622,7 +1622,3 @@ Autoridad_de_protección_de_datos_personales(?apd) ^ revocación(?apd, ?r) -> sq
 ```  
 **Respuesta proporcionada por la ontología:**  
 ![alt text](./Imagenes_preguntas/S-146.png)
-
-
-
-

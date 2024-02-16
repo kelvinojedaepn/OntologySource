@@ -11,7 +11,7 @@ A continuación, se presentan una serie de preguntas que la ontología puede res
 Inaplicabilidad(?in) ^ explicación_de_concepto_de_inaplicabilidad(?x, ?exp) ^ es_la_no_aplicación_de_la_ley_en(?in, ?x) -> sqwrl:select(?x, ?exp)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](./Imagenes_preguntas/S001.png)  
+![alt text](./Imagenes_preguntas/S-1.png)  
 
 ## Pregunta: S002
 **Planteamiento de la pregunta:**
@@ -22,7 +22,7 @@ Inaplicabilidad(?in) ^ explicación_de_concepto_de_inaplicabilidad(?x, ?exp) ^ e
 se_aplica_la_ley_en(?t, ?apt) ^ escenario_de_aplicación_territorial(?apt, ?esc) ^ Territorial(?t) -> sqwrl:select(?apt, ?esc)
 ```
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-2.png)  
+![alt text](./Imagenes_preguntas/S-2.png)  
 
 ## Pregunta: S003
 **Planteamiento de la pregunta:**
@@ -34,7 +34,7 @@ se_aplica_la_ley_en(?t, ?apt) ^ escenario_de_aplicación_territorial(?apt, ?esc)
 Integrantes_del_sistema_de_protección_de_datos_personales(?int) ^ están_compuesto_por(?int, ?p) -> sqwrl:select(?p) ^ sqwrl:limit(6)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-3.png)  
+![alt text](./Imagenes_preguntas/S-3.png)  
 
 ## Pregunta: S004
 **Planteamiento de la pregunta:**
@@ -45,7 +45,7 @@ Integrantes_del_sistema_de_protección_de_datos_personales(?int) ^ están_compue
 Tipos_de_datos(?td) ^ tipos_de_datos_están_compuestos_por(?td, ?cp) ^ descripción(?cp, ?d) -> sqwrl:select(?cp, ?d)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-4.png)  
+![alt text](./Imagenes_preguntas/S-4.png)  
 
 ## Pregunta: S005
 **Planteamiento de la pregunta:**
@@ -56,7 +56,7 @@ Tipos_de_datos(?td) ^ tipos_de_datos_están_compuestos_por(?td, ?cp) ^ descripci
 Entidad_certificadora(?ec) ^ es_autorizada_por(?ec, ?x) -> sqwrl:select(?x)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-5.png)  
+![alt text](./Imagenes_preguntas/S-5.png)  
 
 ## Pregunta: S006
 **Planteamiento de la pregunta:**
@@ -67,7 +67,7 @@ Entidad_certificadora(?ec) ^ es_autorizada_por(?ec, ?x) -> sqwrl:select(?x)
 Fuente_accesible_al_público(?fp) ^ tiene_la_característica_de_ser(?fp, ?tc) -> sqwrl:select(?tc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-6.png)  
+![alt text](./Imagenes_preguntas/S-6.png)  
 
 ## Pregunta: S007
 **Planteamiento de la pregunta:**
@@ -78,7 +78,7 @@ Fuente_accesible_al_público(?fp) ^ tiene_la_característica_de_ser(?fp, ?tc) ->
 Sellos_de_protección_de_datos_personales(?sc) ^ es_otorgada_por(?sc, ?x) -> sqwrl:select(?x)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-7.png)  
+![alt text](./Imagenes_preguntas/S-7.png)  
 
 ## Pregunta: S008
 **Planteamiento de la pregunta:**
@@ -89,7 +89,7 @@ Sellos_de_protección_de_datos_personales(?sc) ^ es_otorgada_por(?sc, ?x) -> sqw
 Vulnerabilidad_de_la_seguridad_de_los_datos_personales(?vs) ^ afecta_a(?vs, ?aa) -> sqwrl:select(?aa)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-8.png)  
+![alt text](./Imagenes_preguntas/S-8.png)  
 
 ## Pregunta: S009
 **Planteamiento de la pregunta:**
@@ -100,7 +100,7 @@ Vulnerabilidad_de_la_seguridad_de_los_datos_personales(?vs) ^ afecta_a(?vs, ?aa)
 responsables_de_canalizar_el_ejercicio_de_derechos(?d, ?r) ^ Derechos(?d) ^ responsable_de_canalizar_el_ejercicio_de_derechos(?d, ?dr) -> sqwrl:select(?dr, ?r)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-9.png) 
+![alt text](./Imagenes_preguntas/S-9.png) 
 
 ## Pregunta: S010
 **Planteamiento de la pregunta:**
@@ -111,7 +111,7 @@ responsables_de_canalizar_el_ejercicio_de_derechos(?d, ?r) ^ Derechos(?d) ^ resp
 Derechos(?d) ^ descripción_responsables_de_canalizar_el_ejercicio_de_derechos(?d, ?desc) -> sqwrl:select(?desc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-10.png)  
+![alt text](./Imagenes_preguntas/S-10.png)  
 
 ## Pregunta: S011
 **Planteamiento de la pregunta:**
@@ -122,7 +122,7 @@ Derechos(?d) ^ descripción_responsables_de_canalizar_el_ejercicio_de_derechos(?
 Derechos(?d) ^ limitación_de_ejercicio_de_derechos_por_leyes_secundarias(?d, ?lm) -> sqwrl:select(?lm)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-11.png)  
+![alt text](./Imagenes_preguntas/S-11.png)  
 
 ## Pregunta: S012
 **Planteamiento de la pregunta:**
@@ -133,7 +133,7 @@ Derechos(?d) ^ limitación_de_ejercicio_de_derechos_por_leyes_secundarias(?d, ?l
 Tratamiento_de_datos(?t) ^ condiciones_para_el_tratamiento_legítmo(?t, ?tl) ^ Consentimiento(?c) ^ condiciones_para_el_tratamiento_legítmo(?c, ?tl) -> sqwrl:select(?tl)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-12.png)  
+![alt text](./Imagenes_preguntas/S-12.png)  
 
 ## Pregunta: S013
 **Planteamiento de la pregunta:**
@@ -144,7 +144,7 @@ Tratamiento_de_datos(?t) ^ condiciones_para_el_tratamiento_legítmo(?t, ?tl) ^ C
 Interés_legítimo(?il) ^ descripción(?il, ?ds) -> sqwrl:select(?ds)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-13.png)  
+![alt text](./Imagenes_preguntas/S-13.png)  
 
 ## Pregunta: S014
 **Planteamiento de la pregunta:**
@@ -155,7 +155,7 @@ Interés_legítimo(?il) ^ descripción(?il, ?ds) -> sqwrl:select(?ds)
 Consentimiento(?c) ^ para_tratar_y_comunicar_datos_personales_se_debe(?c, ?ptc) -> sqwrl:select(?ptc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-14.png)
+![alt text](./Imagenes_preguntas/S-14.png)
 
 ## Pregunta: S015
 **Planteamiento de la pregunta:**
@@ -166,7 +166,7 @@ Consentimiento(?c) ^ para_tratar_y_comunicar_datos_personales_se_debe(?c, ?ptc) 
 Consentimiento(?c) ^ válido(?c, ?cv) -> sqwrl:select(?cv)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-15.png)
+![alt text](./Imagenes_preguntas/S-15.png)
 
 ## Pregunta: S016
 **Planteamiento de la pregunta:**
@@ -177,7 +177,7 @@ Consentimiento(?c) ^ válido(?c, ?cv) -> sqwrl:select(?cv)
 Vicios_de_consentimiento(?vc) ^ descripción(?vc, ?ds) -> sqwrl:select(?ds) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-16.png)
+![alt text](./Imagenes_preguntas/S-16.png)
 
 ## Pregunta: S017
 **Planteamiento de la pregunta:**
@@ -188,7 +188,7 @@ Vicios_de_consentimiento(?vc) ^ descripción(?vc, ?ds) -> sqwrl:select(?ds) ^ sq
 Consentimiento(?c) ^ cuándo_puede_producirse(?c, ?cr) -> sqwrl:select(?cr)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-17.png)
+![alt text](./Imagenes_preguntas/S-17.png)
 
 ## Pregunta: S018
 **Planteamiento de la pregunta:**
@@ -199,7 +199,7 @@ Consentimiento(?c) ^ cuándo_puede_producirse(?c, ?cr) -> sqwrl:select(?cr)
 Consentimiento(?c) ^ justficación_del_revocamiento(?c, ?j) -> sqwrl:select(?j)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-18.png)
+![alt text](./Imagenes_preguntas/S-18.png)
 
 ## Pregunta: S019
 **Planteamiento de la pregunta:**
@@ -210,7 +210,7 @@ Consentimiento(?c) ^ justficación_del_revocamiento(?c, ?j) -> sqwrl:select(?j)
 deben_ser(?mr, ?cds) ^ Mecanismos_de_revocamiento(?mr) -> sqwrl:select(?cds)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-19.png)
+![alt text](./Imagenes_preguntas/S-19.png)
 
 ## Pregunta: S020
 **Planteamiento de la pregunta:**
@@ -221,7 +221,7 @@ deben_ser(?mr, ?cds) ^ Mecanismos_de_revocamiento(?mr) -> sqwrl:select(?cds)
 Mecanismos_de_revocamiento(?mr) ^ como_deben_ser(?mr, ?cds) -> sqwrl:select(?cds)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-20.png)
+![alt text](./Imagenes_preguntas/S-20.png)
 
 ## Pregunta: S021
 **Planteamiento de la pregunta:**
@@ -232,7 +232,7 @@ Mecanismos_de_revocamiento(?mr) ^ como_deben_ser(?mr, ?cds) -> sqwrl:select(?cds
 son_establecidos_por(?mr, ?e) ^ Mecanismos_de_revocamiento(?mr) -> sqwrl:select(?e)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-21.png)
+![alt text](./Imagenes_preguntas/S-21.png)
 
 ## Pregunta: S022
 **Planteamiento de la pregunta:**
@@ -243,7 +243,7 @@ son_establecidos_por(?mr, ?e) ^ Mecanismos_de_revocamiento(?mr) -> sqwrl:select(
 Revocamiento_del_consentimiento(?rc) ^ antes_de_la_revocación_del_consentimiento_se_considera(?rt, ?tarc) ^ respecto_al_tratamiento(?rc, ?rt) -> sqwrl:select(?tarc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-22.png)
+![alt text](./Imagenes_preguntas/S-22.png)
 
 ## Pregunta: S023
 **Planteamiento de la pregunta:**
@@ -254,7 +254,7 @@ Revocamiento_del_consentimiento(?rc) ^ antes_de_la_revocación_del_consentimient
 bajo_interés_legítimo(?td, ?tbil) ^ Tratamiento_de_datos(?td) -> sqwrl:select(?tbil)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-23.png)
+![alt text](./Imagenes_preguntas/S-23.png)
 
 ## Pregunta: S024
 **Planteamiento de la pregunta:**
@@ -265,7 +265,7 @@ bajo_interés_legítimo(?td, ?tbil) ^ Tratamiento_de_datos(?td) -> sqwrl:select(
 Finalidad(?f) ^ deberán_ser(?f, ?fds) -> sqwrl:select(?fds)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-24.png)
+![alt text](./Imagenes_preguntas/S-24.png)
 
 ## Pregunta: S025
 **Planteamiento de la pregunta:**
@@ -276,7 +276,7 @@ Finalidad(?f) ^ deberán_ser(?f, ?fds) -> sqwrl:select(?fds)
 Finalidad(?f) ^ es_distinta_a_la_recogida_de_datos_en_el(?f, ?df) ^ para_finalidad_distinta(?df, ?tdf) -> sqwrl:select(?tdf)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-25.png)
+![alt text](./Imagenes_preguntas/S-25.png)
 
 ## Pregunta: S026
 **Planteamiento de la pregunta:**
@@ -287,7 +287,7 @@ Finalidad(?f) ^ es_distinta_a_la_recogida_de_datos_en_el(?f, ?df) ^ para_finalid
 Finalidad(?f) ^ es_distinta_a_la_recogida_de_datos_en_el(?f, ?df) ^ determinar_la_compatibilidad(?df, ?dct) -> sqwrl:select(?dct)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-26.png)
+![alt text](./Imagenes_preguntas/S-26.png)
 
 ## Pregunta: S027
 **Planteamiento de la pregunta:**
@@ -298,7 +298,7 @@ Finalidad(?f) ^ es_distinta_a_la_recogida_de_datos_en_el(?f, ?df) ^ determinar_l
 asociada_a(?c, ?td) ^ para_cumplir_con_calidad_se_debe(?td, ?cc) ^ Calidad(?c) -> sqwrl:select(?cc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-27.png)
+![alt text](./Imagenes_preguntas/S-27.png)
 
 ## Pregunta: S028
 **Planteamiento de la pregunta:**
@@ -309,7 +309,7 @@ asociada_a(?c, ?td) ^ para_cumplir_con_calidad_se_debe(?td, ?cc) ^ Calidad(?c) -
 Calidad(?c) ^ está_encargada_por_el(?c, ?ec) -> sqwrl:select(?ec)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-28.png)
+![alt text](./Imagenes_preguntas/S-28.png)
 
 ## Pregunta: S029
 **Planteamiento de la pregunta:**
@@ -320,7 +320,7 @@ Calidad(?c) ^ está_encargada_por_el(?c, ?ec) -> sqwrl:select(?ec)
 no_es_imputable_la_inexactitud_cuando(?dp, ?nii) ^ Datos_personales(?dp) -> sqwrl:select(?nii)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-29.png)
+![alt text](./Imagenes_preguntas/S-29.png)
 
 ## Pregunta: S030
 **Planteamiento de la pregunta:**
@@ -331,7 +331,7 @@ no_es_imputable_la_inexactitud_cuando(?dp, ?nii) ^ Datos_personales(?dp) -> sqwr
 Conservación(?c) ^ encargado_de_establecer_los_plazos_para_la_suspensión_o_revisión_periódica_dentro_del_tratamiento_de_datos_es(?c, ?cesr) -> sqwrl:select(?cesr)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-30.png)
+![alt text](./Imagenes_preguntas/S-30.png)
 
 ## Pregunta: S031
 **Planteamiento de la pregunta:**
@@ -342,7 +342,7 @@ Conservación(?c) ^ encargado_de_establecer_los_plazos_para_la_suspensión_o_rev
 Conservación(?c) ^ conservación_ampliada_de_tratamiento_de_datos_personales(?c, ?catdp) -> sqwrl:select(?catdp)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-31.png)
+![alt text](./Imagenes_preguntas/S-31.png)
 
 ## Pregunta: S032
 **Planteamiento de la pregunta:**
@@ -353,7 +353,7 @@ Conservación(?c) ^ conservación_ampliada_de_tratamiento_de_datos_personales(?c
 Seguridad(?s) ^ tipos_de_medidas_de_seguridad(?s, ?tdm) -> sqwrl:select(?tdm)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-32.png)
+![alt text](./Imagenes_preguntas/S-32.png)
 
 ## Pregunta: S033
 **Planteamiento de la pregunta:**
@@ -364,7 +364,7 @@ Seguridad(?s) ^ tipos_de_medidas_de_seguridad(?s, ?tdm) -> sqwrl:select(?tdm)
 Seguridad(?s) ^ encargado_de_implementar_medidas_de_seguridad(?s, ?eims) -> sqwrl:select(?eims)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-33.png)
+![alt text](./Imagenes_preguntas/S-33.png)
 
 ## Pregunta: S034
 **Planteamiento de la pregunta:**
@@ -375,7 +375,7 @@ Seguridad(?s) ^ encargado_de_implementar_medidas_de_seguridad(?s, ?eims) -> sqwr
 actividad_respecto_a_responsabilidad_proactiva_y_demostrada(?r, ?arpd) ^ Responsable_del_tratamiento(?r) -> sqwrl:select(?arpd)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-34.png)
+![alt text](./Imagenes_preguntas/S-34.png)
 
 ## Pregunta: S035
 **Planteamiento de la pregunta:**
@@ -386,7 +386,7 @@ actividad_respecto_a_responsabilidad_proactiva_y_demostrada(?r, ?arpd) ^ Respons
 Responsable_del_tratamiento(?r) ^ debe_haber_cumplido_respecto_a_responsabilidad_proactiva(?r, ?dhacrrp) -> sqwrl:select(?dhacrrp)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-35.png)
+![alt text](./Imagenes_preguntas/S-35.png)
 
 ## Pregunta: S036
 **Planteamiento de la pregunta:**
@@ -397,7 +397,7 @@ Responsable_del_tratamiento(?r) ^ debe_haber_cumplido_respecto_a_responsabilidad
 Responsable_del_tratamiento(?r) ^ acreditar_el_cumplimiento_de_los_mecanismos(?r, ?acm) -> sqwrl:select(?acm)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-36.png)
+![alt text](./Imagenes_preguntas/S-36.png)
 
 ## Pregunta: S037
 **Planteamiento de la pregunta:**
@@ -408,7 +408,7 @@ Responsable_del_tratamiento(?r) ^ acreditar_el_cumplimiento_de_los_mecanismos(?r
 debe_rendir_cuentas_respecto_al_tratamiento_con(?r, ?rcc) ^ Responsable_del_tratamiento(?r) -> sqwrl:select(?rcc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-37.png)
+![alt text](./Imagenes_preguntas/S-37.png)
 
 ## Pregunta: S038
 **Planteamiento de la pregunta:**
@@ -419,7 +419,7 @@ debe_rendir_cuentas_respecto_al_tratamiento_con(?r, ?rcc) ^ Responsable_del_trat
 Independencia_de_control(?ic) ^ es_supervisada_por(?ic, ?ics) -> sqwrl:select(?ics)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-38.png)
+![alt text](./Imagenes_preguntas/S-38.png)
 
 ## Pregunta: S039
 **Planteamiento de la pregunta:**
@@ -430,7 +430,7 @@ Independencia_de_control(?ic) ^ es_supervisada_por(?ic, ?ics) -> sqwrl:select(?i
 Independencia_de_control(?ic) ^ acciones_respecto_a_la_independencia_de_control(?ics, ?aric) ^ es_supervisada_por(?ic, ?ics) -> sqwrl:select(?aric)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-39.png)
+![alt text](./Imagenes_preguntas/S-39.png)
 
 ## Pregunta: S040
 **Planteamiento de la pregunta:**
@@ -441,7 +441,7 @@ Independencia_de_control(?ic) ^ acciones_respecto_a_la_independencia_de_control(
 Datos_en_materia_especializada(?dpme) ^ tratamiento_regulado_en_normativa_especializada_en_materia_de(?dpme, ?trne) -> sqwrl:select(?trne)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-40.png)
+![alt text](./Imagenes_preguntas/S-40.png)
 
 ## Pregunta: S041
 **Planteamiento de la pregunta:**
@@ -452,7 +452,7 @@ Datos_en_materia_especializada(?dpme) ^ tratamiento_regulado_en_normativa_especi
 Datos_en_materia_especializada(?dme) ^ estarán_sujetos_a(?dme, ?es) -> sqwrl:select(?es)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-41.png)
+![alt text](./Imagenes_preguntas/S-41.png)
 
 ## Pregunta: S042
 **Planteamiento de la pregunta:**
@@ -463,7 +463,7 @@ Datos_en_materia_especializada(?dme) ^ estarán_sujetos_a(?dme, ?es) -> sqwrl:se
 Datos_en_materia_especializada(?dme) ^ deberán_cumplir_por_lo_mínimo_con(?dme, ?dcm) ^ están_conformados_por(?dcm, ?cdc) ^ descripción(?cdc, ?des) -> sqwrl:select(?cdc, ?des) ^ sqwrl:limit(3)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-42.png)
+![alt text](./Imagenes_preguntas/S-42.png)
 
 ## Pregunta: S043
 **Planteamiento de la pregunta:**
@@ -474,7 +474,7 @@ Datos_en_materia_especializada(?dme) ^ deberán_cumplir_por_lo_mínimo_con(?dme,
 Derecho_a_la_información(?di) ^ cononcer_en_el_derecho_a_la_información(?di, ?ddc) -> sqwrl:select(?ddc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-43.png)
+![alt text](./Imagenes_preguntas/S-43.png)
 
 ## Pregunta: S044
 **Planteamiento de la pregunta:**
@@ -485,7 +485,7 @@ Derecho_a_la_información(?di) ^ cononcer_en_el_derecho_a_la_información(?di, ?
 en_caso_de_obtención_de_datos_directo_por_el(?c, ?codt) ^ Consentimiento(?c) ^ obtención_de_datos_personales_directamente_por_el_titular(?codt, ?odpdt) -> sqwrl:select(?odpdt)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-44.png)
+![alt text](./Imagenes_preguntas/S-44.png)
 
 ## Pregunta: S045
 **Planteamiento de la pregunta:**
@@ -496,7 +496,7 @@ en_caso_de_obtención_de_datos_directo_por_el(?c, ?codt) ^ Consentimiento(?c) ^ 
 en_caso_de_no_obteción_directa_por_el_titular(?t, ?cnodt) ^ Consentimiento(?c) ^ en_caso_de_no_obtención_de_datos_directo_por_el(?c, ?t) -> sqwrl:select(?cnodt)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-45.png)
+![alt text](./Imagenes_preguntas/S-45.png)
 
 ## Pregunta: S046
 **Planteamiento de la pregunta:**
@@ -507,7 +507,7 @@ en_caso_de_no_obteción_directa_por_el_titular(?t, ?cnodt) ^ Consentimiento(?c) 
 Consentimiento(?c) ^ modo_en_que_se_podrá_transmitir_la_información_al_titular(?c, ?m) -> sqwrl:select(?m)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-46.png)
+![alt text](./Imagenes_preguntas/S-46.png)
 
 ## Pregunta: S047
 **Planteamiento de la pregunta:**
@@ -518,7 +518,7 @@ Consentimiento(?c) ^ modo_en_que_se_podrá_transmitir_la_información_al_titular
 Consentimiento(?c) ^ caracteristicas_que_debe_tener_la_información_transferida_al_titular(?c, ?cdti) -> sqwrl:select(?cdti)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-47.png)
+![alt text](./Imagenes_preguntas/S-47.png)
 
 ## Pregunta: S048
 **Planteamiento de la pregunta:**
@@ -529,7 +529,7 @@ Consentimiento(?c) ^ caracteristicas_que_debe_tener_la_información_transferida_
 Derecho_de_acceso(?da) ^ derecho_cuenta_encargado(?da, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-48.png)
+![alt text](./Imagenes_preguntas/S-48.png)
 
 ## Pregunta: S049
 **Planteamiento de la pregunta:**
@@ -540,7 +540,7 @@ Derecho_de_acceso(?da) ^ derecho_cuenta_encargado(?da, ?dce) -> sqwrl:select(?dc
 Derecho_de_acceso(?da) ^ derecho_cuenta_encargado(?da, ?dce) ^ actividad_dentro_de_derecho_de_acceso(?dce, ?ada) -> sqwrl:select(?ada) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-49.png)
+![alt text](./Imagenes_preguntas/S-49.png)
 
 ## Pregunta: S050
 **Planteamiento de la pregunta:**
@@ -551,7 +551,7 @@ Derecho_de_acceso(?da) ^ derecho_cuenta_encargado(?da, ?dce) ^ actividad_dentro_
 Derecho_de_acceso(?da) ^ derecho_cuenta_encargado(?da, ?dce) ^ plazo_de_atención_en_días_para_el_derecho_de_acceso(?dce, ?pad) -> sqwrl:select(?pad) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-50.png)
+![alt text](./Imagenes_preguntas/S-50.png)
 
 ## Pregunta: S051
 **Planteamiento de la pregunta:**
@@ -562,7 +562,7 @@ Derecho_de_acceso(?da) ^ derecho_cuenta_encargado(?da, ?dce) ^ plazo_de_atenció
 Derecho_de_rectificación_y_actualización(?dra) ^ derecho_cuenta_encargado(?dra, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-51.png)
+![alt text](./Imagenes_preguntas/S-51.png)
 
 ## Pregunta: S052
 **Planteamiento de la pregunta:**
@@ -573,7 +573,7 @@ Derecho_de_rectificación_y_actualización(?dra) ^ derecho_cuenta_encargado(?dra
 Derecho_de_rectificación_y_actualización(?dra) ^ derecho_cuenta_encargado(?dra, ?dce) ^ actividad_dentro_de_derecho_de_rectificación_y_actualización(?dce, ?adra) -> sqwrl:select(?adra) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-52.png)
+![alt text](./Imagenes_preguntas/S-52.png)
 
 ## Pregunta: S053
 **Planteamiento de la pregunta:**
@@ -584,7 +584,7 @@ Derecho_de_rectificación_y_actualización(?dra) ^ derecho_cuenta_encargado(?dra
 Derecho_de_rectificación_y_actualización(?dra) ^ derecho_cuenta_encargado(?dra, ?dce) ^ plazo_de_atención_en_días_para_el_derecho_de_rectificación_y_actualización(?dce, ?p) -> sqwrl:select(?p) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-53.png)
+![alt text](./Imagenes_preguntas/S-53.png)
 
 ## Pregunta: S054
 **Planteamiento de la pregunta:**
@@ -595,7 +595,7 @@ Derecho_de_rectificación_y_actualización(?dra) ^ derecho_cuenta_encargado(?dra
 Derecho_de_eliminación(?de) ^ derecho_cuenta_encargado(?de, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-54.png)
+![alt text](./Imagenes_preguntas/S-54.png)
 
 ## Pregunta: S055
 **Planteamiento de la pregunta:**
@@ -606,7 +606,7 @@ Derecho_de_eliminación(?de) ^ derecho_cuenta_encargado(?de, ?dce) -> sqwrl:sele
 Derecho_de_eliminación(?de) ^ cuándo_se_puede_eliminar_los_datos_personales(?dce, ?cedp) -> sqwrl:select(?cedp) ^ sqwrl:limit(7)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-55.png)
+![alt text](./Imagenes_preguntas/S-55.png)
 
 ## Pregunta: S056
 **Planteamiento de la pregunta:**
@@ -617,7 +617,7 @@ Derecho_de_eliminación(?de) ^ cuándo_se_puede_eliminar_los_datos_personales(?d
 Derecho_de_eliminación(?de) ^ derecho_cuenta_encargado(?de, ?dce) ^ actividad_dentro_de_derecho_de_eliminación(?dce, ?ade) -> sqwrl:select(?ade) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-56.png)
+![alt text](./Imagenes_preguntas/S-56.png)
 
 ## Pregunta: S057
 **Planteamiento de la pregunta:**
@@ -628,7 +628,7 @@ Derecho_de_eliminación(?de) ^ derecho_cuenta_encargado(?de, ?dce) ^ actividad_d
 Derecho_de_eliminación(?de) ^ derecho_cuenta_encargado(?de, ?dce) ^ plazo_de_atención_en_días_para_el_derecho_de_eliminación(?dce, ?pde) -> sqwrl:select(?pde) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-57.png)
+![alt text](./Imagenes_preguntas/S-57.png)
 
 ## Pregunta: S058
 **Planteamiento de la pregunta:**
@@ -639,7 +639,7 @@ Derecho_de_eliminación(?de) ^ derecho_cuenta_encargado(?de, ?dce) ^ plazo_de_at
 Derecho_de_oposición(?do) ^ derecho_cuenta_encargado(?do, ?dce) -> sqwrl:select(?dce) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-58.png)
+![alt text](./Imagenes_preguntas/S-58.png)
 
 ## Pregunta: S059
 **Planteamiento de la pregunta:**
@@ -650,7 +650,7 @@ Derecho_de_oposición(?do) ^ derecho_cuenta_encargado(?do, ?dce) -> sqwrl:select
 cuándo_se_puede_oponer_al_tratamiento(?do, ?cpot) ^ Derecho_de_oposición(?do) -> sqwrl:select(?cpot)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-59.png)
+![alt text](./Imagenes_preguntas/S-59.png)
 
 ## Pregunta: S060
 **Planteamiento de la pregunta:**
@@ -661,7 +661,7 @@ cuándo_se_puede_oponer_al_tratamiento(?do, ?cpot) ^ Derecho_de_oposición(?do) 
 Derecho_de_oposición(?do) ^ en_caso_de_mercadotécnia_directa(?do, ?md) -> sqwrl:select(?md)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-60.png)
+![alt text](./Imagenes_preguntas/S-60.png)
 
 ## Pregunta: S061
 **Planteamiento de la pregunta:**
@@ -672,7 +672,7 @@ Derecho_de_oposición(?do) ^ en_caso_de_mercadotécnia_directa(?do, ?md) -> sqwr
 Derecho_de_oposición(?do) ^ derecho_cuenta_encargado(?do, ?dce) ^ actividad_dentro_de_derecho_de_oposición(?dce, ?ado) -> sqwrl:select(?ado) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-61.png)
+![alt text](./Imagenes_preguntas/S-61.png)
 
 ## Pregunta: S062
 **Planteamiento de la pregunta:**
@@ -683,7 +683,7 @@ Derecho_de_oposición(?do) ^ derecho_cuenta_encargado(?do, ?dce) ^ actividad_den
 Derecho_de_oposición(?do) ^ derecho_cuenta_encargado(?do, ?dce) ^ plazo_de_atención_en_días_para_el_derecho_de_oposición(?dce, ?pado) -> sqwrl:select(?pado) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-62.png)
+![alt text](./Imagenes_preguntas/S-62.png)
 
 ## Pregunta: S063
 **Planteamiento de la pregunta:**
@@ -694,7 +694,7 @@ Derecho_de_oposición(?do) ^ derecho_cuenta_encargado(?do, ?dce) ^ plazo_de_aten
 Excepciones_de_derechos(?ed) ^ derechos_para_rectificación_actualización_eliminación_y_oposición(?ed, ?edc) -> sqwrl:select(?edc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-63.png)
+![alt text](./Imagenes_preguntas/S-63.png)
 
 ## Pregunta: S064
 **Planteamiento de la pregunta:**
@@ -705,7 +705,7 @@ Excepciones_de_derechos(?ed) ^ derechos_para_rectificación_actualización_elimi
 Derecho_a_la_suspensión_del_tratamiento(?dst) ^ condiciones_para_la_suspensión_del_tratamiento(?dst, ?cst) -> sqwrl:select(?cst)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-64.png)
+![alt text](./Imagenes_preguntas/S-64.png)
 
 ## Pregunta: S064
 **Planteamiento de la pregunta:**
@@ -716,7 +716,7 @@ Derecho_a_la_suspensión_del_tratamiento(?dst) ^ condiciones_para_la_suspensión
 Derecho_a_la_suspensión_del_tratamiento(?dst) ^ condiciones_para_la_suspensión_del_tratamiento(?dst, ?cst) -> sqwrl:select(?cst)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-64.png)
+![alt text](./Imagenes_preguntas/S-64.png)
 
 ## Pregunta: S065
 **Planteamiento de la pregunta:**
@@ -727,7 +727,7 @@ Derecho_a_la_suspensión_del_tratamiento(?dst) ^ condiciones_para_la_suspensión
 Titular(?t) ^ en_caso_de_suspesión_de_tratamiento_debe_recurrir_hacia(?t, ?st) -> sqwrl:select(?st)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-65.png)
+![alt text](./Imagenes_preguntas/S-65.png)
 
 ## Pregunta: S066
 **Planteamiento de la pregunta:**
@@ -738,7 +738,7 @@ Titular(?t) ^ en_caso_de_suspesión_de_tratamiento_debe_recurrir_hacia(?t, ?st) 
 Derecho_a_la_suspensión_del_tratamiento(?dst) ^ cuando_debe_ocurrir_el_titular_a_la_autoridad_de_protección_de_datos_personales(?dst, ?drapd) -> sqwrl:select(?drapd)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-66.png)
+![alt text](./Imagenes_preguntas/S-66.png)
 
 ## Pregunta: S067
 **Planteamiento de la pregunta:**
@@ -749,7 +749,7 @@ Derecho_a_la_suspensión_del_tratamiento(?dst) ^ cuando_debe_ocurrir_el_titular_
 Titular(?t) ^ en_caso_de_impugar_la_exactitud_de_los_datos_a(?t, ?tcidp) ^ ante_impugnación_de_exactitud_de_datos(?tcidp, ?idp) -> sqwrl:select(?idp)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-67.png)
+![alt text](./Imagenes_preguntas/S-67.png)
 
 ## Pregunta: S068
 **Planteamiento de la pregunta:**
@@ -760,7 +760,7 @@ Titular(?t) ^ en_caso_de_impugar_la_exactitud_de_los_datos_a(?t, ?tcidp) ^ ante_
 Derecho_a_la_suspensión_del_tratamiento(?dst) ^ supuestos_para_tratar_los_datos_en_caso_de_impugnación_de_los_mismos(?dst, ?stdcidp) -> sqwrl:select(?stdcidp)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-68.png)
+![alt text](./Imagenes_preguntas/S-68.png)
 
 ## Pregunta: S069
 **Planteamiento de la pregunta:**
@@ -771,7 +771,7 @@ Derecho_a_la_suspensión_del_tratamiento(?dst) ^ supuestos_para_tratar_los_datos
 en_caso_de_valoraciones_automatizadas(?t, ?cda) ^ Derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?dnva) ^ para_el(?dnva, ?t) -> sqwrl:select(?cda)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-69.png)
+![alt text](./Imagenes_preguntas/S-69.png)
 
 ## Pregunta: S070
 **Planteamiento de la pregunta:**
@@ -782,7 +782,7 @@ en_caso_de_valoraciones_automatizadas(?t, ?cda) ^ Derecho_a_no_ser_objeto_de_val
 derechos_para_no_ser_objeto_de_valoraciones_automatizadas(?ed, ?edva) ^ Excepciones_de_derechos(?ed) -> sqwrl:select(?edva)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-70.png)
+![alt text](./Imagenes_preguntas/S-70.png)
 
 ## Pregunta: S071
 **Planteamiento de la pregunta:**
@@ -793,7 +793,7 @@ derechos_para_no_ser_objeto_de_valoraciones_automatizadas(?ed, ?edva) ^ Excepcio
 Excepciones_de_derechos(?ed) ^ no_se_podrá_revocar_el_derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?ed, ?rdova) -> sqwrl:select(?rdova)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-71.png)
+![alt text](./Imagenes_preguntas/S-71.png)
 
 ## Pregunta: S072
 **Planteamiento de la pregunta:**
@@ -804,7 +804,7 @@ Excepciones_de_derechos(?ed) ^ no_se_podrá_revocar_el_derecho_a_no_ser_objeto_d
 no_se_podrán_tratar(?dova, ?ntd) ^ Derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?dova) ^ datos_no_sujetos_a_tratamiento_según_el_derecho_a_no_ser_objeto_de_decisiones_automatizadas(?ntd, ?dnst) -> sqwrl:select(?dnst)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-72.png)
+![alt text](./Imagenes_preguntas/S-72.png)
 
 ## Pregunta: S073
 **Planteamiento de la pregunta:**
@@ -815,7 +815,7 @@ no_se_podrán_tratar(?dova, ?ntd) ^ Derecho_a_no_ser_objeto_de_valoraciones_auto
 no_se_podrán_tratar(?dova, ?ntd) ^ Derecho_a_no_ser_objeto_de_valoraciones_automatizadas(?dova) ^ datos_sujetos_a_tratamiento_según_el_derecho_a_no_ser_objeto_de_decisiones_automatizadas(?ntd, ?dst) -> sqwrl:select(?dst)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-73.png)
+![alt text](./Imagenes_preguntas/S-73.png)
 
 ## Pregunta: S074
 **Planteamiento de la pregunta:**
@@ -826,7 +826,7 @@ no_se_podrán_tratar(?dova, ?ntd) ^ Derecho_a_no_ser_objeto_de_valoraciones_auto
 Titular(?t) ^ puede_dar_consentimiento_explícito_para_el_tratamiento(?t, true) -> sqwrl:select(?t)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-74.png)
+![alt text](./Imagenes_preguntas/S-74.png)
 
 ## Pregunta: S075
 **Planteamiento de la pregunta:**
@@ -837,7 +837,7 @@ Titular(?t) ^ puede_dar_consentimiento_explícito_para_el_tratamiento(?t, true) 
 Derecho_de_consulta(?dc) ^ garatiza_que(?dc, ?gq) -> sqwrl:select(?gq)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-75.png)
+![alt text](./Imagenes_preguntas/S-75.png)
 
 ## Pregunta: S076
 **Planteamiento de la pregunta:**
@@ -848,7 +848,7 @@ Derecho_de_consulta(?dc) ^ garatiza_que(?dc, ?gq) -> sqwrl:select(?gq)
 Derecho_de_consulta(?dc) ^ dónde_puede_consultar(?dc, ?dpc) -> sqwrl:select(?dpc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-76.png)
+![alt text](./Imagenes_preguntas/S-76.png)
 
 ## Pregunta: S077
 **Planteamiento de la pregunta:**
@@ -859,7 +859,7 @@ Derecho_de_consulta(?dc) ^ dónde_puede_consultar(?dc, ?dpc) -> sqwrl:select(?dp
 Derecho_a_la_educación_digital(?ded) ^ derecho_al_acceso_y_disponibilidad(?ded, ?sdad) -> sqwrl:select(?sdad)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-77.png)
+![alt text](./Imagenes_preguntas/S-77.png)
 
 ## Pregunta: S078
 **Planteamiento de la pregunta:**
@@ -870,7 +870,7 @@ Derecho_a_la_educación_digital(?ded) ^ derecho_al_acceso_y_disponibilidad(?ded,
 Derecho_a_la_educación_digital(?ded) ^ garantizar_la_educación_digital(?ded, ?dged) -> sqwrl:select(?dged)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-78.png)
+![alt text](./Imagenes_preguntas/S-78.png)
 
 ## Pregunta: S079
 **Planteamiento de la pregunta:**
@@ -881,7 +881,7 @@ Derecho_a_la_educación_digital(?ded) ^ garantizar_la_educación_digital(?ded, ?
 Derecho_a_la_educación_digital(?ded) ^ carácter_inclusivo_en(?ded, ?cied) -> sqwrl:select(?cied)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-79.png)
+![alt text](./Imagenes_preguntas/S-79.png)
 
 ## Pregunta: S080
 **Planteamiento de la pregunta:**
@@ -892,7 +892,7 @@ Derecho_a_la_educación_digital(?ded) ^ carácter_inclusivo_en(?ded, ?cied) -> s
 Ejercicio_de_derechos(?ed) ^ descripción(?ed, ?d) -> sqwrl:select(?d)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-80.png)
+![alt text](./Imagenes_preguntas/S-80.png)
 
 ## Pregunta: S081
 **Planteamiento de la pregunta:**
@@ -903,7 +903,7 @@ Ejercicio_de_derechos(?ed) ^ descripción(?ed, ?d) -> sqwrl:select(?d)
 Ejercicio_de_derechos(?ed) ^ deben_dar_capacitación_y_proveer_información(?ed, ?ddc) -> sqwrl:select(?ddc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-81.png)
+![alt text](./Imagenes_preguntas/S-81.png)
 
 ## Pregunta: S082
 **Planteamiento de la pregunta:**
@@ -914,7 +914,7 @@ Ejercicio_de_derechos(?ed) ^ deben_dar_capacitación_y_proveer_información(?ed,
 Categorías_especiales_de_datos_personales(?cde) ^ categorías_especiales_de_datos_personales_están_compuestos_por(?cde, ?ecp) -> sqwrl:select(?ecp) ^ sqwrl:limit(4)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-82.png)
+![alt text](./Imagenes_preguntas/S-82.png)
 
 ## Pregunta: S083
 **Planteamiento de la pregunta:**
@@ -925,7 +925,7 @@ Categorías_especiales_de_datos_personales(?cde) ^ categorías_especiales_de_dat
 Tratamiento_de_datos_sensibles(?tds) ^ escenarios_de_tratamiento_de_datos_sensibles(?tds, ?etds) -> sqwrl:select(?etds)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-83.png)
+![alt text](./Imagenes_preguntas/S-83.png)
 
 ## Pregunta: S084
 **Planteamiento de la pregunta:**
@@ -936,7 +936,7 @@ Tratamiento_de_datos_sensibles(?tds) ^ escenarios_de_tratamiento_de_datos_sensib
 cuenta_con_un(?tf, ?cu) ^ Titular_fallecido(?tf) -> sqwrl:select(?cu)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-84.png)
+![alt text](./Imagenes_preguntas/S-84.png)
 
 ## Pregunta: S085
 **Planteamiento de la pregunta:**
@@ -947,7 +947,7 @@ cuenta_con_un(?tf, ?cu) ^ Titular_fallecido(?tf) -> sqwrl:select(?cu)
 cuenta_con_un(?tf, ?cu) ^ ejercicio_de_derechos_por_parte_del_titular_fallecido(?cu, ?ed) ^ Titular_fallecido(?tf) -> sqwrl:select(?ed)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-85.png)
+![alt text](./Imagenes_preguntas/S-85.png)
 
 ## Pregunta: S086
 **Planteamiento de la pregunta:**
@@ -958,7 +958,7 @@ cuenta_con_un(?tf, ?cu) ^ ejercicio_de_derechos_por_parte_del_titular_fallecido(
 Tratamiento_de_datos_crediticios(?tdc) ^ permitan_evaluar(?tdc, ?pe) -> sqwrl:select(?pe)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-86.png)
+![alt text](./Imagenes_preguntas/S-86.png)
 
 ## Pregunta: S087
 **Planteamiento de la pregunta:**
@@ -969,7 +969,7 @@ Tratamiento_de_datos_crediticios(?tdc) ^ permitan_evaluar(?tdc, ?pe) -> sqwrl:se
 para_informar_sobre(?tdc, ?pis) ^ Tratamiento_de_datos_crediticios(?tdc) -> sqwrl:select(?pis)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-87.png)
+![alt text](./Imagenes_preguntas/S-87.png)
 
 ## Pregunta: S088
 **Planteamiento de la pregunta:**
@@ -980,7 +980,7 @@ para_informar_sobre(?tdc, ?pis) ^ Tratamiento_de_datos_crediticios(?tdc) -> sqwr
 Tratamiento_de_datos_crediticios(?tdc) ^ fuentes_de_dónde_se_obtuvieron_los_datos_crediticios(?tdc, ?fdo) -> sqwrl:select(?fdo)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-88.png)
+![alt text](./Imagenes_preguntas/S-88.png)
 
 ## Pregunta: S089
 **Planteamiento de la pregunta:**
@@ -991,7 +991,7 @@ Tratamiento_de_datos_crediticios(?tdc) ^ fuentes_de_dónde_se_obtuvieron_los_dat
 Tratamiento_de_datos_crediticios(?tdc) ^ destinado(?tdc, ?tddc) -> sqwrl:select(?tddc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-89.png)
+![alt text](./Imagenes_preguntas/S-89.png)
 
 ## Pregunta: S090
 **Planteamiento de la pregunta:**
@@ -1002,7 +1002,7 @@ Tratamiento_de_datos_crediticios(?tdc) ^ destinado(?tdc, ?tddc) -> sqwrl:select(
 Tratamiento_de_datos_crediticios(?tdc) ^ no_se_podrá_hacer_con_el_tratamiento_de_datos_crediticios(?tdc, ?npad) -> sqwrl:select(?npad)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-90.png)
+![alt text](./Imagenes_preguntas/S-90.png)
 
 ## Pregunta: S091
 **Planteamiento de la pregunta:**
@@ -1013,7 +1013,7 @@ Tratamiento_de_datos_crediticios(?tdc) ^ no_se_podrá_hacer_con_el_tratamiento_d
 Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ derechos_de_los_titulares_de_datos_crediticios(?dtdc, ?dtd) -> sqwrl:select(?dtd)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-91.png)
+![alt text](./Imagenes_preguntas/S-91.png)
 
 ## Pregunta: S092
 **Planteamiento de la pregunta:**
@@ -1024,7 +1024,7 @@ Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ derechos_de_los_titulares
 Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ derecho_al_acceso_de_los_titulares_de_datos_crediticios(?dtdc, ?dadp) -> sqwrl:select(?dadp)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-92.png)
+![alt text](./Imagenes_preguntas/S-92.png)
 
 ## Pregunta: S093
 **Planteamiento de la pregunta:**
@@ -1035,7 +1035,7 @@ Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ derecho_al_acceso_de_los_
 Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ mecanismos_para_asegurar_el_derecho_de_acceso_del_titular_de_datos_crediticios(?dtdc, ?mada) -> sqwrl:select(?mada)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-93.png)
+![alt text](./Imagenes_preguntas/S-93.png)
 
 ## Pregunta: S094
 **Planteamiento de la pregunta:**
@@ -1046,7 +1046,7 @@ Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ mecanismos_para_asegurar_
 Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ derecho_de_actualización_rectificación_o_eliminación_del_titular_de_datos_crediticios(?dtdc, ?daredc) -> sqwrl:select(?daredc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-94.png)
+![alt text](./Imagenes_preguntas/S-94.png)
 
 ## Pregunta: S095
 **Planteamiento de la pregunta:**
@@ -1057,7 +1057,7 @@ Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ derecho_de_actualización
 Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ fuente_de_información_actividad_frente_la_solicitud(?dtdc, ?afi) -> sqwrl:select(?afi)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-95.png)
+![alt text](./Imagenes_preguntas/S-95.png)
 
 ## Pregunta: S096
 **Planteamiento de la pregunta:**
@@ -1068,7 +1068,7 @@ Derecho_de_los_titulares_de_datos_crediticios(?dtdc) ^ fuente_de_información_ac
 Tratamiento_de_datos_relativos_a_salud(?tds) ^ recolección_y_tratamiento_de_dato_relativo_a_salud(?tds, ?rtdrs) -> sqwrl:select(?rtdrs)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-96.png)
+![alt text](./Imagenes_preguntas/S-96.png)
 
 ## Pregunta: S097
 **Planteamiento de la pregunta:**
@@ -1079,7 +1079,7 @@ Tratamiento_de_datos_relativos_a_salud(?tds) ^ recolección_y_tratamiento_de_dat
 Tratamiento_de_datos_relativos_a_salud(?tds) ^ en_lo_que_respecta_a_el(?tds, ?ctds) ^ para_datos_relativos_a_salud_sin_consentimiento(?ctds, ?cdrs) -> sqwrl:select(?cdrs)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-97.png)
+![alt text](./Imagenes_preguntas/S-97.png)
 
 ## Pregunta: S098
 **Planteamiento de la pregunta:**
@@ -1090,7 +1090,7 @@ Tratamiento_de_datos_relativos_a_salud(?tds) ^ en_lo_que_respecta_a_el(?tds, ?ct
 Tratamiento_de_datos_relativos_a_salud(?tds) ^ escenarios_de_aplicación_para_el_tratamiento_de_datos_sin_consentimiento(?tds, ?eatds) -> sqwrl:select(?eatds)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-98.png)
+![alt text](./Imagenes_preguntas/S-98.png)
 
 ## Pregunta: S099
 **Planteamiento de la pregunta:**
@@ -1101,7 +1101,7 @@ Tratamiento_de_datos_relativos_a_salud(?tds) ^ escenarios_de_aplicación_para_el
 Tratamiento_de_datos_relativos_a_salud(?tds) ^ supervisar_el_tratamiento_en_actividades_de_gestión_de_servicio_de_salud(?tds, ?dst) -> sqwrl:select(?dst)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-99.png)
+![alt text](./Imagenes_preguntas/S-99.png)
 
 ## Pregunta: S100
 **Planteamiento de la pregunta:**
@@ -1112,7 +1112,7 @@ Tratamiento_de_datos_relativos_a_salud(?tds) ^ supervisar_el_tratamiento_en_acti
 Tratamiento_de_datos_relativos_a_salud(?tds) ^ deberá_ser_autorizado_por(?tds, ?tdrsdsa) -> sqwrl:select(?tdrsdsa)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-100.png)
+![alt text](./Imagenes_preguntas/S-100.png)
 
 ## Pregunta: S101
 **Planteamiento de la pregunta:**
@@ -1123,7 +1123,7 @@ Tratamiento_de_datos_relativos_a_salud(?tds) ^ deberá_ser_autorizado_por(?tds, 
 Tratamiento_de_datos_relativos_a_salud(?tds) ^ deberá_ser_autorizado_por(?tds, ?tdrsdsa) ^ acciones_respecto_al_tratamiento_de_datos_de_salud(?tdrsdsa, ?artds) -> sqwrl:select(?artds)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-101.png)
+![alt text](./Imagenes_preguntas/S-101.png)
 
 ## Pregunta: S102
 **Planteamiento de la pregunta:**
@@ -1134,7 +1134,7 @@ Tratamiento_de_datos_relativos_a_salud(?tds) ^ deberá_ser_autorizado_por(?tds, 
 autorización_de_tratamiento_de_datos_de_salud_anonimizados(?tds, ?atds) ^ Tratamiento_de_datos_relativos_a_salud(?tds) -> sqwrl:select(?atds)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-102.png)
+![alt text](./Imagenes_preguntas/S-102.png)
 
 ## Pregunta: S103
 **Planteamiento de la pregunta:**
@@ -1145,7 +1145,7 @@ autorización_de_tratamiento_de_datos_de_salud_anonimizados(?tds, ?atds) ^ Trata
 Tratamiento_de_datos_relativos_a_salud(?tds) ^ fines_del_tratamiento_de_datos_por_entes_privados_y_públicos(?tds, ?tdepp) -> sqwrl:select(?tdepp)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-103.png)
+![alt text](./Imagenes_preguntas/S-103.png)
 
 ## Pregunta: S104
 **Planteamiento de la pregunta:**
@@ -1156,7 +1156,7 @@ Tratamiento_de_datos_relativos_a_salud(?tds) ^ fines_del_tratamiento_de_datos_po
 Tratamiento_de_datos_relativos_a_salud(?tds) ^ escenarios_para_el_tratamiento_por_entes_privados_y_públicos(?tds, ?eptepp) -> sqwrl:select(?eptepp)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-104.png)
+![alt text](./Imagenes_preguntas/S-104.png)
 
 ## Pregunta: S105
 **Planteamiento de la pregunta:**
@@ -1167,7 +1167,7 @@ Tratamiento_de_datos_relativos_a_salud(?tds) ^ escenarios_para_el_tratamiento_po
 Responsable_del_tratamiento(?rt) ^ obligaciones(?rt, ?o) -> sqwrl:select(?o) ^ sqwrl:limit(16)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-105.png)
+![alt text](./Imagenes_preguntas/S-105.png)
 
 ## Pregunta: S106
 **Planteamiento de la pregunta:**
@@ -1178,7 +1178,7 @@ Responsable_del_tratamiento(?rt) ^ obligaciones(?rt, ?o) -> sqwrl:select(?o) ^ s
 Delegado_de_protección_de_datos_personales(?dpd) ^ se_asignará_un_delegado_de_protección_de_datos(?dpd, ?adpd) -> sqwrl:select(?adpd)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-106.png)
+![alt text](./Imagenes_preguntas/S-106.png)
 
 ## Pregunta: S107
 **Planteamiento de la pregunta:**
@@ -1189,7 +1189,7 @@ Delegado_de_protección_de_datos_personales(?dpd) ^ se_asignará_un_delegado_de_
 Delegado_de_protección_de_datos_personales(?dpd) ^ funciones_del_rol(?dpd, ?fdd) -> sqwrl:select(?fdd) ^ sqwrl:limit(5)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-107.png)
+![alt text](./Imagenes_preguntas/S-107.png)
 
 ## Pregunta: S108
 **Planteamiento de la pregunta:**
@@ -1200,7 +1200,7 @@ Delegado_de_protección_de_datos_personales(?dpd) ^ funciones_del_rol(?dpd, ?fdd
 Delegado_de_protección_de_datos_personales(?dpd) ^ deberá_ser_observado_por(?dpd, ?dop) -> sqwrl:select(?dop)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-108.png)
+![alt text](./Imagenes_preguntas/S-108.png)
 
 ## Pregunta: S109
 **Planteamiento de la pregunta:**
@@ -1212,7 +1212,7 @@ Delegado_de_protección_de_datos_personales(?dpd) ^ deberá_ser_observado_por(?d
 Delegado_de_protección_de_datos_personales(?dpd) ^ deberá_ser_observado_por(?dpd, ?dop) ^ observaciones_del_delegado(?dop, ?odd) -> sqwrl:select( ?odd) ^ sqwrl:limit(5)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-109.png)
+![alt text](./Imagenes_preguntas/S-109.png)
 
 ## Pregunta: S110
 **Planteamiento de la pregunta:**
@@ -1223,7 +1223,7 @@ Delegado_de_protección_de_datos_personales(?dpd) ^ deberá_ser_observado_por(?d
 Reclamaciones(?r) ^ podrán_ser_hechas_por(?r, ?pshp) -> sqwrl:select(?pshp)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-110.png)
+![alt text](./Imagenes_preguntas/S-110.png)
 
 ## Pregunta: S111
 **Planteamiento de la pregunta:**
@@ -1234,7 +1234,7 @@ Reclamaciones(?r) ^ podrán_ser_hechas_por(?r, ?pshp) -> sqwrl:select(?pshp)
 Reclamaciones(?r) ^ van_destinadas_hacia(?r, ?rvdh) -> sqwrl:select(?rvdh)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-111.png)
+![alt text](./Imagenes_preguntas/S-111.png)
 
 ## Pregunta: S112
 **Planteamiento de la pregunta:**
@@ -1246,7 +1246,7 @@ Reclamaciones(?r) ^ van_destinadas_hacia(?r, ?rvdh) -> sqwrl:select(?rvdh)
 Reclamaciones(?r) ^ podrán_ser_hecha_de_forma(?r, ?psh) -> sqwrl:select(?psh)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-112.png)
+![alt text](./Imagenes_preguntas/S-112.png)
 
 ## Pregunta: S113
 **Planteamiento de la pregunta:**
@@ -1257,7 +1257,7 @@ Reclamaciones(?r) ^ podrán_ser_hecha_de_forma(?r, ?psh) -> sqwrl:select(?psh)
 podrán_ser_hecha_por_medios(?r, ?pshpm) ^ Reclamaciones(?r) -> sqwrl:select(?pshpm)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-113.png)
+![alt text](./Imagenes_preguntas/S-113.png)
 
 ## Pregunta: S114
 **Planteamiento de la pregunta:**
@@ -1268,7 +1268,7 @@ podrán_ser_hecha_por_medios(?r, ?pshpm) ^ Reclamaciones(?r) -> sqwrl:select(?ps
 Reclamaciones(?r) ^ reclamos_de(?r, ?rd) -> sqwrl:select(?rd)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-114.png)
+![alt text](./Imagenes_preguntas/S-114.png)
 
 ## Pregunta: S115
 **Planteamiento de la pregunta:**
@@ -1279,7 +1279,7 @@ Reclamaciones(?r) ^ reclamos_de(?r, ?rd) -> sqwrl:select(?rd)
 Reclamaciones(?r) ^ presentar_en_caso_de_reclamación(?r, ?pecr) -> sqwrl:select(?pecr)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-115.png)
+![alt text](./Imagenes_preguntas/S-115.png)
 
 ## Pregunta: S116
 **Planteamiento de la pregunta:**
@@ -1290,7 +1290,7 @@ Reclamaciones(?r) ^ presentar_en_caso_de_reclamación(?r, ?pecr) -> sqwrl:select
 Reclamaciones(?r) ^ contestar_la_reclamación(?r, ?cr) -> sqwrl:select(?cr)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-116.png)
+![alt text](./Imagenes_preguntas/S-116.png)
 
 ## Pregunta: S117
 **Planteamiento de la pregunta:**
@@ -1301,7 +1301,7 @@ Reclamaciones(?r) ^ contestar_la_reclamación(?r, ?cr) -> sqwrl:select(?cr)
 Reclamaciones(?r) ^ antes_de_contestar_la_reclamación(?r, ?acr) -> sqwrl:select(?acr)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-117.png)
+![alt text](./Imagenes_preguntas/S-117.png)
 
 ## Pregunta: S118
 **Planteamiento de la pregunta:**
@@ -1312,7 +1312,7 @@ Reclamaciones(?r) ^ antes_de_contestar_la_reclamación(?r, ?acr) -> sqwrl:select
 Reclamaciones(?r) ^ ante_una_negación_o_no_respuesta_del_reclamo(?r, ?annr) -> sqwrl:select(?annr)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-118.png)
+![alt text](./Imagenes_preguntas/S-118.png)
 
 ## Pregunta: S119
 **Planteamiento de la pregunta:**
@@ -1323,7 +1323,7 @@ Reclamaciones(?r) ^ ante_una_negación_o_no_respuesta_del_reclamo(?r, ?annr) -> 
 Medidas_correctivas(?mc) ^ en_caso_de_incumplimiento_de(?mc, ?ecimc) -> sqwrl:select(?ecimc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-119.png)
+![alt text](./Imagenes_preguntas/S-119.png)
 
 ## Pregunta: S120
 **Planteamiento de la pregunta:**
@@ -1334,7 +1334,7 @@ Medidas_correctivas(?mc) ^ en_caso_de_incumplimiento_de(?mc, ?ecimc) -> sqwrl:se
 serán_impuestas_por(?mc, ?mcsip) ^ Medidas_correctivas(?mc) -> sqwrl:select(?mcsip) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-120.png)
+![alt text](./Imagenes_preguntas/S-120.png)
 
 ## Pregunta: S121
 **Planteamiento de la pregunta:**
@@ -1345,7 +1345,7 @@ serán_impuestas_por(?mc, ?mcsip) ^ Medidas_correctivas(?mc) -> sqwrl:select(?mc
 Medidas_correctivas(?mc) ^ cuáles_serán_las_medidas_correctivas(?mc, ?cmc) -> sqwrl:select(?cmc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-121.png)
+![alt text](./Imagenes_preguntas/S-121.png)
 
 ## Pregunta: S122
 **Planteamiento de la pregunta:**
@@ -1356,7 +1356,7 @@ Medidas_correctivas(?mc) ^ cuáles_serán_las_medidas_correctivas(?mc, ?cmc) -> 
 Medidas_correctivas(?mc) ^ antes_de_dictar_las_medidas_correctivas(?mc, ?admc) -> sqwrl:select(?admc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-122.png)
+![alt text](./Imagenes_preguntas/S-122.png)
 
 ## Pregunta: S123
 **Planteamiento de la pregunta:**
@@ -1368,7 +1368,7 @@ Medidas_correctivas(?mc) ^ antes_de_dictar_las_medidas_correctivas(?mc, ?admc) -
 Medidas_correctivas(?mc) ^ casos_para_incurrir_en_medidas_correctivas(?mc, ?cimc) -> sqwrl:select(?cimc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-123.png)
+![alt text](./Imagenes_preguntas/S-123.png)
 
 ## Pregunta: S124
 **Planteamiento de la pregunta:**
@@ -1379,7 +1379,7 @@ Medidas_correctivas(?mc) ^ casos_para_incurrir_en_medidas_correctivas(?mc, ?cimc
 Medidas_correctivas(?mc) ^ por_infracciones_leves(?mc, ?mcil) -> sqwrl:select(?mcil)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-124.png)
+![alt text](./Imagenes_preguntas/S-124.png)
 
 ## Pregunta: S125
 **Planteamiento de la pregunta:**
@@ -1390,7 +1390,7 @@ Medidas_correctivas(?mc) ^ por_infracciones_leves(?mc, ?mcil) -> sqwrl:select(?m
 por_infracciones_graves(?mc, ?mcig) ^ Medidas_correctivas(?mc) -> sqwrl:select(?mcig)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-125.png)
+![alt text](./Imagenes_preguntas/S-125.png)
 
 ## Pregunta: S126
 **Planteamiento de la pregunta:**
@@ -1401,7 +1401,7 @@ por_infracciones_graves(?mc, ?mcig) ^ Medidas_correctivas(?mc) -> sqwrl:select(?
 por_infracciones_muy_graves(?mc, ?mcimg) ^ Medidas_correctivas(?mc) -> sqwrl:select(?mcimg)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-126.png)
+![alt text](./Imagenes_preguntas/S-126.png)
 
 ## Pregunta: S127
 **Planteamiento de la pregunta:**
@@ -1412,7 +1412,7 @@ por_infracciones_muy_graves(?mc, ?mcimg) ^ Medidas_correctivas(?mc) -> sqwrl:sel
 cometidas_por(?il, ?rt) ^ Infracciones_leves(?il) ^ Responsable_del_tratamiento(?rt) ^ infracciones_leves(?rt, ?eil) -> sqwrl:select(?eil) ^ sqwrl:limit(5)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-127.png)
+![alt text](./Imagenes_preguntas/S-127.png)
 
 ## Pregunta: S128
 **Planteamiento de la pregunta:**
@@ -1423,7 +1423,7 @@ cometidas_por(?il, ?rt) ^ Infracciones_leves(?il) ^ Responsable_del_tratamiento(
 Responsable_del_tratamiento(?rt) ^ infracciones_graves(?rt, ?eig) ^ Infracciones_graves(?ig) ^ cometidas_por(?ig, ?rt) -> sqwrl:select(?eig) ^ sqwrl:limit(14)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-128.png)
+![alt text](./Imagenes_preguntas/S-128.png)
 
 ## Pregunta: S129
 **Planteamiento de la pregunta:**
@@ -1434,7 +1434,7 @@ Responsable_del_tratamiento(?rt) ^ infracciones_graves(?rt, ?eig) ^ Infracciones
 Infracciones_leves(?il) ^ cometidas_por(?il, ?et) ^ infracciones_leves(?et, ?eil) ^ Encargado_del_tratamiento(?et) -> sqwrl:select(?eil) ^ sqwrl:limit(4)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-129.png)
+![alt text](./Imagenes_preguntas/S-129.png)
 
 ## Pregunta: S130
 **Planteamiento de la pregunta:**
@@ -1445,7 +1445,7 @@ Infracciones_leves(?il) ^ cometidas_por(?il, ?et) ^ infracciones_leves(?et, ?eil
 cometidas_por(?ig, ?et) ^ Infracciones_graves(?ig) ^ Encargado_del_tratamiento(?et) ^ infracciones_graves(?et, ?eig) -> sqwrl:select(?eig) ^ sqwrl:limit(8)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-130.png)
+![alt text](./Imagenes_preguntas/S-130.png)
 
 ## Pregunta: S131
 **Planteamiento de la pregunta:**
@@ -1456,7 +1456,7 @@ cometidas_por(?ig, ?et) ^ Infracciones_graves(?ig) ^ Encargado_del_tratamiento(?
 Sanciones(?s) ^ están_compuesto_por(?s, ?ec) -> sqwrl:select(?ec) ^ sqwrl:limit(2)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-131.png)
+![alt text](./Imagenes_preguntas/S-131.png)
 
 ## Pregunta: S132
 **Planteamiento de la pregunta:**
@@ -1467,7 +1467,7 @@ Sanciones(?s) ^ están_compuesto_por(?s, ?ec) -> sqwrl:select(?ec) ^ sqwrl:limit
 Sanciones(?s) ^ serán_impuestas_por(?s, ?si) -> sqwrl:select(?si) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-132.png)
+![alt text](./Imagenes_preguntas/S-132.png)
 
 ## Pregunta: S133
 **Planteamiento de la pregunta:**
@@ -1478,7 +1478,7 @@ Sanciones(?s) ^ serán_impuestas_por(?s, ?si) -> sqwrl:select(?si) ^ sqwrl:limit
 Sanciones_por_infracciones_leves(?sil) ^ destinadas(?sil, ?d) -> sqwrl:select(?d) ^ sqwrl:limit(2)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-133.png)
+![alt text](./Imagenes_preguntas/S-133.png)
 
 ## Pregunta: S134
 **Planteamiento de la pregunta:**
@@ -1489,7 +1489,7 @@ Sanciones_por_infracciones_leves(?sil) ^ destinadas(?sil, ?d) -> sqwrl:select(?d
 Sanciones_por_infracciones_leves(?sil) ^ tipo_de_sanción_por_infracciones_hacia_servidores_o_funcionarios_públicos(?sil, ?tssf) -> sqwrl:select(?tssf) ^ sqwrl:limit(2)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-134.png)
+![alt text](./Imagenes_preguntas/S-134.png)
 
 ## Pregunta: S135
 **Planteamiento de la pregunta:**
@@ -1500,7 +1500,7 @@ Sanciones_por_infracciones_leves(?sil) ^ tipo_de_sanción_por_infracciones_hacia
 Sanciones_por_infracciones_leves(?sil) ^ tipo_de_sanción_por_infracciones_hacia_responsable_o_el_encargado_del_tratamiento(?sil, ?tsret) -> sqwrl:select(?tsret) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-135.png)
+![alt text](./Imagenes_preguntas/S-135.png)
 
 ## Pregunta: S136
 **Planteamiento de la pregunta:**
@@ -1511,7 +1511,7 @@ Sanciones_por_infracciones_leves(?sil) ^ tipo_de_sanción_por_infracciones_hacia
 Sanciones_por_infracciones_leves(?sil) ^ determinación_de_la_multa_respecto_a_sanciones_por_infracción_del_responsable_o_encargado_del_tratamiento(?sil, ?dm) -> sqwrl:select(?dm) ^ sqwrl:limit(4)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-136.png)
+![alt text](./Imagenes_preguntas/S-136.png)
 
 ## Pregunta: S137
 **Planteamiento de la pregunta:**
@@ -1522,7 +1522,7 @@ Sanciones_por_infracciones_leves(?sil) ^ determinación_de_la_multa_respecto_a_s
 Sanciones_por_infracciones_graves(?sig) ^ destinadas(?sig, ?d) -> sqwrl:select(?d) ^ sqwrl:limit(2)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-137.png)
+![alt text](./Imagenes_preguntas/S-137.png)
 
 ## Pregunta: S138
 **Planteamiento de la pregunta:**
@@ -1533,7 +1533,7 @@ Sanciones_por_infracciones_graves(?sig) ^ destinadas(?sig, ?d) -> sqwrl:select(?
 Sanciones_por_infracciones_graves(?sig) ^ tipo_de_sanción_por_infracciones_hacia_servidores_o_funcionarios_públicos(?sig, ?tssf) -> sqwrl:select(?tssf) ^ sqwrl:limit(2)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-138.png)
+![alt text](./Imagenes_preguntas/S-138.png)
 
 ## Pregunta: S139
 **Planteamiento de la pregunta:**
@@ -1544,7 +1544,7 @@ Sanciones_por_infracciones_graves(?sig) ^ tipo_de_sanción_por_infracciones_haci
 Sanciones_por_infracciones_graves(?sig) ^ tipo_de_sanción_por_infracciones_hacia_responsable_o_el_encargado_del_tratamiento(?sig, ?tsret) -> sqwrl:select(?tsret) ^ sqwrl:limit(1)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-139.png)
+![alt text](./Imagenes_preguntas/S-139.png)
 
 ## Pregunta: S140
 **Planteamiento de la pregunta:**
@@ -1555,7 +1555,7 @@ Sanciones_por_infracciones_graves(?sig) ^ tipo_de_sanción_por_infracciones_haci
 Sanciones_por_infracciones_graves(?sig) ^ determinación_de_la_multa_respecto_a_sanciones_por_infracción_del_responsable_o_encargado_del_tratamiento(?sig, ?dm) -> sqwrl:select(?dm) ^ sqwrl:limit(4)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-140.png)
+![alt text](./Imagenes_preguntas/S-140.png)
 
 ## Pregunta: S141
 **Planteamiento de la pregunta:**
@@ -1566,7 +1566,7 @@ Sanciones_por_infracciones_graves(?sig) ^ determinación_de_la_multa_respecto_a_
 Autoridad_de_protección_de_datos_personales(?apd) ^ funciones(?apd, ?f) -> sqwrl:select(?f)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-141.png)
+![alt text](./Imagenes_preguntas/S-141.png)
 
 ## Pregunta: S142
 **Planteamiento de la pregunta:**
@@ -1577,7 +1577,7 @@ Autoridad_de_protección_de_datos_personales(?apd) ^ funciones(?apd, ?f) -> sqwr
 Autoridad_de_protección_de_datos_personales(?apd) ^ conocido_como(?apd, ?cm) -> sqwrl:select(?cm)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-142.png)
+![alt text](./Imagenes_preguntas/S-142.png)
 
 ## Pregunta: S143
 **Planteamiento de la pregunta:**
@@ -1588,7 +1588,7 @@ Autoridad_de_protección_de_datos_personales(?apd) ^ conocido_como(?apd, ?cm) ->
 Autoridad_de_protección_de_datos_personales(?apd) ^ designación(?apd, ?d) -> sqwrl:select(?d)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-143.png)
+![alt text](./Imagenes_preguntas/S-143.png)
 
 ## Pregunta: S144
 **Planteamiento de la pregunta:**
@@ -1599,7 +1599,7 @@ Autoridad_de_protección_de_datos_personales(?apd) ^ designación(?apd, ?d) -> s
 Autoridad_de_protección_de_datos_personales(?apd) ^ requisitos_que_debe_cumplir(?apd, ?rdc) -> sqwrl:select(?rdc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-144.png)
+![alt text](./Imagenes_preguntas/S-144.png)
 
 ## Pregunta: S145
 **Planteamiento de la pregunta:**
@@ -1610,7 +1610,7 @@ Autoridad_de_protección_de_datos_personales(?apd) ^ requisitos_que_debe_cumplir
 Autoridad_de_protección_de_datos_personales(?apd) ^ duración_del_cargo(?apd, ?dc) -> sqwrl:select(?dc)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-145.png)
+![alt text](./Imagenes_preguntas/S-145.png)
 
 ## Pregunta: S146
 **Planteamiento de la pregunta:**
@@ -1621,7 +1621,7 @@ Autoridad_de_protección_de_datos_personales(?apd) ^ duración_del_cargo(?apd, ?
 Autoridad_de_protección_de_datos_personales(?apd) ^ revocación(?apd, ?r) -> sqwrl:select(?r)
 ```  
 **Respuesta proporcionada por la ontología:**  
-![alt text](image-146.png)
+![alt text](./Imagenes_preguntas/S-146.png)
 
 
 
